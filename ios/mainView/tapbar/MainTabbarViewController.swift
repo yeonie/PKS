@@ -26,7 +26,8 @@ class MainTabbarViewController: UITabBarController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
-        tabBar.backgroundImage = UIImage(named: "forTest")
+        tabBar.backgroundImage = UIImage()
+        
         tabBar.shadowImage = UIImage()
         //        self.tabBar.layer.shadowColor = UIColor.black.cgColor
         //        self.tabBar.layer.shadowOffset = CGSize(width: 1, height: 2)

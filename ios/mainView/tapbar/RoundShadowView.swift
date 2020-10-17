@@ -3,7 +3,6 @@
 //  ios
 //
 //  Created by 이동연 on 12/10/2020.
-//  Copyright © 2020 Jerry Jung. All rights reserved.
 //
 
 import UIKit

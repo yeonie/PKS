@@ -9,11 +9,25 @@
 import UIKit
 
 class somethingViewController: BaseViewController {
+    
+    var select = false
 
+    @IBOutlet weak var selectBtn: UIButton!
+    @IBOutlet weak var symptomView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        selectBtn.layer.cornerRadius = 16
+        symptomView.layer.cornerRadius = 15
+        symptomView.isHidden = true
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        navigationController?.navigationBar.isHidden = true
+        
     }
 
     @IBAction func mainBtnPressed(_ sender: UIButton) {
@@ -21,6 +35,16 @@ class somethingViewController: BaseViewController {
         window?.rootViewController = MainTabbarViewController()
     }
     
+    @IBAction func symptomBtn(_ sender: UIButton) {
+        
+        if select{
+            self.symptomView.isHidden = false
+        }
+        else{
+            self.symptomView.isHidden = true
+        }
+        select = !select
+    }
     
 
 }
