@@ -18,6 +18,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="somethingViewController" customModule="ios" customModuleProvider="target">
             <connections>
                 <outlet property="selectBtn" destination="Ycw-lu-Rrw" id="gDy-gk-Vwf"/>
+                <outlet property="symptomBTN" destination="U1L-zv-dqd" id="38y-Fr-J4T"/>
+                <outlet property="symptomBTNBTM" destination="4UH-U2-TbT" id="C4U-db-5s0"/>
                 <outlet property="symptomView" destination="TtY-75-X6I" id="ocG-9h-ceD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

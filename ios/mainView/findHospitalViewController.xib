@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="TTRunGothic.ttf">
+            <string>TTRunGothic</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="findHospitalViewController" customModule="ios" customModuleProvider="target">
             <connections>
@@ -22,7 +27,28 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OIS-RN-6sZ">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지도로 볼까요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tO1-qd-jLp">
+                            <rect key="frame" x="139" y="660" width="136" height="30"/>
+                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="25"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljM-o9-nC6">
+                            <rect key="frame" x="125" y="698" width="164" height="65"/>
+                            <state key="normal" image="confirmBtn"/>
+                            <connections>
+                                <action selector="mapConfirmBtn:" destination="-1" eventType="touchUpInside" id="TP5-q7-Gpo"/>
+                            </connections>
+                        </button>
+                    </subviews>
                     <color key="backgroundColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="tO1-qd-jLp" firstAttribute="centerX" secondItem="OIS-RN-6sZ" secondAttribute="centerX" id="Saw-2Q-W4T"/>
+                        <constraint firstItem="ljM-o9-nC6" firstAttribute="top" secondItem="tO1-qd-jLp" secondAttribute="bottom" constant="18" id="VAa-9Z-hHc"/>
+                        <constraint firstItem="ljM-o9-nC6" firstAttribute="centerX" secondItem="OIS-RN-6sZ" secondAttribute="centerX" id="XY0-lz-WUb"/>
+                        <constraint firstItem="tO1-qd-jLp" firstAttribute="top" secondItem="OIS-RN-6sZ" secondAttribute="top" constant="660" id="lI7-nm-L5t"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -36,4 +62,7 @@
             <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
         </view>
     </objects>
+    <resources>
+        <image name="confirmBtn" width="140" height="48"/>
+    </resources>
 </document>

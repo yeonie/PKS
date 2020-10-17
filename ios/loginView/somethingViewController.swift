@@ -14,12 +14,16 @@ class somethingViewController: BaseViewController {
 
     @IBOutlet weak var selectBtn: UIButton!
     @IBOutlet weak var symptomView: UIView!
+    @IBOutlet weak var symptomBTN: UIView!
+    @IBOutlet weak var symptomBTNBTM: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         selectBtn.layer.cornerRadius = 16
         symptomView.layer.cornerRadius = 15
         symptomView.isHidden = true
+        symptomBTN.layer.cornerRadius = 15
+        symptomBTNBTM.layer.cornerRadius = 15
         // Do any additional setup after loading the view.
     }
     
