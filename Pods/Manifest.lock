@@ -7,9 +7,6 @@ PODS:
   - AlamofireObjectMapper (5.2.1):
     - Alamofire (~> 4.7)
     - ObjectMapper (~> 3.4)
-  - AWSAPIGateway (2.4.16):
-    - AWSCore (= 2.4.16)
-  - AWSCore (2.4.16)
   - Crashlytics (3.10.9):
     - Fabric (~> 1.7.13)
   - Fabric (1.7.13)
@@ -86,7 +83,6 @@ DEPENDENCIES:
   - AlamofireImage (~> 3.5)
   - AlamofireNetworkActivityIndicator (~> 2.3)
   - AlamofireObjectMapper (~> 5.2)
-  - AWSAPIGateway (~> 2.4.7)
   - Crashlytics (~> 3.10.1)
   - Fabric (~> 1.7.5)
   - Firebase/Analytics
@@ -100,8 +96,6 @@ SPEC REPOS:
     - AlamofireImage
     - AlamofireNetworkActivityIndicator
     - AlamofireObjectMapper
-    - AWSAPIGateway
-    - AWSCore
     - Crashlytics
     - Fabric
     - Firebase
@@ -132,8 +126,6 @@ SPEC CHECKSUMS:
   AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
   AlamofireNetworkActivityIndicator: 9acc3de3ca6645bf0efed462396b0df13dd3e7b8
   AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
-  AWSAPIGateway: 49d48577724a9f53eda1e8c53411c1f1ebac3b7b
-  AWSCore: 7c3c129991e6387bcbad7132bc3661e7135754db
   Crashlytics: f836e1d564b4492da572b056ce7ea0476c53ec4b
   Fabric: e88a14d80173bcf3db4eac866c83619f2894183d
   Firebase: 50be68416f50eb4eb2ecb0e78acab9a051ef95df
@@ -151,6 +143,6 @@ SPEC CHECKSUMS:
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SwiftyXMLParser: c39a7854b7d32e447e19d0fabdd98696fe26f03a
 
-PODFILE CHECKSUM: c8f8ac04a5f35e041e94d3221bbccf0da2695f70
+PODFILE CHECKSUM: ed1b8473318223c6bdf469e0c9e7ad683b336959
 
 COCOAPODS: 1.10.0

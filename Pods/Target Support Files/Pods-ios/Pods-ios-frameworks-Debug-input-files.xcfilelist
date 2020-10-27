@@ -1,6 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-ios/Pods-ios-frameworks.sh
-${BUILT_PRODUCTS_DIR}/AWSAPIGateway/AWSAPIGateway.framework
-${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework
 ${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework
