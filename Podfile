@@ -15,5 +15,7 @@ target 'ios' do
   pod 'Fabric', '~> 1.7.5'
   pod 'Crashlytics', '~> 3.10.1'
   pod 'KYDrawerController'
+  pod 'AWSAPIGateway', '~>2.4.7'
+  pod "SwiftyXMLParser", :git => 'https://github.com/yahoojapan/SwiftyXMLParser.git'
 
 end
