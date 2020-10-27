@@ -11,7 +11,7 @@ import UIKit
 class MainViewController: BaseViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
-    
+    @available(iOS 13.0, *)
     @IBAction func pressedGetTutorials(_ sender: UIButton) {
         MainDataManager().getTutorials(self)
     }

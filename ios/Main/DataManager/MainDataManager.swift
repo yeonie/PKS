@@ -9,6 +9,7 @@
 import Alamofire
 import AlamofireObjectMapper
 
+@available(iOS 13.0, *)
 class MainDataManager {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     

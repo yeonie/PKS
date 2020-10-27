@@ -12,6 +12,7 @@ import AlamofireNetworkActivityIndicator
 import Firebase
 
 @UIApplicationMain
+@available(iOS 13.0,*)
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
