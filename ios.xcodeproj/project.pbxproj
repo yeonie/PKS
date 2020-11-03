@@ -7,19 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84A4155A25349DD300770F9A /* findHospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4155825349DD300770F9A /* findHospitalViewController.swift */; };
-		84A4155B25349DD300770F9A /* findHospitalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A4155925349DD300770F9A /* findHospitalViewController.xib */; };
-		84A4155E25349DF400770F9A /* putSymptomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4155C25349DF400770F9A /* putSymptomViewController.swift */; };
-		84A4155F25349DF400770F9A /* putSymptomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A4155D25349DF400770F9A /* putSymptomViewController.xib */; };
-		84A4156225349EA700770F9A /* expectedSymptomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4156025349EA700770F9A /* expectedSymptomViewController.swift */; };
-		84A4156325349EA700770F9A /* expectedSymptomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A4156125349EA700770F9A /* expectedSymptomViewController.xib */; };
-		84A4156625349EBD00770F9A /* printMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4156425349EBD00770F9A /* printMapViewController.swift */; };
-		84A4156725349EBD00770F9A /* printMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A4156525349EBD00770F9A /* printMapViewController.xib */; };
-		84A4156B2534A13900770F9A /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4156A2534A13900770F9A /* MainTabbarViewController.swift */; };
-		84A4156D2534A15200770F9A /* RoundShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4156C2534A15200770F9A /* RoundShadowView.swift */; };
-		84A415702534A4FE00770F9A /* somethingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4156E2534A4FE00770F9A /* somethingViewController.swift */; };
-		84A415712534A4FE00770F9A /* somethingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A4156F2534A4FE00770F9A /* somethingViewController.xib */; };
-		84AD545A25349270009220C4 /* TTRunGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84AD54592534924D009220C4 /* TTRunGothic.ttf */; };
+		845D44C4254E883A002794A7 /* hospitalAPITestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D44C2254E883A002794A7 /* hospitalAPITestViewController.swift */; };
+		845D44C5254E883A002794A7 /* hospitalAPITestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845D44C3254E883A002794A7 /* hospitalAPITestViewController.xib */; };
+		845D44C82550055D002794A7 /* gyungkiAPITestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D44C62550055D002794A7 /* gyungkiAPITestViewController.swift */; };
+		845D44C92550055D002794A7 /* gyungkiAPITestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845D44C72550055D002794A7 /* gyungkiAPITestViewController.xib */; };
+		845D44CC25500BC0002794A7 /* ggDentistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D44CA25500BC0002794A7 /* ggDentistViewController.swift */; };
+		845D44CD25500BC0002794A7 /* ggDentistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845D44CB25500BC0002794A7 /* ggDentistViewController.xib */; };
+		8486384A2547C2C3007FA1B1 /* somethingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848638482547C2C3007FA1B1 /* somethingViewController.swift */; };
+		8486384B2547C2C3007FA1B1 /* somethingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848638492547C2C3007FA1B1 /* somethingViewController.xib */; };
+		848638502547C2EA007FA1B1 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8486384D2547C2EA007FA1B1 /* SplashViewController.swift */; };
+		848638512547C2EA007FA1B1 /* TTRunGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8486384E2547C2EA007FA1B1 /* TTRunGothic.ttf */; };
+		848638522547C2EA007FA1B1 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8486384F2547C2EA007FA1B1 /* SplashViewController.xib */; };
+		8486385F2547C2F5007FA1B1 /* expectedSymptomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848638542547C2F5007FA1B1 /* expectedSymptomViewController.swift */; };
+		848638602547C2F5007FA1B1 /* RoundShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848638562547C2F5007FA1B1 /* RoundShadowView.swift */; };
+		848638612547C2F5007FA1B1 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848638572547C2F5007FA1B1 /* MainTabbarViewController.swift */; };
+		848638622547C2F5007FA1B1 /* findHospitalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848638582547C2F5007FA1B1 /* findHospitalViewController.xib */; };
+		848638632547C2F5007FA1B1 /* findHospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848638592547C2F5007FA1B1 /* findHospitalViewController.swift */; };
+		848638642547C2F5007FA1B1 /* putSymptomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8486385A2547C2F5007FA1B1 /* putSymptomViewController.swift */; };
+		848638652547C2F5007FA1B1 /* printMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8486385B2547C2F5007FA1B1 /* printMapViewController.swift */; };
+		848638662547C2F5007FA1B1 /* putSymptomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8486385C2547C2F5007FA1B1 /* putSymptomViewController.xib */; };
+		848638672547C2F5007FA1B1 /* printMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8486385D2547C2F5007FA1B1 /* printMapViewController.xib */; };
+		848638682547C2F5007FA1B1 /* expectedSymptomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8486385E2547C2F5007FA1B1 /* expectedSymptomViewController.xib */; };
+		8486386A2547C30C007FA1B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848638692547C30C007FA1B1 /* AppDelegate.swift */; };
+		8486386D2547C37C007FA1B1 /* pharmacyHospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8486386B2547C37C007FA1B1 /* pharmacyHospitalViewController.swift */; };
+		8486386E2547C37C007FA1B1 /* pharmacyHospitalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8486386C2547C37C007FA1B1 /* pharmacyHospitalViewController.xib */; };
 		BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */; };
 		BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */; };
 		BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD75ABDB2301B7B500E0FC7A /* NoticePopUp.storyboard */; };
@@ -32,11 +43,8 @@
 		BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9BF17B22F9C737009E47EB /* UIViewController.swift */; };
 		BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9BF17D22F9CD60009E47EB /* ColorPalette.swift */; };
 		BD9BF18022F9CDEF009E47EB /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9BF17F22F9CDEF009E47EB /* String.swift */; };
-		BD9BF18322F9D1A4009E47EB /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9BF18122F9D1A4009E47EB /* SplashViewController.swift */; };
-		BD9BF18422F9D1A4009E47EB /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD9BF18222F9D1A4009E47EB /* SplashViewController.xib */; };
 		BD9BF18722F9DCC7009E47EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9BF18522F9DCC7009E47EB /* MainViewController.swift */; };
 		BD9BF18822F9DCC7009E47EB /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD9BF18622F9DCC7009E47EB /* MainViewController.xib */; };
-		BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEF322E22F9B7CB00FEF8BD /* AppDelegate.swift */; };
 		BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDEF323522F9B7CB00FEF8BD /* ios.xcdatamodeld */; };
 		BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEF323822F9B7CB00FEF8BD /* Assets.xcassets */; };
 		BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEF323A22F9B7CB00FEF8BD /* LaunchScreen.storyboard */; };
@@ -46,19 +54,30 @@
 /* Begin PBXFileReference section */
 		2F13293A0F781AAAF1DC9C8A /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DE891A8DE4AEB4ED1D1105 /* Pods-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.release.xcconfig"; path = "Target Support Files/Pods-ios/Pods-ios.release.xcconfig"; sourceTree = "<group>"; };
-		84A4155825349DD300770F9A /* findHospitalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findHospitalViewController.swift; sourceTree = "<group>"; };
-		84A4155925349DD300770F9A /* findHospitalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = findHospitalViewController.xib; sourceTree = "<group>"; };
-		84A4155C25349DF400770F9A /* putSymptomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = putSymptomViewController.swift; sourceTree = "<group>"; };
-		84A4155D25349DF400770F9A /* putSymptomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = putSymptomViewController.xib; sourceTree = "<group>"; };
-		84A4156025349EA700770F9A /* expectedSymptomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = expectedSymptomViewController.swift; sourceTree = "<group>"; };
-		84A4156125349EA700770F9A /* expectedSymptomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = expectedSymptomViewController.xib; sourceTree = "<group>"; };
-		84A4156425349EBD00770F9A /* printMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = printMapViewController.swift; sourceTree = "<group>"; };
-		84A4156525349EBD00770F9A /* printMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = printMapViewController.xib; sourceTree = "<group>"; };
-		84A4156A2534A13900770F9A /* MainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
-		84A4156C2534A15200770F9A /* RoundShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundShadowView.swift; sourceTree = "<group>"; };
-		84A4156E2534A4FE00770F9A /* somethingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = somethingViewController.swift; sourceTree = "<group>"; };
-		84A4156F2534A4FE00770F9A /* somethingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = somethingViewController.xib; sourceTree = "<group>"; };
-		84AD54592534924D009220C4 /* TTRunGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TTRunGothic.ttf; sourceTree = "<group>"; };
+		845D44C2254E883A002794A7 /* hospitalAPITestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hospitalAPITestViewController.swift; sourceTree = "<group>"; };
+		845D44C3254E883A002794A7 /* hospitalAPITestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = hospitalAPITestViewController.xib; sourceTree = "<group>"; };
+		845D44C62550055D002794A7 /* gyungkiAPITestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gyungkiAPITestViewController.swift; sourceTree = "<group>"; };
+		845D44C72550055D002794A7 /* gyungkiAPITestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = gyungkiAPITestViewController.xib; sourceTree = "<group>"; };
+		845D44CA25500BC0002794A7 /* ggDentistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ggDentistViewController.swift; sourceTree = "<group>"; };
+		845D44CB25500BC0002794A7 /* ggDentistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ggDentistViewController.xib; sourceTree = "<group>"; };
+		848638482547C2C3007FA1B1 /* somethingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = somethingViewController.swift; sourceTree = "<group>"; };
+		848638492547C2C3007FA1B1 /* somethingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = somethingViewController.xib; sourceTree = "<group>"; };
+		8486384D2547C2EA007FA1B1 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		8486384E2547C2EA007FA1B1 /* TTRunGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TTRunGothic.ttf; sourceTree = "<group>"; };
+		8486384F2547C2EA007FA1B1 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		848638542547C2F5007FA1B1 /* expectedSymptomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = expectedSymptomViewController.swift; sourceTree = "<group>"; };
+		848638562547C2F5007FA1B1 /* RoundShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundShadowView.swift; sourceTree = "<group>"; };
+		848638572547C2F5007FA1B1 /* MainTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
+		848638582547C2F5007FA1B1 /* findHospitalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = findHospitalViewController.xib; sourceTree = "<group>"; };
+		848638592547C2F5007FA1B1 /* findHospitalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = findHospitalViewController.swift; sourceTree = "<group>"; };
+		8486385A2547C2F5007FA1B1 /* putSymptomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = putSymptomViewController.swift; sourceTree = "<group>"; };
+		8486385B2547C2F5007FA1B1 /* printMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = printMapViewController.swift; sourceTree = "<group>"; };
+		8486385C2547C2F5007FA1B1 /* putSymptomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = putSymptomViewController.xib; sourceTree = "<group>"; };
+		8486385D2547C2F5007FA1B1 /* printMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = printMapViewController.xib; sourceTree = "<group>"; };
+		8486385E2547C2F5007FA1B1 /* expectedSymptomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = expectedSymptomViewController.xib; sourceTree = "<group>"; };
+		848638692547C30C007FA1B1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8486386B2547C37C007FA1B1 /* pharmacyHospitalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pharmacyHospitalViewController.swift; sourceTree = "<group>"; };
+		8486386C2547C37C007FA1B1 /* pharmacyHospitalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = pharmacyHospitalViewController.xib; sourceTree = "<group>"; };
 		BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePopUp.swift; sourceTree = "<group>"; };
 		BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePopUpDelegate.swift; sourceTree = "<group>"; };
 		BD75ABDB2301B7B500E0FC7A /* NoticePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoticePopUp.storyboard; sourceTree = "<group>"; };
@@ -71,12 +90,9 @@
 		BD9BF17B22F9C737009E47EB /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		BD9BF17D22F9CD60009E47EB /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		BD9BF17F22F9CDEF009E47EB /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		BD9BF18122F9D1A4009E47EB /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		BD9BF18222F9D1A4009E47EB /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		BD9BF18522F9DCC7009E47EB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BD9BF18622F9DCC7009E47EB /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		BDEF322B22F9B7CB00FEF8BD /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDEF322E22F9B7CB00FEF8BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDEF323622F9B7CB00FEF8BD /* ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ios.xcdatamodel; sourceTree = "<group>"; };
 		BDEF323822F9B7CB00FEF8BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDEF323B22F9B7CB00FEF8BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -113,38 +129,56 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		84A4156825349EC100770F9A /* loginView */ = {
+		848638472547C2C3007FA1B1 /* loginView */ = {
 			isa = PBXGroup;
 			children = (
-				84A4156E2534A4FE00770F9A /* somethingViewController.swift */,
-				84A4156F2534A4FE00770F9A /* somethingViewController.xib */,
+				848638482547C2C3007FA1B1 /* somethingViewController.swift */,
+				848638492547C2C3007FA1B1 /* somethingViewController.xib */,
 			);
 			path = loginView;
 			sourceTree = "<group>";
 		};
-		84A415692534A10300770F9A /* tapbar */ = {
+		8486384C2547C2EA007FA1B1 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				84A4156A2534A13900770F9A /* MainTabbarViewController.swift */,
-				84A4156C2534A15200770F9A /* RoundShadowView.swift */,
+				8486384D2547C2EA007FA1B1 /* SplashViewController.swift */,
+				8486384E2547C2EA007FA1B1 /* TTRunGothic.ttf */,
+				8486384F2547C2EA007FA1B1 /* SplashViewController.xib */,
 			);
-			path = tapbar;
+			path = Splash;
 			sourceTree = "<group>";
 		};
-		84AD545B25349506009220C4 /* mainView */ = {
+		848638532547C2F5007FA1B1 /* mainView */ = {
 			isa = PBXGroup;
 			children = (
-				84A415692534A10300770F9A /* tapbar */,
-				84A4155825349DD300770F9A /* findHospitalViewController.swift */,
-				84A4155925349DD300770F9A /* findHospitalViewController.xib */,
-				84A4155C25349DF400770F9A /* putSymptomViewController.swift */,
-				84A4155D25349DF400770F9A /* putSymptomViewController.xib */,
-				84A4156025349EA700770F9A /* expectedSymptomViewController.swift */,
-				84A4156125349EA700770F9A /* expectedSymptomViewController.xib */,
-				84A4156425349EBD00770F9A /* printMapViewController.swift */,
-				84A4156525349EBD00770F9A /* printMapViewController.xib */,
+				848638552547C2F5007FA1B1 /* tapbar */,
+				848638582547C2F5007FA1B1 /* findHospitalViewController.xib */,
+				848638592547C2F5007FA1B1 /* findHospitalViewController.swift */,
+				8486385C2547C2F5007FA1B1 /* putSymptomViewController.xib */,
+				8486385A2547C2F5007FA1B1 /* putSymptomViewController.swift */,
+				8486385D2547C2F5007FA1B1 /* printMapViewController.xib */,
+				8486385B2547C2F5007FA1B1 /* printMapViewController.swift */,
+				8486386C2547C37C007FA1B1 /* pharmacyHospitalViewController.xib */,
+				8486386B2547C37C007FA1B1 /* pharmacyHospitalViewController.swift */,
+				8486385E2547C2F5007FA1B1 /* expectedSymptomViewController.xib */,
+				848638542547C2F5007FA1B1 /* expectedSymptomViewController.swift */,
+				845D44C2254E883A002794A7 /* hospitalAPITestViewController.swift */,
+				845D44C3254E883A002794A7 /* hospitalAPITestViewController.xib */,
+				845D44C62550055D002794A7 /* gyungkiAPITestViewController.swift */,
+				845D44C72550055D002794A7 /* gyungkiAPITestViewController.xib */,
+				845D44CA25500BC0002794A7 /* ggDentistViewController.swift */,
+				845D44CB25500BC0002794A7 /* ggDentistViewController.xib */,
 			);
 			path = mainView;
+			sourceTree = "<group>";
+		};
+		848638552547C2F5007FA1B1 /* tapbar */ = {
+			isa = PBXGroup;
+			children = (
+				848638562547C2F5007FA1B1 /* RoundShadowView.swift */,
+				848638572547C2F5007FA1B1 /* MainTabbarViewController.swift */,
+			);
+			path = tapbar;
 			sourceTree = "<group>";
 		};
 		BD75ABD42301B3FB00E0FC7A /* PopUp */ = {
@@ -185,23 +219,16 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		BD9BF17022F9C318009E47EB /* Splash */ = {
-			isa = PBXGroup;
-			children = (
-				BD9BF18122F9D1A4009E47EB /* SplashViewController.swift */,
-				BD9BF18222F9D1A4009E47EB /* SplashViewController.xib */,
-				84AD54592534924D009220C4 /* TTRunGothic.ttf */,
-			);
-			path = Splash;
-			sourceTree = "<group>";
-		};
 		BD9BF17122F9C31D009E47EB /* config */ = {
 			isa = PBXGroup;
 			children = (
+				848638532547C2F5007FA1B1 /* mainView */,
+				848638472547C2C3007FA1B1 /* loginView */,
 				BD9BF17622F9C6BA009E47EB /* extensions */,
 				BD9BF17222F9C3D5009E47EB /* BaseViewController.swift */,
 				BD9BF17422F9C494009E47EB /* CusomIndicatorView.swift */,
 				BD9BF17D22F9CD60009E47EB /* ColorPalette.swift */,
+				8486384C2547C2EA007FA1B1 /* Splash */,
 			);
 			path = config;
 			sourceTree = "<group>";
@@ -238,13 +265,10 @@
 		BDEF322D22F9B7CB00FEF8BD /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				84A4156825349EC100770F9A /* loginView */,
-				84AD545B25349506009220C4 /* mainView */,
 				BD9BF17122F9C31D009E47EB /* config */,
-				BD9BF17022F9C318009E47EB /* Splash */,
 				BD9BF16F22F9C314009E47EB /* Main */,
-				BDEF322E22F9B7CB00FEF8BD /* AppDelegate.swift */,
 				BDEF323822F9B7CB00FEF8BD /* Assets.xcassets */,
+				848638692547C30C007FA1B1 /* AppDelegate.swift */,
 				BDEF323A22F9B7CB00FEF8BD /* LaunchScreen.storyboard */,
 				BDEF323D22F9B7CB00FEF8BD /* Info.plist */,
 				BDEF323522F9B7CB00FEF8BD /* ios.xcdatamodeld */,
@@ -312,17 +336,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84AD545A25349270009220C4 /* TTRunGothic.ttf in Resources */,
-				84A4156325349EA700770F9A /* expectedSymptomViewController.xib in Resources */,
+				848638512547C2EA007FA1B1 /* TTRunGothic.ttf in Resources */,
+				845D44C5254E883A002794A7 /* hospitalAPITestViewController.xib in Resources */,
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
-				84A4156725349EBD00770F9A /* printMapViewController.xib in Resources */,
+				845D44CD25500BC0002794A7 /* ggDentistViewController.xib in Resources */,
+				848638682547C2F5007FA1B1 /* expectedSymptomViewController.xib in Resources */,
+				8486384B2547C2C3007FA1B1 /* somethingViewController.xib in Resources */,
+				848638672547C2F5007FA1B1 /* printMapViewController.xib in Resources */,
+				845D44C92550055D002794A7 /* gyungkiAPITestViewController.xib in Resources */,
+				848638622547C2F5007FA1B1 /* findHospitalViewController.xib in Resources */,
+				848638522547C2EA007FA1B1 /* SplashViewController.xib in Resources */,
+				848638662547C2F5007FA1B1 /* putSymptomViewController.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
-				BD9BF18422F9D1A4009E47EB /* SplashViewController.xib in Resources */,
-				84A4155B25349DD300770F9A /* findHospitalViewController.xib in Resources */,
 				BD9BF18822F9DCC7009E47EB /* MainViewController.xib in Resources */,
-				84A4155F25349DF400770F9A /* putSymptomViewController.xib in Resources */,
-				84A415712534A4FE00770F9A /* somethingViewController.xib in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
+				8486386E2547C37C007FA1B1 /* pharmacyHospitalViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,28 +403,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8486386A2547C30C007FA1B1 /* AppDelegate.swift in Sources */,
 				BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */,
 				BD9BF18722F9DCC7009E47EB /* MainViewController.swift in Sources */,
+				845D44C4254E883A002794A7 /* hospitalAPITestViewController.swift in Sources */,
+				848638632547C2F5007FA1B1 /* findHospitalViewController.swift in Sources */,
+				845D44C82550055D002794A7 /* gyungkiAPITestViewController.swift in Sources */,
 				BD9BF17822F9C6CF009E47EB /* UIColor.swift in Sources */,
-				84A415702534A4FE00770F9A /* somethingViewController.swift in Sources */,
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
 				BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */,
-				84A4156D2534A15200770F9A /* RoundShadowView.swift in Sources */,
-				84A4156625349EBD00770F9A /* printMapViewController.swift in Sources */,
+				848638602547C2F5007FA1B1 /* RoundShadowView.swift in Sources */,
+				8486384A2547C2C3007FA1B1 /* somethingViewController.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
+				8486385F2547C2F5007FA1B1 /* expectedSymptomViewController.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
+				848638652547C2F5007FA1B1 /* printMapViewController.swift in Sources */,
 				BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */,
-				84A4156B2534A13900770F9A /* MainTabbarViewController.swift in Sources */,
-				84A4156225349EA700770F9A /* expectedSymptomViewController.swift in Sources */,
 				BD9BF17522F9C494009E47EB /* CusomIndicatorView.swift in Sources */,
-				84A4155E25349DF400770F9A /* putSymptomViewController.swift in Sources */,
+				848638642547C2F5007FA1B1 /* putSymptomViewController.swift in Sources */,
+				848638612547C2F5007FA1B1 /* MainTabbarViewController.swift in Sources */,
 				BD9BF17A22F9C6FF009E47EB /* UIButton.swift in Sources */,
+				845D44CC25500BC0002794A7 /* ggDentistViewController.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
 				BD75ABE02301BE8200E0FC7A /* TutorialResponse.swift in Sources */,
-				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
 				BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */,
-				84A4155A25349DD300770F9A /* findHospitalViewController.swift in Sources */,
-				BD9BF18322F9D1A4009E47EB /* SplashViewController.swift in Sources */,
+				848638502547C2EA007FA1B1 /* SplashViewController.swift in Sources */,
+				8486386D2547C37C007FA1B1 /* pharmacyHospitalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +575,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.litong.template.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softsquared.template.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -563,7 +595,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.litong.template.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softsquared.template.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,14 +1,14 @@
 {
   "images" : [
     {
+      "filename" : "confirmBtn.png",
       "scale" : "1x",
-      "idiom" : "universal",
-      "filename" : "confirmBtn.png"
+      "idiom" : "universal"
     },
     {
-      "filename" : "confirmBtn@2x.png",
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "confirmBtn@2x.png"
     },
     {
       "idiom" : "universal",
