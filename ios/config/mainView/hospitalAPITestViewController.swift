@@ -3,7 +3,7 @@
 //  ios
 //
 //  Created by 이동연 on 01/11/2020.
-//  Copyright © 2020 Jerry Jung. All rights reserved.
+//  Copyright © 2020 litong. All rights reserved.
 //
 
 import UIKit

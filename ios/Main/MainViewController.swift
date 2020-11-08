@@ -2,8 +2,8 @@
 //  MainViewController.swift
 //  ios
 //
-//  Created by Jerry Jung on 07/08/2019.
-//  Copyright © 2019 Jerry Jung. All rights reserved.
+//  Created by litong on 07/08/2019.
+//  Copyright © 2019 litong. All rights reserved.
 //
 
 import UIKit
