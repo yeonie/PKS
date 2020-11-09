@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,12 +27,6 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkO-o4-AN0">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
-                        <pickerView contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="AmV-n7-FMy">
-                            <rect key="frame" x="0.0" y="201" width="414" height="350"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="350" id="vwm-9M-enN"/>
-                            </constraints>
-                        </pickerView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="경기-&gt; 지금 어디죠?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mV-Xz-koZ">
                             <rect key="frame" x="130" y="150" width="154" height="26"/>
                             <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="22"/>
@@ -48,6 +40,12 @@
                                 <action selector="confirmBtnPressed:" destination="-1" eventType="touchUpInside" id="6mg-1Z-ArE"/>
                             </connections>
                         </button>
+                        <pickerView contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AmV-n7-FMy">
+                            <rect key="frame" x="0.0" y="234" width="414" height="350"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="350" id="vwm-9M-enN"/>
+                            </constraints>
+                        </pickerView>
                     </subviews>
                     <color key="backgroundColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
@@ -62,6 +60,7 @@
                     </constraints>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="xkO-o4-AN0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="O0L-MP-ogH"/>
@@ -69,7 +68,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xkO-o4-AN0" secondAttribute="trailing" id="g6g-lf-Ukg"/>
                 <constraint firstAttribute="bottom" secondItem="xkO-o4-AN0" secondAttribute="bottom" id="nC7-A3-HYx"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="92"/>
         </view>
     </objects>
     <resources>

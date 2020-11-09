@@ -4,8 +4,10 @@
 target 'ios' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  
+  platform :ios, '9.0'
 
-  # Pods for ios
+  pod 'AWSTranslate', '~> 2.6.19'
   pod 'Alamofire'
   pod 'AlamofireNetworkActivityIndicator', '~> 2.3'
   pod 'AlamofireObjectMapper', '~> 5.2'
@@ -16,6 +18,7 @@ target 'ios' do
   pod 'Crashlytics', '~> 3.10.1'
   pod 'KYDrawerController'
   pod "SwiftyXMLParser", :git => 'https://github.com/yahoojapan/SwiftyXMLParser.git'
-  pod 'AWSTranslate', '~> 2.6.19'
+  pod 'AWSS3'
+  
 
 end

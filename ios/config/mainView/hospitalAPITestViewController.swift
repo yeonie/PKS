@@ -3,7 +3,7 @@
 //  ios
 //
 //  Created by 이동연 on 01/11/2020.
-//  Copyright © 2020 litong. All rights reserved.
+//  Copyright © 2020 Jerry Jung. All rights reserved.
 //
 
 import UIKit
@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyXMLParser
 
 class hospitalAPITestViewController: UIViewController {
-
+    
     let HospitalUrl = "http://apis.data.go.kr/6260000/MedicInstitService/MedicalInstitInfo?serviceKey=s7UQTbfE28Clt5jr0WTHSjGtUUua5oeN%2Fri30zcURa5CkkAowaMBPC9Kj95RsuCytKo3jeqNTVe8EaM5PGkKTw%3D%3D&numOfRows=5&pageNo=1"
     let serviceKey = "s7UQTbfE28Clt5jr0WTHSjGtUUua5oeN%2Fri30zcURa5CkkAowaMBPC9Kj95RsuCytKo3jeqNTVe8EaM5PGkKTw%3D%3D"
     let numOfRows = "10"

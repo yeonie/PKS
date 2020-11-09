@@ -7,6 +7,11 @@ PODS:
   - AlamofireObjectMapper (5.2.1):
     - Alamofire (~> 4.7)
     - ObjectMapper (~> 3.4)
+  - AWSCore (2.6.35)
+  - AWSS3 (2.6.35):
+    - AWSCore (= 2.6.35)
+  - AWSTranslate (2.6.35):
+    - AWSCore (= 2.6.35)
   - Crashlytics (3.10.9):
     - Fabric (~> 1.7.13)
   - Fabric (1.7.13)
@@ -85,6 +90,8 @@ DEPENDENCIES:
   - AlamofireImage (~> 3.5)
   - AlamofireNetworkActivityIndicator (~> 2.3)
   - AlamofireObjectMapper (~> 5.2)
+  - AWSS3
+  - AWSTranslate (~> 2.6.19)
   - Crashlytics (~> 3.10.1)
   - Fabric (~> 1.7.5)
   - Firebase/Analytics
@@ -98,6 +105,9 @@ SPEC REPOS:
     - AlamofireImage
     - AlamofireNetworkActivityIndicator
     - AlamofireObjectMapper
+    - AWSCore
+    - AWSS3
+    - AWSTranslate
     - Crashlytics
     - Fabric
     - Firebase
@@ -129,6 +139,9 @@ SPEC CHECKSUMS:
   AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
   AlamofireNetworkActivityIndicator: 9acc3de3ca6645bf0efed462396b0df13dd3e7b8
   AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  AWSCore: 2dab62ef2e5ca5d8c72c6cbdb3a6ea1532c27c2b
+  AWSS3: 282a590bb47e9cd88de24979fb28954399c41c52
+  AWSTranslate: 2eadeb1942dc9495e1431d6e7d0367309b79fab3
   Crashlytics: f836e1d564b4492da572b056ce7ea0476c53ec4b
   Fabric: e88a14d80173bcf3db4eac866c83619f2894183d
   Firebase: bc9cfc7a96c73268656d5aaab453ff1b4b530e0e
@@ -147,6 +160,6 @@ SPEC CHECKSUMS:
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SwiftyXMLParser: c39a7854b7d32e447e19d0fabdd98696fe26f03a
 
-PODFILE CHECKSUM: 3f4b34494bae2ec1b36c8a8e0cbdc1473f9e53a7
+PODFILE CHECKSUM: 8e1c4e99a82e9efb4d4aeb4105a1ab0ff95769e6
 
 COCOAPODS: 1.10.0

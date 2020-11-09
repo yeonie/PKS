@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  ios
 //
-//  Created by litong on 06/08/2019.
-//  Copyright © 2019 litong. All rights reserved.
+//  Created by Jerry Jung on 06/08/2019.
+//  Copyright © 2019 Jerry Jung. All rights reserved.
 //
 
 import UIKit
@@ -36,6 +36,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = UINavigationController(rootViewController: splashViewController)
         self.window?.makeKeyAndVisible()
         return true
+        
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
