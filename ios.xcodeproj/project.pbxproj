@@ -64,6 +64,7 @@
 		845D44CA25500BC0002794A7 /* ggDentistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ggDentistViewController.swift; sourceTree = "<group>"; };
 		845D44CB25500BC0002794A7 /* ggDentistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ggDentistViewController.xib; sourceTree = "<group>"; };
 		8478005925595405006C62FE /* lisabe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lisabe.png; sourceTree = "<group>"; };
+		8478005C25595A0B006C62FE /* hospitalRegion.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = hospitalRegion.docx; sourceTree = "<group>"; };
 		848638482547C2C3007FA1B1 /* somethingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = somethingViewController.swift; sourceTree = "<group>"; };
 		848638492547C2C3007FA1B1 /* somethingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = somethingViewController.xib; sourceTree = "<group>"; };
 		8486384D2547C2EA007FA1B1 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +187,7 @@
 				848638562547C2F5007FA1B1 /* RoundShadowView.swift */,
 				848638572547C2F5007FA1B1 /* MainTabbarViewController.swift */,
 				8478005925595405006C62FE /* lisabe.png */,
+				8478005C25595A0B006C62FE /* hospitalRegion.docx */,
 			);
 			path = tapbar;
 			sourceTree = "<group>";

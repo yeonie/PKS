@@ -30,13 +30,13 @@ class testForS3UploadViewController: BaseViewController {
     
     func uploadFile(with resource: String, type: String){
         let key = "\(resource).\(type)"
-        let localImagePath = Bundle.main.path(forResource: resource, ofType: type)!
-        let localImageUrl = URL(fileURLWithPath: localImagePath)
+        let localPath = Bundle.main.path(forResource: resource, ofType: type)!
+        let localUrl = URL(fileURLWithPath: localPath)
         
         let request = AWSS3TransferManagerUploadRequest()!
         request.bucket = bucketName
         request.key = key
-        request.body = localImageUrl
+        request.body = localUrl
         request.acl = .publicReadWrite
         
         let transferManager = AWSS3TransferManager.default()
@@ -54,7 +54,7 @@ class testForS3UploadViewController: BaseViewController {
     }
     
     @IBAction func uploadBtnPressed(_ sender: UIButton) {
-        uploadFile(with: "lisabe ", type: "png")
+        uploadFile(with: "hospitalRegion", type: "docx")
     }
     
     @IBAction func onBulkBtnPressed(_ sender: UIButton) {
