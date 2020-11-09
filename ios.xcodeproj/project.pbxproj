@@ -13,6 +13,7 @@
 		845D44C92550055D002794A7 /* gyungkiAPITestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845D44C72550055D002794A7 /* gyungkiAPITestViewController.xib */; };
 		845D44CC25500BC0002794A7 /* ggDentistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D44CA25500BC0002794A7 /* ggDentistViewController.swift */; };
 		845D44CD25500BC0002794A7 /* ggDentistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845D44CB25500BC0002794A7 /* ggDentistViewController.xib */; };
+		8478005A25595405006C62FE /* lisabe.png in Resources */ = {isa = PBXBuildFile; fileRef = 8478005925595405006C62FE /* lisabe.png */; };
 		8486384A2547C2C3007FA1B1 /* somethingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848638482547C2C3007FA1B1 /* somethingViewController.swift */; };
 		8486384B2547C2C3007FA1B1 /* somethingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848638492547C2C3007FA1B1 /* somethingViewController.xib */; };
 		848638502547C2EA007FA1B1 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8486384D2547C2EA007FA1B1 /* SplashViewController.swift */; };
@@ -31,6 +32,8 @@
 		8486386A2547C30C007FA1B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848638692547C30C007FA1B1 /* AppDelegate.swift */; };
 		8486386D2547C37C007FA1B1 /* pharmacyHospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8486386B2547C37C007FA1B1 /* pharmacyHospitalViewController.swift */; };
 		8486386E2547C37C007FA1B1 /* pharmacyHospitalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8486386C2547C37C007FA1B1 /* pharmacyHospitalViewController.xib */; };
+		84A35DBB25593D9D009FE822 /* testForS3UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A35DB925593D9D009FE822 /* testForS3UploadViewController.swift */; };
+		84A35DBC25593D9D009FE822 /* testForS3UploadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A35DBA25593D9D009FE822 /* testForS3UploadViewController.xib */; };
 		BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */; };
 		BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */; };
 		BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD75ABDB2301B7B500E0FC7A /* NoticePopUp.storyboard */; };
@@ -60,6 +63,7 @@
 		845D44C72550055D002794A7 /* gyungkiAPITestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = gyungkiAPITestViewController.xib; sourceTree = "<group>"; };
 		845D44CA25500BC0002794A7 /* ggDentistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ggDentistViewController.swift; sourceTree = "<group>"; };
 		845D44CB25500BC0002794A7 /* ggDentistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ggDentistViewController.xib; sourceTree = "<group>"; };
+		8478005925595405006C62FE /* lisabe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lisabe.png; sourceTree = "<group>"; };
 		848638482547C2C3007FA1B1 /* somethingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = somethingViewController.swift; sourceTree = "<group>"; };
 		848638492547C2C3007FA1B1 /* somethingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = somethingViewController.xib; sourceTree = "<group>"; };
 		8486384D2547C2EA007FA1B1 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 		848638692547C30C007FA1B1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8486386B2547C37C007FA1B1 /* pharmacyHospitalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pharmacyHospitalViewController.swift; sourceTree = "<group>"; };
 		8486386C2547C37C007FA1B1 /* pharmacyHospitalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = pharmacyHospitalViewController.xib; sourceTree = "<group>"; };
+		84A35DB925593D9D009FE822 /* testForS3UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testForS3UploadViewController.swift; sourceTree = "<group>"; };
+		84A35DBA25593D9D009FE822 /* testForS3UploadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = testForS3UploadViewController.xib; sourceTree = "<group>"; };
 		BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePopUp.swift; sourceTree = "<group>"; };
 		BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePopUpDelegate.swift; sourceTree = "<group>"; };
 		BD75ABDB2301B7B500E0FC7A /* NoticePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoticePopUp.storyboard; sourceTree = "<group>"; };
@@ -168,6 +174,8 @@
 				845D44C72550055D002794A7 /* gyungkiAPITestViewController.xib */,
 				845D44CA25500BC0002794A7 /* ggDentistViewController.swift */,
 				845D44CB25500BC0002794A7 /* ggDentistViewController.xib */,
+				84A35DB925593D9D009FE822 /* testForS3UploadViewController.swift */,
+				84A35DBA25593D9D009FE822 /* testForS3UploadViewController.xib */,
 			);
 			path = mainView;
 			sourceTree = "<group>";
@@ -177,6 +185,7 @@
 			children = (
 				848638562547C2F5007FA1B1 /* RoundShadowView.swift */,
 				848638572547C2F5007FA1B1 /* MainTabbarViewController.swift */,
+				8478005925595405006C62FE /* lisabe.png */,
 			);
 			path = tapbar;
 			sourceTree = "<group>";
@@ -345,8 +354,10 @@
 				848638672547C2F5007FA1B1 /* printMapViewController.xib in Resources */,
 				845D44C92550055D002794A7 /* gyungkiAPITestViewController.xib in Resources */,
 				848638622547C2F5007FA1B1 /* findHospitalViewController.xib in Resources */,
+				84A35DBC25593D9D009FE822 /* testForS3UploadViewController.xib in Resources */,
 				848638522547C2EA007FA1B1 /* SplashViewController.xib in Resources */,
 				848638662547C2F5007FA1B1 /* putSymptomViewController.xib in Resources */,
+				8478005A25595405006C62FE /* lisabe.png in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
 				BD9BF18822F9DCC7009E47EB /* MainViewController.xib in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
@@ -422,6 +433,7 @@
 				BD9BF17522F9C494009E47EB /* CusomIndicatorView.swift in Sources */,
 				848638642547C2F5007FA1B1 /* putSymptomViewController.swift in Sources */,
 				848638612547C2F5007FA1B1 /* MainTabbarViewController.swift in Sources */,
+				84A35DBB25593D9D009FE822 /* testForS3UploadViewController.swift in Sources */,
 				BD9BF17A22F9C6FF009E47EB /* UIButton.swift in Sources */,
 				845D44CC25500BC0002794A7 /* ggDentistViewController.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,

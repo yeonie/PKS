@@ -19,6 +19,8 @@ target 'ios' do
   pod 'KYDrawerController'
   pod "SwiftyXMLParser", :git => 'https://github.com/yahoojapan/SwiftyXMLParser.git'
   pod 'AWSS3'
+  pod 'AWSCore'
+  pod 'AWSCognito'
   
 
 end
