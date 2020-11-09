@@ -16,5 +16,6 @@ target 'ios' do
   pod 'Crashlytics', '~> 3.10.1'
   pod 'KYDrawerController'
   pod "SwiftyXMLParser", :git => 'https://github.com/yahoojapan/SwiftyXMLParser.git'
+  pod 'AWSTranslate', '~> 2.6.19'
 
 end
