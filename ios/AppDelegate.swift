@@ -21,6 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let baseUrl = "http://13.124.75.140"
     
     let Region = "과천시"
+    
+    
+    
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

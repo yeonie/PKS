@@ -20,20 +20,26 @@ class coronaClinicViewController: BaseViewController {
     
     
 
-    let CoronaHospitalURL = "https://openapi.gg.go.kr/EmgMedInfo"
+    let CoronaHospitalURL = "https://openapi.gg.go.kr/EmgMedInfo?KEY=005d50ab8c3c40f3866b4ffd93756f0e&pIndex=10&pSize=2"
     let serviceKey = "005d50ab8c3c40f3866b4ffd93756f0e"
     let pIndex = "10"
-    let pSize = "100"
+    let pSize = "1"
     let type = "json"
+    let REFINE_WGS84_LAT = "37.4939143412"
+    let REFINE_WGS84_LOGT = "127.4864820853"
     
     
+
+//현재 위치와 가져온 위경도 비교해서 가장 가까운거 띄워주기
+
+            
     func getURL(url:String, params:[String: Any]) -> URL {
         let urlParams = params.compactMap({ (serviceKey, value) -> String in
             return "\(serviceKey)=\(value)"
         }).joined(separator: "&")
         let withURL = url + "?\(urlParams)"
-                let encoded = withURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
-                    + "&Key=" + serviceKey + "&Type" + type + "&pIndex=" + pIndex + "&pSize=" + pSize
+        let encoded = withURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+                    + "&Key=" + serviceKey + "&Type" + type + "&pIndex=" + pIndex + "&pSize=" + pSize + "&REFINE_WGS84_LAT" + REFINE_WGS84_LAT + "&REFINE_WGS84_LOGT" + REFINE_WGS84_LOGT
 //        let encoded = withURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         
         return URL(string:encoded)!
@@ -50,6 +56,9 @@ class coronaClinicViewController: BaseViewController {
                 switch response.result {
                 case .success:
                     if response.result.value != nil {
+                        if response.result.value == "300" {
+                            print("제대로 불러온 거 맞니?")
+                        }
                         let responseString = NSString(data: response.data!, encoding:
                             String.Encoding.utf8.rawValue )
                         let xml = try! XML.parse(String(responseString!))
@@ -67,6 +76,8 @@ class coronaClinicViewController: BaseViewController {
                             }
                         }
                     }
+                    
+//                case .failure:
                 default:
                     return
                 }
@@ -87,8 +98,11 @@ class coronaClinicViewController: BaseViewController {
 //        hospitalNM.text = MEDCARE_INST_NM.
         
         //        getHospitalData(instit_nm: "동아대학교병원")
-        getHospitalData(SIGUN_NM: "양평군", SIGUN_CD: "41830")
+        getHospitalData(SIGUN_NM: "여주시", SIGUN_CD: "")
         
     }
+//    print(latitude)
+//    print(longitude)
+
 
 }
