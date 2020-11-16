@@ -3,14 +3,22 @@
 //  ios
 //
 //  Created by 이동연 on 16/11/2020.
-//  Copyright © 2020 Jerry Jung. All rights reserved.
+//  Copyright © 2020 litong. All rights reserved.
 //
 
 import UIKit
 import Alamofire
 import SwiftyXMLParser
 
-class coronaClinicViewController: UIViewController {
+class coronaClinicViewController: BaseViewController {
+    
+    
+    @IBOutlet weak var hospitalNM: UILabel!
+    @IBOutlet weak var medType: UILabel!
+    @IBOutlet weak var medReg: UILabel!
+    
+    
+    
 
     let CoronaHospitalURL = "https://openapi.gg.go.kr/EmgMedInfo"
     let serviceKey = "005d50ab8c3c40f3866b4ffd93756f0e"
@@ -45,13 +53,17 @@ class coronaClinicViewController: UIViewController {
                         let responseString = NSString(data: response.data!, encoding:
                             String.Encoding.utf8.rawValue )
                         let xml = try! XML.parse(String(responseString!))
-                        for element in xml["row"] {
+                        for element in xml["EmgMedInfo"]["row"] {
                             if let MEDCARE_INST_NM = element["MEDCARE_INST_NM"].text,
                                 let DISTRCT_DIV_NM = element["DISTRCT_DIV_NM"].text,
                                 let REFINE_ROADNM_ADDR = element["REFINE_ROADNM_ADDR"].text {
                                 print("MEDCARE_INST_NM = \(MEDCARE_INST_NM)")
                                 print("DISTRCT_DIV_NM = \(DISTRCT_DIV_NM)")
                                 print("REFINE_ROADNM_ADDR = \(REFINE_ROADNM_ADDR)")
+                                self.hospitalNM.text = "\(MEDCARE_INST_NM)"
+                                self.medType.text = "\(DISTRCT_DIV_NM)"
+                                self.medReg.text = "\(REFINE_ROADNM_ADDR)"
+
                             }
                         }
                     }
@@ -63,10 +75,16 @@ class coronaClinicViewController: UIViewController {
     }
     //    let responseString = NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue )
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        navigationController?.navigationBar.isHidden = false
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        hospitalNM.text = MEDCARE_INST_NM.
         
         //        getHospitalData(instit_nm: "동아대학교병원")
         getHospitalData(SIGUN_NM: "양평군", SIGUN_CD: "41830")

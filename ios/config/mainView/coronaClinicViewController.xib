@@ -17,6 +17,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="coronaClinicViewController" customModule="ios" customModuleProvider="target">
             <connections>
+                <outlet property="hospitalNM" destination="mjB-81-pWy" id="Ixo-2e-vfz"/>
+                <outlet property="medReg" destination="VzW-og-TY7" id="r6T-iZ-gNX"/>
+                <outlet property="medType" destination="iJD-FC-KS1" id="xdr-oh-H6n"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -62,8 +65,8 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="영업 상태 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcy-LJ-afF">
-                                    <rect key="frame" x="8" y="106" width="67" height="20"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="진료 종목 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcy-LJ-afF">
+                                    <rect key="frame" x="8" y="106" width="68" height="20"/>
                                     <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -78,7 +81,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="state" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJD-FC-KS1">
-                                    <rect key="frame" x="82" y="106" width="37" height="20"/>
+                                    <rect key="frame" x="83" y="106" width="37" height="20"/>
                                     <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
