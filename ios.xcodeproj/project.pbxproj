@@ -14,6 +14,10 @@
 		845D44CC25500BC0002794A7 /* ggDentistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D44CA25500BC0002794A7 /* ggDentistViewController.swift */; };
 		845D44CD25500BC0002794A7 /* ggDentistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845D44CB25500BC0002794A7 /* ggDentistViewController.xib */; };
 		8478005A25595405006C62FE /* lisabe.png in Resources */ = {isa = PBXBuildFile; fileRef = 8478005925595405006C62FE /* lisabe.png */; };
+		8478005F2562223B006C62FE /* RegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478005D2562223B006C62FE /* RegionViewController.swift */; };
+		847800602562223B006C62FE /* RegionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8478005E2562223B006C62FE /* RegionViewController.xib */; };
+		84780063256248FD006C62FE /* coronaClinicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84780061256248FD006C62FE /* coronaClinicViewController.swift */; };
+		84780064256248FD006C62FE /* coronaClinicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84780062256248FD006C62FE /* coronaClinicViewController.xib */; };
 		8486384A2547C2C3007FA1B1 /* somethingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848638482547C2C3007FA1B1 /* somethingViewController.swift */; };
 		8486384B2547C2C3007FA1B1 /* somethingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848638492547C2C3007FA1B1 /* somethingViewController.xib */; };
 		848638502547C2EA007FA1B1 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8486384D2547C2EA007FA1B1 /* SplashViewController.swift */; };
@@ -65,6 +69,10 @@
 		845D44CB25500BC0002794A7 /* ggDentistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ggDentistViewController.xib; sourceTree = "<group>"; };
 		8478005925595405006C62FE /* lisabe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lisabe.png; sourceTree = "<group>"; };
 		8478005C25595A0B006C62FE /* hospitalRegion.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = hospitalRegion.docx; sourceTree = "<group>"; };
+		8478005D2562223B006C62FE /* RegionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionViewController.swift; sourceTree = "<group>"; };
+		8478005E2562223B006C62FE /* RegionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegionViewController.xib; sourceTree = "<group>"; };
+		84780061256248FD006C62FE /* coronaClinicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coronaClinicViewController.swift; sourceTree = "<group>"; };
+		84780062256248FD006C62FE /* coronaClinicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = coronaClinicViewController.xib; sourceTree = "<group>"; };
 		848638482547C2C3007FA1B1 /* somethingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = somethingViewController.swift; sourceTree = "<group>"; };
 		848638492547C2C3007FA1B1 /* somethingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = somethingViewController.xib; sourceTree = "<group>"; };
 		8486384D2547C2EA007FA1B1 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -136,13 +144,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		848638472547C2C3007FA1B1 /* loginView */ = {
+		848638472547C2C3007FA1B1 /* ChoiceSymptomReigion */ = {
 			isa = PBXGroup;
 			children = (
 				848638482547C2C3007FA1B1 /* somethingViewController.swift */,
 				848638492547C2C3007FA1B1 /* somethingViewController.xib */,
+				8478005D2562223B006C62FE /* RegionViewController.swift */,
+				8478005E2562223B006C62FE /* RegionViewController.xib */,
 			);
-			path = loginView;
+			path = ChoiceSymptomReigion;
 			sourceTree = "<group>";
 		};
 		8486384C2547C2EA007FA1B1 /* Splash */ = {
@@ -177,6 +187,8 @@
 				845D44CB25500BC0002794A7 /* ggDentistViewController.xib */,
 				84A35DB925593D9D009FE822 /* testForS3UploadViewController.swift */,
 				84A35DBA25593D9D009FE822 /* testForS3UploadViewController.xib */,
+				84780061256248FD006C62FE /* coronaClinicViewController.swift */,
+				84780062256248FD006C62FE /* coronaClinicViewController.xib */,
 			);
 			path = mainView;
 			sourceTree = "<group>";
@@ -234,7 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				848638532547C2F5007FA1B1 /* mainView */,
-				848638472547C2C3007FA1B1 /* loginView */,
+				848638472547C2C3007FA1B1 /* ChoiceSymptomReigion */,
 				BD9BF17622F9C6BA009E47EB /* extensions */,
 				BD9BF17222F9C3D5009E47EB /* BaseViewController.swift */,
 				BD9BF17422F9C494009E47EB /* CusomIndicatorView.swift */,
@@ -347,12 +359,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847800602562223B006C62FE /* RegionViewController.xib in Resources */,
 				848638512547C2EA007FA1B1 /* TTRunGothic.ttf in Resources */,
 				845D44C5254E883A002794A7 /* hospitalAPITestViewController.xib in Resources */,
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
 				845D44CD25500BC0002794A7 /* ggDentistViewController.xib in Resources */,
 				848638682547C2F5007FA1B1 /* expectedSymptomViewController.xib in Resources */,
 				8486384B2547C2C3007FA1B1 /* somethingViewController.xib in Resources */,
+				84780064256248FD006C62FE /* coronaClinicViewController.xib in Resources */,
 				848638672547C2F5007FA1B1 /* printMapViewController.xib in Resources */,
 				845D44C92550055D002794A7 /* gyungkiAPITestViewController.xib in Resources */,
 				848638622547C2F5007FA1B1 /* findHospitalViewController.xib in Resources */,
@@ -432,6 +446,7 @@
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
 				848638652547C2F5007FA1B1 /* printMapViewController.swift in Sources */,
 				BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */,
+				8478005F2562223B006C62FE /* RegionViewController.swift in Sources */,
 				BD9BF17522F9C494009E47EB /* CusomIndicatorView.swift in Sources */,
 				848638642547C2F5007FA1B1 /* putSymptomViewController.swift in Sources */,
 				848638612547C2F5007FA1B1 /* MainTabbarViewController.swift in Sources */,
@@ -443,6 +458,7 @@
 				BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */,
 				848638502547C2EA007FA1B1 /* SplashViewController.swift in Sources */,
 				8486386D2547C37C007FA1B1 /* pharmacyHospitalViewController.swift in Sources */,
+				84780063256248FD006C62FE /* coronaClinicViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

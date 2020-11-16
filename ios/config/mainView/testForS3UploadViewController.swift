@@ -54,7 +54,7 @@ class testForS3UploadViewController: BaseViewController {
     }
     
     @IBAction func uploadBtnPressed(_ sender: UIButton) {
-        uploadFile(with: "hospitalRegion", type: "docx")
+        uploadFile(with: "lisabe", type: "png")
     }
     
     @IBAction func onBulkBtnPressed(_ sender: UIButton) {

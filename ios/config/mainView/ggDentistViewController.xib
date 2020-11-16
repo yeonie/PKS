@@ -29,10 +29,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53U-gX-zR7">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vbC-hb-Tde">
-                            <rect key="frame" x="20" y="512" width="374" height="200"/>
+                            <rect key="frame" x="20" y="546" width="374" height="200"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="병원 정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dR-af-aS9">
                                     <rect key="frame" x="8" y="8" width="82" height="30"/>
@@ -119,9 +119,9 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="53U-gX-zR7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2RZ-xJ-xHj"/>
+                <constraint firstAttribute="bottom" secondItem="53U-gX-zR7" secondAttribute="bottom" id="A8h-mD-4yV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="53U-gX-zR7" secondAttribute="trailing" id="fDA-0b-BJd"/>
                 <constraint firstItem="53U-gX-zR7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fd7-qb-qgm"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="53U-gX-zR7" secondAttribute="bottom" id="tFh-Bt-wgS"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>

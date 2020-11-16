@@ -50,5 +50,11 @@ class somethingViewController: BaseViewController {
         select = !select
     }
     
+    @IBAction func COVIDBtnPressed(_ sender: UIButton) {
+        navigationController?.pushViewController(coronaClinicViewController(), animated: true)
+        
+    }
+    
+    
 
 }
