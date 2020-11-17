@@ -18,9 +18,17 @@ class coronaClinicViewController: BaseViewController {
     @IBOutlet weak var medReg: UILabel!
     
     
+    @IBOutlet weak var hospitalNM2: UILabel!
+    @IBOutlet weak var medType2: UILabel!
+    @IBOutlet weak var medReg2: UILabel!
+    
+    @IBOutlet weak var hospitalNM3: UILabel!
+    @IBOutlet weak var medType3: UILabel!
+    @IBOutlet weak var medReg3: UILabel!
+    
     
 
-    let CoronaHospitalURL = "https://openapi.gg.go.kr/EmgMedInfo?KEY=005d50ab8c3c40f3866b4ffd93756f0e&pIndex=10&pSize=2"
+    let CoronaHospitalURL = "https://openapi.gg.go.kr/EmgMedInfo?KEY=005d50ab8c3c40f3866b4ffd93756f0e&pIndex=10&pSize=3"
     let serviceKey = "005d50ab8c3c40f3866b4ffd93756f0e"
     let pIndex = "10"
     let pSize = "1"
@@ -73,6 +81,14 @@ class coronaClinicViewController: BaseViewController {
                                 self.medType.text = "\(DISTRCT_DIV_NM)"
                                 self.medReg.text = "\(REFINE_ROADNM_ADDR)"
 
+
+                            }
+                            if let MEDCARE_INST_NM2 = element["MEDCARE_INST_NM"].text,
+                                let DISTRCT_DIV_NM2 = element["DISTRCT_DIV_NM"].text,
+                                let REFINE_ROADNM_ADDR2 = element["REFINE_ROADNM_ADDR"].text {
+                                self.hospitalNM2.text = "\(MEDCARE_INST_NM2)"
+                                self.medType2.text = "\(DISTRCT_DIV_NM2)"
+                                self.medReg2.text = "\(REFINE_ROADNM_ADDR2)"
                             }
                         }
                     }
@@ -89,6 +105,7 @@ class coronaClinicViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         navigationController?.navigationBar.isHidden = false
+        navigationController?.navigationBar.topItem?.title = ""
     }
     
     

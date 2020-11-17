@@ -17,6 +17,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="coronaClinicViewController" customModule="ios" customModuleProvider="target">
             <connections>
+                <outlet property="hospitalNM" destination="aq8-kH-JO3" id="VIJ-rh-lI8"/>
+                <outlet property="hospitalNM2" destination="2xK-Oc-rWs" id="0qt-jh-tpV"/>
+                <outlet property="hospitalNM3" destination="Olc-t0-dc6" id="dwH-tL-DaV"/>
+                <outlet property="medReg" destination="HcU-JB-g4A" id="Cwj-z7-18h"/>
+                <outlet property="medReg2" destination="rR7-IT-PYs" id="3uR-W8-vGN"/>
+                <outlet property="medReg3" destination="FPN-hj-ekj" id="EVB-R9-6cU"/>
+                <outlet property="medType" destination="teV-bw-8V7" id="qPa-w5-LBu"/>
+                <outlet property="medType2" destination="lur-Kx-Jhi" id="Eii-ze-ydM"/>
+                <outlet property="medType3" destination="Reo-gl-Wwa" id="5UE-do-tqM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -42,10 +51,10 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLt-Tq-ywp">
                             <rect key="frame" x="20" y="246" width="374" height="608"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="병원 정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6W-nB-Wap">
-                                    <rect key="frame" x="8" y="8" width="82" height="30"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="병원 정보 (for corona)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6W-nB-Wap">
+                                    <rect key="frame" x="8" y="8" width="250" height="30"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="82" id="iYE-mH-uaQ"/>
+                                        <constraint firstAttribute="width" constant="250" id="iYE-mH-uaQ"/>
                                         <constraint firstAttribute="height" constant="30" id="xnx-9i-78U"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="25"/>
