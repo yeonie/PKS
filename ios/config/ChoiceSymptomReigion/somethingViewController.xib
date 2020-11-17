@@ -174,7 +174,7 @@
                                 <constraint firstAttribute="height" constant="60" id="Clu-VO-DGD"/>
                                 <constraint firstAttribute="width" constant="137" id="O2H-rQ-Unq"/>
                             </constraints>
-                            <state key="normal" image="choiceCompletedOff">
+                            <state key="normal" image="confirmBtnYellow">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
@@ -241,7 +241,7 @@
         </view>
     </objects>
     <resources>
-        <image name="choiceCompletedOff" width="140" height="48"/>
+        <image name="confirmBtnYellow" width="140" height="48"/>
         <image name="selectBtn" width="16" height="16"/>
     </resources>
 </document>

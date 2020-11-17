@@ -17,9 +17,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="coronaClinicViewController" customModule="ios" customModuleProvider="target">
             <connections>
-                <outlet property="hospitalNM" destination="mjB-81-pWy" id="Ixo-2e-vfz"/>
-                <outlet property="medReg" destination="VzW-og-TY7" id="r6T-iZ-gNX"/>
-                <outlet property="medType" destination="iJD-FC-KS1" id="xdr-oh-H6n"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -31,57 +28,152 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YuX-nU-UZp">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBf-ei-66k">
-                            <rect key="frame" x="20" y="546" width="374" height="200"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcF-jO-urr">
+                            <rect key="frame" x="32" y="52" width="350" height="200"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="Nbm-pB-yeX"/>
+                            </constraints>
+                            <string key="text">현재위치로부터 가까운
+3순위</string>
+                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="39"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLt-Tq-ywp">
+                            <rect key="frame" x="20" y="246" width="374" height="608"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="병원 정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1V0-8i-Ckl">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="병원 정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6W-nB-Wap">
                                     <rect key="frame" x="8" y="8" width="82" height="30"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="82" id="Do6-Vl-G01"/>
-                                        <constraint firstAttribute="height" constant="30" id="sM5-1x-GgD"/>
+                                        <constraint firstAttribute="width" constant="82" id="iYE-mH-uaQ"/>
+                                        <constraint firstAttribute="height" constant="30" id="xnx-9i-78U"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="25"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="병원 이름 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZR5-aW-DfY">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="병원 이름 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwF-bc-Stk" userLabel="병원 이름 :">
                                     <rect key="frame" x="8" y="64" width="66" height="20"/>
                                     <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjB-81-pWy">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aq8-kH-JO3">
                                     <rect key="frame" x="82" y="64" width="40" height="20"/>
                                     <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="region" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VzW-og-TY7">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="region" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcU-JB-g4A">
                                     <rect key="frame" x="79" y="153" width="287" height="42"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="42" id="uiz-6O-XNu"/>
+                                        <constraint firstAttribute="height" constant="42" id="f1d-9V-F3H"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="진료 종목 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcy-LJ-afF">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="진료 종목 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32M-sc-ATR">
                                     <rect key="frame" x="8" y="106" width="68" height="20"/>
                                     <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="병원 위치 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rva-Bs-0aB">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="병원 위치 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBw-1h-awF">
                                     <rect key="frame" x="8" y="153" width="64" height="20"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="64" id="aut-Ra-UBh"/>
+                                        <constraint firstAttribute="width" constant="64" id="mzO-hq-juQ"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="state" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJD-FC-KS1">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="state" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teV-bw-8V7">
                                     <rect key="frame" x="83" y="106" width="37" height="20"/>
+                                    <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="진료 종목 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egR-9m-1Rg">
+                                    <rect key="frame" x="8" y="275" width="68" height="20"/>
+                                    <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="병원 이름 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3K-3t-SbE" userLabel="병원 이름 :">
+                                    <rect key="frame" x="8" y="233" width="66" height="20"/>
+                                    <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="병원 위치 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUj-Lz-YJS">
+                                    <rect key="frame" x="8" y="322" width="64" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="64" id="gzS-ZT-pGZ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xK-Oc-rWs">
+                                    <rect key="frame" x="82" y="233" width="40" height="20"/>
+                                    <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="state" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lur-Kx-Jhi">
+                                    <rect key="frame" x="83" y="275" width="37" height="20"/>
+                                    <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="region" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rR7-IT-PYs">
+                                    <rect key="frame" x="79" y="322" width="42.5" height="42"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="42" id="Cda-NQ-KYq"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="진료 종목 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SR2-DJ-FNq">
+                                    <rect key="frame" x="8" y="444" width="68" height="20"/>
+                                    <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="병원 이름 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBD-h0-Ebf" userLabel="병원 이름 :">
+                                    <rect key="frame" x="8" y="402" width="66" height="20"/>
+                                    <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="병원 위치 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q97-34-AjP">
+                                    <rect key="frame" x="8" y="491" width="64" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="64" id="wD2-nl-LYi"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olc-t0-dc6">
+                                    <rect key="frame" x="82" y="402" width="40" height="20"/>
+                                    <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="state" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Reo-gl-Wwa">
+                                    <rect key="frame" x="83" y="444" width="37" height="20"/>
+                                    <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="region" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPN-hj-ekj">
+                                    <rect key="frame" x="79" y="491" width="42.5" height="42"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="42" id="QhK-1w-YXX"/>
+                                    </constraints>
                                     <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -89,30 +181,57 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="VzW-og-TY7" firstAttribute="leading" secondItem="Rva-Bs-0aB" secondAttribute="trailing" constant="7" id="6cH-kv-zsk"/>
-                                <constraint firstItem="VzW-og-TY7" firstAttribute="top" secondItem="Rva-Bs-0aB" secondAttribute="top" id="7kw-KK-LYR"/>
-                                <constraint firstItem="1V0-8i-Ckl" firstAttribute="top" secondItem="XBf-ei-66k" secondAttribute="top" constant="8" id="85Z-mG-YbD"/>
-                                <constraint firstItem="ZR5-aW-DfY" firstAttribute="leading" secondItem="1V0-8i-Ckl" secondAttribute="leading" id="DHU-6I-xaF"/>
-                                <constraint firstItem="mjB-81-pWy" firstAttribute="top" secondItem="ZR5-aW-DfY" secondAttribute="top" id="PKS-A5-qQk"/>
-                                <constraint firstAttribute="height" constant="200" id="SLl-Hi-IkU"/>
-                                <constraint firstItem="Rva-Bs-0aB" firstAttribute="top" secondItem="jcy-LJ-afF" secondAttribute="bottom" constant="27" id="VLG-7b-Nbq"/>
-                                <constraint firstItem="ZR5-aW-DfY" firstAttribute="top" secondItem="1V0-8i-Ckl" secondAttribute="bottom" constant="26" id="fhN-Wi-19Z"/>
-                                <constraint firstItem="jcy-LJ-afF" firstAttribute="top" secondItem="ZR5-aW-DfY" secondAttribute="bottom" constant="22" id="hAS-gD-gX1"/>
-                                <constraint firstItem="1V0-8i-Ckl" firstAttribute="leading" secondItem="XBf-ei-66k" secondAttribute="leading" constant="8" id="hBs-FP-Wbq"/>
-                                <constraint firstAttribute="trailing" secondItem="VzW-og-TY7" secondAttribute="trailing" constant="8" id="k6T-e5-TAG"/>
-                                <constraint firstItem="jcy-LJ-afF" firstAttribute="leading" secondItem="ZR5-aW-DfY" secondAttribute="leading" id="nUX-kR-TCT"/>
-                                <constraint firstItem="mjB-81-pWy" firstAttribute="leading" secondItem="ZR5-aW-DfY" secondAttribute="trailing" constant="8" id="pcR-Zd-g4g"/>
-                                <constraint firstItem="Rva-Bs-0aB" firstAttribute="leading" secondItem="jcy-LJ-afF" secondAttribute="leading" id="tLh-dH-JSt"/>
-                                <constraint firstItem="iJD-FC-KS1" firstAttribute="top" secondItem="jcy-LJ-afF" secondAttribute="top" id="uXC-ul-oLi"/>
-                                <constraint firstItem="iJD-FC-KS1" firstAttribute="leading" secondItem="jcy-LJ-afF" secondAttribute="trailing" constant="7" id="vMB-sN-Mhp"/>
+                                <constraint firstItem="lur-Kx-Jhi" firstAttribute="top" secondItem="egR-9m-1Rg" secondAttribute="top" id="042-SK-ssO"/>
+                                <constraint firstItem="FPN-hj-ekj" firstAttribute="leading" secondItem="Q97-34-AjP" secondAttribute="trailing" constant="7" id="1h3-il-p1X"/>
+                                <constraint firstItem="Reo-gl-Wwa" firstAttribute="top" secondItem="SR2-DJ-FNq" secondAttribute="top" id="2de-lR-0vA"/>
+                                <constraint firstItem="teV-bw-8V7" firstAttribute="leading" secondItem="32M-sc-ATR" secondAttribute="trailing" constant="7" id="5UW-3Z-KLZ"/>
+                                <constraint firstItem="lur-Kx-Jhi" firstAttribute="leading" secondItem="egR-9m-1Rg" secondAttribute="trailing" constant="7" id="5py-k7-1CS"/>
+                                <constraint firstItem="egR-9m-1Rg" firstAttribute="top" secondItem="f3K-3t-SbE" secondAttribute="bottom" constant="22" id="97e-HH-cj5"/>
+                                <constraint firstItem="2xK-Oc-rWs" firstAttribute="top" secondItem="f3K-3t-SbE" secondAttribute="top" id="CTr-aH-krq"/>
+                                <constraint firstItem="teV-bw-8V7" firstAttribute="top" secondItem="32M-sc-ATR" secondAttribute="top" id="DHe-8o-GUP"/>
+                                <constraint firstItem="TwF-bc-Stk" firstAttribute="top" secondItem="s6W-nB-Wap" secondAttribute="bottom" constant="26" id="E0S-Rl-8kN"/>
+                                <constraint firstItem="fBw-1h-awF" firstAttribute="leading" secondItem="32M-sc-ATR" secondAttribute="leading" id="JvX-H1-GKi"/>
+                                <constraint firstItem="Q97-34-AjP" firstAttribute="top" secondItem="SR2-DJ-FNq" secondAttribute="bottom" constant="27" id="KDA-Lq-3Ec"/>
+                                <constraint firstItem="aq8-kH-JO3" firstAttribute="leading" secondItem="TwF-bc-Stk" secondAttribute="trailing" constant="8" id="L25-lU-9BH"/>
+                                <constraint firstItem="2xK-Oc-rWs" firstAttribute="leading" secondItem="f3K-3t-SbE" secondAttribute="trailing" constant="8" id="L5v-Pl-DZA"/>
+                                <constraint firstItem="HUj-Lz-YJS" firstAttribute="top" secondItem="egR-9m-1Rg" secondAttribute="bottom" constant="27" id="Ngw-LE-EeM"/>
+                                <constraint firstItem="Olc-t0-dc6" firstAttribute="leading" secondItem="MBD-h0-Ebf" secondAttribute="trailing" constant="8" id="PXN-E8-qaC"/>
+                                <constraint firstItem="rR7-IT-PYs" firstAttribute="leading" secondItem="HUj-Lz-YJS" secondAttribute="trailing" constant="7" id="TGM-mo-BmU"/>
+                                <constraint firstItem="SR2-DJ-FNq" firstAttribute="top" secondItem="MBD-h0-Ebf" secondAttribute="bottom" constant="22" id="XeG-VB-BDx"/>
+                                <constraint firstItem="32M-sc-ATR" firstAttribute="leading" secondItem="TwF-bc-Stk" secondAttribute="leading" id="ZDr-S5-dWL"/>
+                                <constraint firstItem="MBD-h0-Ebf" firstAttribute="top" secondItem="HUj-Lz-YJS" secondAttribute="bottom" constant="60" id="ZcM-Ll-7uT"/>
+                                <constraint firstItem="FPN-hj-ekj" firstAttribute="top" secondItem="Q97-34-AjP" secondAttribute="top" id="eMg-iI-25s"/>
+                                <constraint firstItem="f3K-3t-SbE" firstAttribute="leading" secondItem="TwF-bc-Stk" secondAttribute="leading" id="hTt-Uk-a2u"/>
+                                <constraint firstItem="HcU-JB-g4A" firstAttribute="top" secondItem="fBw-1h-awF" secondAttribute="top" id="htg-GS-qIU"/>
+                                <constraint firstItem="TwF-bc-Stk" firstAttribute="leading" secondItem="s6W-nB-Wap" secondAttribute="leading" id="iwc-Oh-bb6"/>
+                                <constraint firstItem="32M-sc-ATR" firstAttribute="top" secondItem="TwF-bc-Stk" secondAttribute="bottom" constant="22" id="jJ8-cw-wLY"/>
+                                <constraint firstItem="SR2-DJ-FNq" firstAttribute="leading" secondItem="MBD-h0-Ebf" secondAttribute="leading" id="kIm-MC-gli"/>
+                                <constraint firstItem="s6W-nB-Wap" firstAttribute="top" secondItem="lLt-Tq-ywp" secondAttribute="top" constant="8" id="nwe-l8-C46"/>
+                                <constraint firstItem="HcU-JB-g4A" firstAttribute="leading" secondItem="fBw-1h-awF" secondAttribute="trailing" constant="7" id="o66-66-rW5"/>
+                                <constraint firstAttribute="trailing" secondItem="HcU-JB-g4A" secondAttribute="trailing" constant="8" id="qIg-D9-AvW"/>
+                                <constraint firstItem="Reo-gl-Wwa" firstAttribute="leading" secondItem="SR2-DJ-FNq" secondAttribute="trailing" constant="7" id="ryr-64-xmq"/>
+                                <constraint firstItem="aq8-kH-JO3" firstAttribute="top" secondItem="TwF-bc-Stk" secondAttribute="top" id="s30-0P-O3g"/>
+                                <constraint firstItem="egR-9m-1Rg" firstAttribute="leading" secondItem="f3K-3t-SbE" secondAttribute="leading" id="ssp-Mc-jVq"/>
+                                <constraint firstItem="Q97-34-AjP" firstAttribute="leading" secondItem="SR2-DJ-FNq" secondAttribute="leading" id="tIC-mz-pkr"/>
+                                <constraint firstItem="fBw-1h-awF" firstAttribute="top" secondItem="32M-sc-ATR" secondAttribute="bottom" constant="27" id="tdZ-TF-04V"/>
+                                <constraint firstItem="Olc-t0-dc6" firstAttribute="top" secondItem="MBD-h0-Ebf" secondAttribute="top" id="v3O-Cg-qBy"/>
+                                <constraint firstItem="rR7-IT-PYs" firstAttribute="top" secondItem="HUj-Lz-YJS" secondAttribute="top" id="vZv-EK-cga"/>
+                                <constraint firstItem="s6W-nB-Wap" firstAttribute="leading" secondItem="lLt-Tq-ywp" secondAttribute="leading" constant="8" id="vlx-GB-0I0"/>
+                                <constraint firstItem="HUj-Lz-YJS" firstAttribute="leading" secondItem="egR-9m-1Rg" secondAttribute="leading" id="wmT-BO-rFX"/>
+                                <constraint firstItem="MBD-h0-Ebf" firstAttribute="leading" secondItem="HUj-Lz-YJS" secondAttribute="leading" id="x7Y-wb-tKj"/>
+                                <constraint firstItem="f3K-3t-SbE" firstAttribute="top" secondItem="fBw-1h-awF" secondAttribute="bottom" constant="60" id="y3u-SI-0bJ"/>
                             </constraints>
                         </view>
                     </subviews>
                     <color key="backgroundColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="XBf-ei-66k" secondAttribute="trailing" constant="20" id="1FD-LW-KzQ"/>
-                        <constraint firstItem="XBf-ei-66k" firstAttribute="leading" secondItem="YuX-nU-UZp" secondAttribute="leading" constant="20" id="9rG-bG-1rw"/>
-                        <constraint firstAttribute="bottom" secondItem="XBf-ei-66k" secondAttribute="bottom" constant="150" id="G1y-QH-Ike"/>
+                        <constraint firstItem="lLt-Tq-ywp" firstAttribute="leading" secondItem="YuX-nU-UZp" secondAttribute="leading" constant="20" id="Fag-dr-gUQ"/>
+                        <constraint firstAttribute="trailing" secondItem="AcF-jO-urr" secondAttribute="trailing" constant="32" id="Gfw-ey-Mns"/>
+                        <constraint firstAttribute="bottom" secondItem="lLt-Tq-ywp" secondAttribute="bottom" constant="42" id="JOi-bf-JpI"/>
+                        <constraint firstAttribute="trailing" secondItem="lLt-Tq-ywp" secondAttribute="trailing" constant="20" id="Oh3-Xn-61f"/>
+                        <constraint firstItem="AcF-jO-urr" firstAttribute="leading" secondItem="YuX-nU-UZp" secondAttribute="leading" constant="32" id="UK8-vU-nam"/>
+                        <constraint firstItem="AcF-jO-urr" firstAttribute="top" secondItem="YuX-nU-UZp" secondAttribute="top" constant="52" id="d77-Px-jnS"/>
+                        <constraint firstItem="lLt-Tq-ywp" firstAttribute="top" secondItem="AcF-jO-urr" secondAttribute="bottom" constant="-6" id="gWH-YP-72l"/>
                     </constraints>
                 </view>
             </subviews>

@@ -15,6 +15,10 @@ class findHospitalViewController: BaseViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func regReset(_ sender: UIButton) {
+        navigationController?.pushViewController(resetRegionViewController(), animated: true)
+        
+    }
     @IBAction func tstbtnPressed(_ sender: UIButton) {
         navigationController?.pushViewController(printMapViewController(), animated: true)
     }

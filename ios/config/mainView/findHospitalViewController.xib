@@ -69,8 +69,35 @@
                                 <action selector="gyungkiAPI:" destination="-1" eventType="touchUpInside" id="qXJ-QY-vdL"/>
                             </connections>
                         </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CGQ-pk-nrV">
+                            <rect key="frame" x="22" y="506" width="95.5" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awl-hI-gDG">
+                                    <rect key="frame" x="0.0" y="0.0" width="95.5" height="40"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="COVID 19">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96614569429999997" green="0.72388029639999996" blue="0.54630944059999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="95.5" id="4PI-SQ-FgS"/>
+                                <constraint firstAttribute="trailing" secondItem="Awl-hI-gDG" secondAttribute="trailing" id="4cg-aw-zLP"/>
+                                <constraint firstItem="Awl-hI-gDG" firstAttribute="centerX" secondItem="CGQ-pk-nrV" secondAttribute="centerX" id="5c0-Wm-A3n"/>
+                                <constraint firstItem="Awl-hI-gDG" firstAttribute="centerY" secondItem="CGQ-pk-nrV" secondAttribute="centerY" id="5l8-Ij-QhM"/>
+                                <constraint firstItem="Awl-hI-gDG" firstAttribute="leading" secondItem="CGQ-pk-nrV" secondAttribute="leading" id="C6F-Ma-yBA"/>
+                                <constraint firstItem="Awl-hI-gDG" firstAttribute="leading" secondItem="CGQ-pk-nrV" secondAttribute="leading" id="INa-yn-aPt"/>
+                                <constraint firstItem="Awl-hI-gDG" firstAttribute="top" secondItem="CGQ-pk-nrV" secondAttribute="top" id="OqG-nu-lDy"/>
+                                <constraint firstAttribute="bottom" secondItem="Awl-hI-gDG" secondAttribute="bottom" id="P3t-yH-zJC"/>
+                                <constraint firstItem="Awl-hI-gDG" firstAttribute="top" secondItem="CGQ-pk-nrV" secondAttribute="top" id="RP3-iG-W4u"/>
+                                <constraint firstAttribute="height" constant="40" id="T5L-dE-rak"/>
+                                <constraint firstAttribute="bottom" secondItem="Awl-hI-gDG" secondAttribute="bottom" id="YOA-H5-Ovq"/>
+                                <constraint firstAttribute="trailing" secondItem="Awl-hI-gDG" secondAttribute="trailing" id="jWB-qW-HUN"/>
+                            </constraints>
+                        </view>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wac-eo-iaH">
-                            <rect key="frame" x="22" y="238" width="85" height="32"/>
+                            <rect key="frame" x="309" y="489" width="85" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
                             <state key="normal" title="지역 설정 하기">
@@ -83,6 +110,7 @@
                     </subviews>
                     <color key="backgroundColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
+                        <constraint firstAttribute="bottom" secondItem="CGQ-pk-nrV" secondAttribute="bottom" constant="350" id="4w0-f3-sDY"/>
                         <constraint firstItem="nEe-A0-zKA" firstAttribute="leading" secondItem="OIS-RN-6sZ" secondAttribute="leading" constant="22" id="EbY-14-lw1"/>
                         <constraint firstItem="tO1-qd-jLp" firstAttribute="top" secondItem="nEe-A0-zKA" secondAttribute="bottom" constant="197" id="FLS-cP-Ta5"/>
                         <constraint firstItem="tO1-qd-jLp" firstAttribute="centerX" secondItem="OIS-RN-6sZ" secondAttribute="centerX" id="Saw-2Q-W4T"/>
@@ -91,6 +119,7 @@
                         <constraint firstItem="ljM-o9-nC6" firstAttribute="centerX" secondItem="OIS-RN-6sZ" secondAttribute="centerX" id="XY0-lz-WUb"/>
                         <constraint firstItem="tO1-qd-jLp" firstAttribute="top" secondItem="jgl-az-ZsD" secondAttribute="bottom" constant="197" id="hRE-tP-F9R"/>
                         <constraint firstItem="tO1-qd-jLp" firstAttribute="top" secondItem="OIS-RN-6sZ" secondAttribute="top" constant="660" id="lI7-nm-L5t"/>
+                        <constraint firstItem="CGQ-pk-nrV" firstAttribute="leading" secondItem="OIS-RN-6sZ" secondAttribute="leading" constant="22" id="msf-Q2-DY7"/>
                     </constraints>
                 </view>
             </subviews>

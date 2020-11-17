@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TTRunGothic.ttf">
+            <string>TTRunGothic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="resetRegionViewController" customModule="ios" customModuleProvider="target">
+            <connections>
+                <outlet property="lastCornerView" destination="POs-v5-qbn" id="5L4-FD-kbf"/>
+                <outlet property="selectBtn" destination="qPg-XN-vhe" id="9mN-Tk-SxS"/>
+                <outlet property="selectedReg" destination="lNA-Oy-C1j" id="UyR-CZ-gtj"/>
+                <outlet property="symptomBTN" destination="zVo-F0-fEk" id="Ikk-fI-hcp"/>
+                <outlet property="symptomBTNBTM" destination="Hrc-b8-Rdv" id="pUA-QA-hv2"/>
+                <outlet property="symptomView" destination="Uf3-eo-fu0" id="veo-mH-P73"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wherYouAtLabel" destination="QyT-Z1-EDn" id="Awg-Nl-5VS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bN8-TJ-fDn">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyT-Z1-EDn">
+                            <rect key="frame" x="32" y="90" width="350" height="200"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="8oW-Pl-7hn"/>
+                            </constraints>
+                            <string key="text">지금
+어디계신다구요?</string>
+                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="51"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soo-rF-0JV">
+                            <rect key="frame" x="236" y="711" width="138" height="45"/>
+                            <state key="normal" image="choiceCompletedOff">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="mainBtnPressed:" destination="-1" eventType="touchUpInside" id="cNo-ar-QgB"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPg-XN-vhe">
+                            <rect key="frame" x="40" y="342" width="334" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="symptomBtn:" destination="-1" eventType="touchUpInside" id="Fyk-PJ-xOP"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNA-Oy-C1j">
+                            <rect key="frame" x="40" y="346.5" width="334" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="HoL-7n-DoN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="19"/>
+                            <color key="textColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uf3-eo-fu0">
+                            <rect key="frame" x="40" y="379.5" width="334" height="300"/>
+                            <subviews>
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rtf-4X-KnZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="334" height="300"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AKF-Je-lrF">
+                                            <rect key="frame" x="0.0" y="0.0" width="334" height="1400"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVo-F0-fEk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xa1-Zv-U2H">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="수 원 시">
+                                                                <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <state key="highlighted" title="ㅇ"/>
+                                                            <connections>
+                                                                <action selector="suwonSelected:" destination="-1" eventType="touchUpInside" id="jLn-pt-5lO"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="Xa1-Zv-U2H" secondAttribute="bottom" id="3M3-8b-ZbK"/>
+                                                        <constraint firstItem="Xa1-Zv-U2H" firstAttribute="top" secondItem="zVo-F0-fEk" secondAttribute="top" id="FLv-wz-n3l"/>
+                                                        <constraint firstAttribute="height" constant="50" id="P4j-nO-tNy"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Xa1-Zv-U2H" secondAttribute="trailing" id="ev2-g4-0pZ"/>
+                                                        <constraint firstItem="Xa1-Zv-U2H" firstAttribute="leading" secondItem="zVo-F0-fEk" secondAttribute="leading" id="zL2-XI-4Oz"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qVR-9w-pC4">
+                                                    <rect key="frame" x="0.0" y="50" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9h-NV-oJX">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="용 인 시"/>
+                                                            <connections>
+                                                                <action selector="yongInSelected:" destination="-1" eventType="touchUpInside" id="NZP-3n-aID"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="b9h-NV-oJX" firstAttribute="leading" secondItem="qVR-9w-pC4" secondAttribute="leading" id="Ogz-Aw-C9q"/>
+                                                        <constraint firstItem="b9h-NV-oJX" firstAttribute="top" secondItem="qVR-9w-pC4" secondAttribute="top" id="XGf-fB-TC4"/>
+                                                        <constraint firstAttribute="bottom" secondItem="b9h-NV-oJX" secondAttribute="bottom" id="aiN-j1-wra"/>
+                                                        <constraint firstAttribute="trailing" secondItem="b9h-NV-oJX" secondAttribute="trailing" id="aip-XA-nbA"/>
+                                                        <constraint firstAttribute="height" constant="50" id="z88-e7-nPU"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzH-3F-TRE">
+                                                    <rect key="frame" x="0.0" y="100" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yB3-QW-H6g">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="성 남 시"/>
+                                                            <connections>
+                                                                <action selector="sungnamSelected:" destination="-1" eventType="touchUpInside" id="RqE-fF-ocR"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="yB3-QW-H6g" firstAttribute="leading" secondItem="uzH-3F-TRE" secondAttribute="leading" id="FSx-Dz-cz9"/>
+                                                        <constraint firstAttribute="trailing" secondItem="yB3-QW-H6g" secondAttribute="trailing" id="UPn-ws-fMw"/>
+                                                        <constraint firstAttribute="height" constant="50" id="i3n-sn-htk"/>
+                                                        <constraint firstItem="yB3-QW-H6g" firstAttribute="top" secondItem="uzH-3F-TRE" secondAttribute="top" id="oX5-1V-j1r"/>
+                                                        <constraint firstAttribute="bottom" secondItem="yB3-QW-H6g" secondAttribute="bottom" id="vel-Au-JkS"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CfV-og-Jpo">
+                                                    <rect key="frame" x="0.0" y="150" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWd-Sv-oH3">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="부 천 시"/>
+                                                            <connections>
+                                                                <action selector="bucheunSelected:" destination="-1" eventType="touchUpInside" id="2id-cu-xOz"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="FWd-Sv-oH3" firstAttribute="leading" secondItem="CfV-og-Jpo" secondAttribute="leading" id="EIP-Aa-Dd2"/>
+                                                        <constraint firstAttribute="height" constant="50" id="HAj-G0-MNN"/>
+                                                        <constraint firstAttribute="bottom" secondItem="FWd-Sv-oH3" secondAttribute="bottom" id="IYk-lF-2eI"/>
+                                                        <constraint firstAttribute="trailing" secondItem="FWd-Sv-oH3" secondAttribute="trailing" id="bfG-Rs-7wV"/>
+                                                        <constraint firstItem="FWd-Sv-oH3" firstAttribute="top" secondItem="CfV-og-Jpo" secondAttribute="top" id="kRh-fx-kcN"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dig-Nf-yxX">
+                                                    <rect key="frame" x="0.0" y="200" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3x-QN-AMq">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="화 성 시"/>
+                                                            <connections>
+                                                                <action selector="hwasungSelected:" destination="-1" eventType="touchUpInside" id="EGz-YG-n3t"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="b3x-QN-AMq" secondAttribute="bottom" id="3Ok-ld-KRI"/>
+                                                        <constraint firstItem="b3x-QN-AMq" firstAttribute="top" secondItem="dig-Nf-yxX" secondAttribute="top" id="96E-V5-Jj9"/>
+                                                        <constraint firstItem="b3x-QN-AMq" firstAttribute="leading" secondItem="dig-Nf-yxX" secondAttribute="leading" id="RbK-d1-2k0"/>
+                                                        <constraint firstAttribute="trailing" secondItem="b3x-QN-AMq" secondAttribute="trailing" id="agM-fd-exM"/>
+                                                        <constraint firstAttribute="height" constant="50" id="b8g-Zs-bTP"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYo-Gc-XFX">
+                                                    <rect key="frame" x="0.0" y="250" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qK-RV-GEo">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="안 산 시"/>
+                                                            <connections>
+                                                                <action selector="ansanSelected:" destination="-1" eventType="touchUpInside" id="kne-z6-Lh5"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="2qK-RV-GEo" secondAttribute="bottom" id="2yE-yg-y2F"/>
+                                                        <constraint firstItem="2qK-RV-GEo" firstAttribute="top" secondItem="mYo-Gc-XFX" secondAttribute="top" id="BXs-xZ-HiO"/>
+                                                        <constraint firstAttribute="height" constant="50" id="bqC-Mn-rm5"/>
+                                                        <constraint firstItem="2qK-RV-GEo" firstAttribute="leading" secondItem="mYo-Gc-XFX" secondAttribute="leading" id="ig0-xG-ypF"/>
+                                                        <constraint firstAttribute="trailing" secondItem="2qK-RV-GEo" secondAttribute="trailing" id="ns0-lB-NIK"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y7N-em-8c6">
+                                                    <rect key="frame" x="0.0" y="300" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhX-wv-Uxi">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="안 양 시"/>
+                                                            <connections>
+                                                                <action selector="anyangSelected:" destination="-1" eventType="touchUpInside" id="3hY-rX-Azc"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="MhX-wv-Uxi" firstAttribute="top" secondItem="Y7N-em-8c6" secondAttribute="top" id="7Eh-XM-zdx"/>
+                                                        <constraint firstAttribute="bottom" secondItem="MhX-wv-Uxi" secondAttribute="bottom" id="Hgp-sh-UpA"/>
+                                                        <constraint firstAttribute="height" constant="50" id="QDi-UJ-jre"/>
+                                                        <constraint firstItem="MhX-wv-Uxi" firstAttribute="leading" secondItem="Y7N-em-8c6" secondAttribute="leading" id="QpT-Cj-ST0"/>
+                                                        <constraint firstAttribute="trailing" secondItem="MhX-wv-Uxi" secondAttribute="trailing" id="a2q-rs-cd8"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ilb-qo-99A">
+                                                    <rect key="frame" x="0.0" y="350" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1m-Wg-6pa">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="평 택 시"/>
+                                                            <connections>
+                                                                <action selector="pyungtaekSelected:" destination="-1" eventType="touchUpInside" id="eTA-iV-C5R"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="G1m-Wg-6pa" firstAttribute="leading" secondItem="Ilb-qo-99A" secondAttribute="leading" id="38j-q5-4gP"/>
+                                                        <constraint firstItem="G1m-Wg-6pa" firstAttribute="top" secondItem="Ilb-qo-99A" secondAttribute="top" id="WEy-1b-UR4"/>
+                                                        <constraint firstAttribute="height" constant="50" id="Xea-no-pHc"/>
+                                                        <constraint firstAttribute="trailing" secondItem="G1m-Wg-6pa" secondAttribute="trailing" id="kLO-Kf-Sys"/>
+                                                        <constraint firstAttribute="bottom" secondItem="G1m-Wg-6pa" secondAttribute="bottom" id="zMt-Cg-cVN"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mah-ll-NWD">
+                                                    <rect key="frame" x="0.0" y="400" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3h-gy-reR">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="시 흥 시"/>
+                                                            <connections>
+                                                                <action selector="siheungSelected:" destination="-1" eventType="touchUpInside" id="2mq-si-Fje"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="C3h-gy-reR" secondAttribute="trailing" id="KIp-hW-vI7"/>
+                                                        <constraint firstItem="C3h-gy-reR" firstAttribute="top" secondItem="mah-ll-NWD" secondAttribute="top" id="NIq-tB-lxi"/>
+                                                        <constraint firstAttribute="height" constant="50" id="UWA-tI-he1"/>
+                                                        <constraint firstAttribute="bottom" secondItem="C3h-gy-reR" secondAttribute="bottom" id="ae5-Hs-DFB"/>
+                                                        <constraint firstItem="C3h-gy-reR" firstAttribute="leading" secondItem="mah-ll-NWD" secondAttribute="leading" id="qb2-g9-xfJ"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jsf-cv-Z0t">
+                                                    <rect key="frame" x="0.0" y="450" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqU-oy-xJ7">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="김 포 시"/>
+                                                            <connections>
+                                                                <action selector="kimpoeSelected:" destination="-1" eventType="touchUpInside" id="Q8a-x1-CMj"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="IqU-oy-xJ7" firstAttribute="leading" secondItem="Jsf-cv-Z0t" secondAttribute="leading" id="7Be-Yo-Coc"/>
+                                                        <constraint firstAttribute="trailing" secondItem="IqU-oy-xJ7" secondAttribute="trailing" id="SWF-7d-5bN"/>
+                                                        <constraint firstAttribute="bottom" secondItem="IqU-oy-xJ7" secondAttribute="bottom" id="Xfx-iy-KE9"/>
+                                                        <constraint firstAttribute="height" constant="50" id="a2B-FP-nQk"/>
+                                                        <constraint firstItem="IqU-oy-xJ7" firstAttribute="top" secondItem="Jsf-cv-Z0t" secondAttribute="top" id="iQm-1w-xEr"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="srT-aK-53D">
+                                                    <rect key="frame" x="0.0" y="500" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onU-gx-l9U">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="광 주 시"/>
+                                                            <connections>
+                                                                <action selector="kwanjuSelected:" destination="-1" eventType="touchUpInside" id="Ua4-vl-VyM"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="QbM-HL-Rrx"/>
+                                                        <constraint firstAttribute="trailing" secondItem="onU-gx-l9U" secondAttribute="trailing" id="hOm-0l-9P9"/>
+                                                        <constraint firstItem="onU-gx-l9U" firstAttribute="top" secondItem="srT-aK-53D" secondAttribute="top" id="q6Z-b6-CmF"/>
+                                                        <constraint firstItem="onU-gx-l9U" firstAttribute="leading" secondItem="srT-aK-53D" secondAttribute="leading" id="qP4-dE-mW0"/>
+                                                        <constraint firstAttribute="bottom" secondItem="onU-gx-l9U" secondAttribute="bottom" id="y3q-do-R81"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Cr-Wd-2AM">
+                                                    <rect key="frame" x="0.0" y="550" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFQ-Ie-7go">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="광 명 시"/>
+                                                            <connections>
+                                                                <action selector="kwangmyungSelected:" destination="-1" eventType="touchUpInside" id="vVA-68-mi4"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="MFQ-Ie-7go" firstAttribute="top" secondItem="9Cr-Wd-2AM" secondAttribute="top" id="21a-Dj-09i"/>
+                                                        <constraint firstAttribute="height" constant="50" id="7Dr-RX-mPY"/>
+                                                        <constraint firstAttribute="trailing" secondItem="MFQ-Ie-7go" secondAttribute="trailing" id="bZ0-XF-7lo"/>
+                                                        <constraint firstAttribute="bottom" secondItem="MFQ-Ie-7go" secondAttribute="bottom" id="fb7-VD-kpL"/>
+                                                        <constraint firstItem="MFQ-Ie-7go" firstAttribute="leading" secondItem="9Cr-Wd-2AM" secondAttribute="leading" id="rMd-XU-eNc"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iww-XZ-FJn">
+                                                    <rect key="frame" x="0.0" y="600" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQ9-j0-1X1">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="군 포 시"/>
+                                                            <connections>
+                                                                <action selector="koonpoeSelected:" destination="-1" eventType="touchUpInside" id="F4G-pQ-IBf"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="kQ9-j0-1X1" secondAttribute="trailing" id="0AD-xk-BW5"/>
+                                                        <constraint firstAttribute="height" constant="50" id="9am-oN-bpR"/>
+                                                        <constraint firstAttribute="bottom" secondItem="kQ9-j0-1X1" secondAttribute="bottom" id="Esc-FL-EIW"/>
+                                                        <constraint firstItem="kQ9-j0-1X1" firstAttribute="leading" secondItem="iww-XZ-FJn" secondAttribute="leading" id="Y8H-xs-DKY"/>
+                                                        <constraint firstItem="kQ9-j0-1X1" firstAttribute="top" secondItem="iww-XZ-FJn" secondAttribute="top" id="xb9-BS-tBc"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3k-eo-KCW">
+                                                    <rect key="frame" x="0.0" y="650" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7w-BU-58B">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="하 남 시"/>
+                                                            <connections>
+                                                                <action selector="hanamSelected:" destination="-1" eventType="touchUpInside" id="XZR-F0-2dO"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="r7w-BU-58B" secondAttribute="bottom" id="3wg-ZS-Rmq"/>
+                                                        <constraint firstAttribute="trailing" secondItem="r7w-BU-58B" secondAttribute="trailing" id="eHK-3I-Erl"/>
+                                                        <constraint firstAttribute="height" constant="50" id="nNV-El-13u"/>
+                                                        <constraint firstItem="r7w-BU-58B" firstAttribute="top" secondItem="D3k-eo-KCW" secondAttribute="top" id="teh-yN-iuN"/>
+                                                        <constraint firstItem="r7w-BU-58B" firstAttribute="leading" secondItem="D3k-eo-KCW" secondAttribute="leading" id="woz-bJ-DSY"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvt-oH-itb">
+                                                    <rect key="frame" x="0.0" y="700" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofs-av-D3Q">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="오 산 시"/>
+                                                            <connections>
+                                                                <action selector="ohsanSelected:" destination="-1" eventType="touchUpInside" id="rdi-TD-dKh"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Ofs-av-D3Q" firstAttribute="leading" secondItem="lvt-oH-itb" secondAttribute="leading" id="YcQ-br-VYa"/>
+                                                        <constraint firstItem="Ofs-av-D3Q" firstAttribute="top" secondItem="lvt-oH-itb" secondAttribute="top" id="bq4-p0-gl2"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Ofs-av-D3Q" secondAttribute="bottom" id="cul-Y6-2eO"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Ofs-av-D3Q" secondAttribute="trailing" id="l4M-iX-SMg"/>
+                                                        <constraint firstAttribute="height" constant="50" id="rZq-oJ-2Ee"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NfM-kd-m7r">
+                                                    <rect key="frame" x="0.0" y="750" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzk-91-8eh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="이 천 시"/>
+                                                            <connections>
+                                                                <action selector="icheonSelected:" destination="-1" eventType="touchUpInside" id="hfX-qs-wpa"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="1da-tJ-zMj"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Kzk-91-8eh" secondAttribute="trailing" id="4Kz-w5-Cxq"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Kzk-91-8eh" secondAttribute="bottom" id="7z3-48-ZWF"/>
+                                                        <constraint firstItem="Kzk-91-8eh" firstAttribute="leading" secondItem="NfM-kd-m7r" secondAttribute="leading" id="Oaz-rZ-BKj"/>
+                                                        <constraint firstItem="Kzk-91-8eh" firstAttribute="top" secondItem="NfM-kd-m7r" secondAttribute="top" id="nnM-on-zo9"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3R-T2-NF4">
+                                                    <rect key="frame" x="0.0" y="800" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="InR-dW-YF4">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="안 성 시"/>
+                                                            <connections>
+                                                                <action selector="anseungSelected:" destination="-1" eventType="touchUpInside" id="85t-lP-ZfT"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="InR-dW-YF4" secondAttribute="trailing" id="2Wm-rP-KwB"/>
+                                                        <constraint firstAttribute="bottom" secondItem="InR-dW-YF4" secondAttribute="bottom" id="44j-FW-FYm"/>
+                                                        <constraint firstItem="InR-dW-YF4" firstAttribute="leading" secondItem="h3R-T2-NF4" secondAttribute="leading" id="TjC-uN-c2O"/>
+                                                        <constraint firstAttribute="height" constant="50" id="YXs-mp-q85"/>
+                                                        <constraint firstItem="InR-dW-YF4" firstAttribute="top" secondItem="h3R-T2-NF4" secondAttribute="top" id="fIm-KE-hW5"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BgG-RK-qHc">
+                                                    <rect key="frame" x="0.0" y="850" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZF-ia-DbI">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="의 왕 시"/>
+                                                            <connections>
+                                                                <action selector="euiwangSelected:" destination="-1" eventType="touchUpInside" id="myM-0F-Arr"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="0ka-Gs-nzs"/>
+                                                        <constraint firstItem="sZF-ia-DbI" firstAttribute="top" secondItem="BgG-RK-qHc" secondAttribute="top" id="5b1-d4-Ufi"/>
+                                                        <constraint firstAttribute="trailing" secondItem="sZF-ia-DbI" secondAttribute="trailing" id="VDM-Gh-zUI"/>
+                                                        <constraint firstAttribute="bottom" secondItem="sZF-ia-DbI" secondAttribute="bottom" id="Vea-db-FXo"/>
+                                                        <constraint firstItem="sZF-ia-DbI" firstAttribute="leading" secondItem="BgG-RK-qHc" secondAttribute="leading" id="fJd-on-xwf"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYn-Ja-mNO">
+                                                    <rect key="frame" x="0.0" y="900" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGR-Rd-sTT">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="여 주 시"/>
+                                                            <connections>
+                                                                <action selector="yeujuSelected:" destination="-1" eventType="touchUpInside" id="cht-Oi-d7G"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="GGR-Rd-sTT" secondAttribute="trailing" id="9lh-t0-lCO"/>
+                                                        <constraint firstAttribute="height" constant="50" id="F6B-Ut-Oie"/>
+                                                        <constraint firstAttribute="bottom" secondItem="GGR-Rd-sTT" secondAttribute="bottom" id="ObT-b8-wBD"/>
+                                                        <constraint firstItem="GGR-Rd-sTT" firstAttribute="top" secondItem="AYn-Ja-mNO" secondAttribute="top" id="VTz-dj-Bk4"/>
+                                                        <constraint firstItem="GGR-Rd-sTT" firstAttribute="leading" secondItem="AYn-Ja-mNO" secondAttribute="leading" id="ZPj-gL-Vfg"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qks-gB-vcY">
+                                                    <rect key="frame" x="0.0" y="950" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4L-Fb-dCI">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="과 천 시"/>
+                                                            <connections>
+                                                                <action selector="gwachunSelected:" destination="-1" eventType="touchUpInside" id="jPS-i0-IIf"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="e4L-Fb-dCI" secondAttribute="bottom" id="98a-LK-oVw"/>
+                                                        <constraint firstAttribute="trailing" secondItem="e4L-Fb-dCI" secondAttribute="trailing" id="IH1-HH-huy"/>
+                                                        <constraint firstItem="e4L-Fb-dCI" firstAttribute="leading" secondItem="Qks-gB-vcY" secondAttribute="leading" id="Vd1-f7-mph"/>
+                                                        <constraint firstAttribute="height" constant="50" id="Zhi-Nk-xQl"/>
+                                                        <constraint firstItem="e4L-Fb-dCI" firstAttribute="top" secondItem="Qks-gB-vcY" secondAttribute="top" id="hsl-rl-TCf"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qsb-Tj-yxo">
+                                                    <rect key="frame" x="0.0" y="1000" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iz5-SA-IBI">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="고 양 시"/>
+                                                            <connections>
+                                                                <action selector="koyangSelected:" destination="-1" eventType="touchUpInside" id="qeb-V3-L89"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="Iz5-SA-IBI" secondAttribute="bottom" id="Bko-CJ-URP"/>
+                                                        <constraint firstItem="Iz5-SA-IBI" firstAttribute="leading" secondItem="qsb-Tj-yxo" secondAttribute="leading" id="K5O-ct-0l9"/>
+                                                        <constraint firstAttribute="height" constant="50" id="PHy-Tv-mxz"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Iz5-SA-IBI" secondAttribute="trailing" id="QCH-9z-h68"/>
+                                                        <constraint firstItem="Iz5-SA-IBI" firstAttribute="top" secondItem="qsb-Tj-yxo" secondAttribute="top" id="b0d-ld-dxK"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yuc-Uy-Uw0">
+                                                    <rect key="frame" x="0.0" y="1050" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soZ-pM-MYW">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="남 양 주 시"/>
+                                                            <connections>
+                                                                <action selector="namyangSelected:" destination="-1" eventType="touchUpInside" id="4Pu-xx-NX5"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="22o-ix-6yx"/>
+                                                        <constraint firstAttribute="trailing" secondItem="soZ-pM-MYW" secondAttribute="trailing" id="CEV-L2-8LD"/>
+                                                        <constraint firstItem="soZ-pM-MYW" firstAttribute="top" secondItem="Yuc-Uy-Uw0" secondAttribute="top" id="DPg-UB-nYJ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="soZ-pM-MYW" secondAttribute="bottom" id="N2g-ZS-1j0"/>
+                                                        <constraint firstItem="soZ-pM-MYW" firstAttribute="leading" secondItem="Yuc-Uy-Uw0" secondAttribute="leading" id="o0B-rD-t1A"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIZ-wt-4Ud">
+                                                    <rect key="frame" x="0.0" y="1100" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cld-Um-Q96">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="파 주 시"/>
+                                                            <connections>
+                                                                <action selector="pajooSelected:" destination="-1" eventType="touchUpInside" id="XGF-eh-030"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="cld-Um-Q96" firstAttribute="top" secondItem="fIZ-wt-4Ud" secondAttribute="top" id="6ZW-fn-Hhb"/>
+                                                        <constraint firstAttribute="bottom" secondItem="cld-Um-Q96" secondAttribute="bottom" id="QN2-Bk-8Is"/>
+                                                        <constraint firstItem="cld-Um-Q96" firstAttribute="leading" secondItem="fIZ-wt-4Ud" secondAttribute="leading" id="ey3-Dz-obO"/>
+                                                        <constraint firstAttribute="trailing" secondItem="cld-Um-Q96" secondAttribute="trailing" id="sQb-v5-8Vv"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQd-85-ObX">
+                                                    <rect key="frame" x="0.0" y="1150" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKc-c8-AuV">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="의 정 부 시"/>
+                                                            <connections>
+                                                                <action selector="euijeongbooSelected:" destination="-1" eventType="touchUpInside" id="tYe-Wy-SnP"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="fKc-c8-AuV" firstAttribute="leading" secondItem="SQd-85-ObX" secondAttribute="leading" id="9mc-Wg-t1A"/>
+                                                        <constraint firstItem="fKc-c8-AuV" firstAttribute="top" secondItem="SQd-85-ObX" secondAttribute="top" id="NC8-r9-Qdh"/>
+                                                        <constraint firstAttribute="bottom" secondItem="fKc-c8-AuV" secondAttribute="bottom" id="UtY-Xv-v2v"/>
+                                                        <constraint firstAttribute="trailing" secondItem="fKc-c8-AuV" secondAttribute="trailing" id="eCQ-JQ-RZz"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ikp-4b-Iao">
+                                                    <rect key="frame" x="0.0" y="1200" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dti-9c-h4c">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="양 주 시"/>
+                                                            <connections>
+                                                                <action selector="yangjooSelected:" destination="-1" eventType="touchUpInside" id="wmy-s7-3H2"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Dti-9c-h4c" firstAttribute="top" secondItem="Ikp-4b-Iao" secondAttribute="top" id="BXp-ba-Bnl"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Dti-9c-h4c" secondAttribute="trailing" id="CX1-Kv-pnu"/>
+                                                        <constraint firstItem="Dti-9c-h4c" firstAttribute="leading" secondItem="Ikp-4b-Iao" secondAttribute="leading" id="aGQ-zu-fAp"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Dti-9c-h4c" secondAttribute="bottom" id="iX0-gm-cWe"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDG-kF-5cU">
+                                                    <rect key="frame" x="0.0" y="1250" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ods-oY-VE6">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="구 리 시"/>
+                                                            <connections>
+                                                                <action selector="kooriSelected:" destination="-1" eventType="touchUpInside" id="dj3-tl-tax"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Ods-oY-VE6" firstAttribute="leading" secondItem="lDG-kF-5cU" secondAttribute="leading" id="3WS-cS-2Hj"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Ods-oY-VE6" secondAttribute="bottom" id="SdR-5P-LwG"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Ods-oY-VE6" secondAttribute="trailing" id="vNJ-io-3Bg"/>
+                                                        <constraint firstItem="Ods-oY-VE6" firstAttribute="top" secondItem="lDG-kF-5cU" secondAttribute="top" id="wmO-Bm-fI0"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hrc-b8-Rdv">
+                                                    <rect key="frame" x="0.0" y="1300" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkp-RY-rKC">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="포 천 시"/>
+                                                            <connections>
+                                                                <action selector="pocheonSelected:" destination="-1" eventType="touchUpInside" id="ecd-jE-CBj"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="wkp-RY-rKC" secondAttribute="trailing" id="7cq-hj-STO"/>
+                                                        <constraint firstItem="wkp-RY-rKC" firstAttribute="top" secondItem="Hrc-b8-Rdv" secondAttribute="top" id="CVe-ZL-VJs"/>
+                                                        <constraint firstItem="wkp-RY-rKC" firstAttribute="leading" secondItem="Hrc-b8-Rdv" secondAttribute="leading" id="Skr-Ie-vcJ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="wkp-RY-rKC" secondAttribute="bottom" id="Zsl-rB-Ocn"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POs-v5-qbn">
+                                                    <rect key="frame" x="0.0" y="1350" width="334" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8q-p1-B0K">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="동 두 천 시"/>
+                                                            <connections>
+                                                                <action selector="dongdoochunSelected:" destination="-1" eventType="touchUpInside" id="8e5-Hy-w8C"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="p8q-p1-B0K" secondAttribute="bottom" id="2lL-fM-Dla"/>
+                                                        <constraint firstItem="p8q-p1-B0K" firstAttribute="top" secondItem="POs-v5-qbn" secondAttribute="top" id="3gj-Ty-BUo"/>
+                                                        <constraint firstItem="p8q-p1-B0K" firstAttribute="leading" secondItem="POs-v5-qbn" secondAttribute="leading" id="rO3-oY-dGC"/>
+                                                        <constraint firstAttribute="trailing" secondItem="p8q-p1-B0K" secondAttribute="trailing" id="yhX-aa-gIQ"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ikp-4b-Iao" firstAttribute="width" secondItem="SQd-85-ObX" secondAttribute="width" id="4ws-6d-6w5"/>
+                                                <constraint firstItem="POs-v5-qbn" firstAttribute="height" secondItem="Hrc-b8-Rdv" secondAttribute="height" id="7kr-t3-vH9"/>
+                                                <constraint firstItem="Ikp-4b-Iao" firstAttribute="height" secondItem="SQd-85-ObX" secondAttribute="height" id="9IR-DG-qsF"/>
+                                                <constraint firstItem="fIZ-wt-4Ud" firstAttribute="width" secondItem="Yuc-Uy-Uw0" secondAttribute="width" id="9NO-Nx-gnC"/>
+                                                <constraint firstItem="Hrc-b8-Rdv" firstAttribute="width" secondItem="lDG-kF-5cU" secondAttribute="width" id="B9X-zi-aIN"/>
+                                                <constraint firstItem="lDG-kF-5cU" firstAttribute="height" secondItem="Ikp-4b-Iao" secondAttribute="height" id="C8m-EM-qzs"/>
+                                                <constraint firstItem="fIZ-wt-4Ud" firstAttribute="height" secondItem="Yuc-Uy-Uw0" secondAttribute="height" id="R4d-lz-FkR"/>
+                                                <constraint firstItem="POs-v5-qbn" firstAttribute="width" secondItem="Hrc-b8-Rdv" secondAttribute="width" id="bA7-CC-rxo"/>
+                                                <constraint firstItem="uzH-3F-TRE" firstAttribute="width" secondItem="qVR-9w-pC4" secondAttribute="width" id="eUB-eR-QIf"/>
+                                                <constraint firstItem="SQd-85-ObX" firstAttribute="height" secondItem="fIZ-wt-4Ud" secondAttribute="height" id="eXO-qN-3cT"/>
+                                                <constraint firstItem="zVo-F0-fEk" firstAttribute="width" secondItem="AKF-Je-lrF" secondAttribute="width" id="erU-8l-r0V"/>
+                                                <constraint firstItem="qVR-9w-pC4" firstAttribute="width" secondItem="zVo-F0-fEk" secondAttribute="width" id="gYx-mx-oZA"/>
+                                                <constraint firstItem="lDG-kF-5cU" firstAttribute="width" secondItem="Ikp-4b-Iao" secondAttribute="width" id="mRy-5w-dE4"/>
+                                                <constraint firstItem="SQd-85-ObX" firstAttribute="width" secondItem="fIZ-wt-4Ud" secondAttribute="width" id="ofO-Ei-Slv"/>
+                                                <constraint firstItem="Hrc-b8-Rdv" firstAttribute="height" secondItem="lDG-kF-5cU" secondAttribute="height" id="uXR-1i-0WV"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="AKF-Je-lrF" firstAttribute="leading" secondItem="Rtf-4X-KnZ" secondAttribute="leading" id="Kzt-1B-0GQ"/>
+                                        <constraint firstItem="AKF-Je-lrF" firstAttribute="top" secondItem="Rtf-4X-KnZ" secondAttribute="top" id="PtT-hO-R2r"/>
+                                        <constraint firstAttribute="trailing" secondItem="AKF-Je-lrF" secondAttribute="trailing" id="nz0-up-Afb"/>
+                                        <constraint firstAttribute="bottom" secondItem="AKF-Je-lrF" secondAttribute="bottom" id="rlw-rh-UDs"/>
+                                    </constraints>
+                                </scrollView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Rtf-4X-KnZ" firstAttribute="leading" secondItem="Uf3-eo-fu0" secondAttribute="leading" id="853-RT-q7s"/>
+                                <constraint firstAttribute="trailing" secondItem="Rtf-4X-KnZ" secondAttribute="trailing" id="9fg-yp-lf3"/>
+                                <constraint firstItem="Rtf-4X-KnZ" firstAttribute="width" secondItem="Uf3-eo-fu0" secondAttribute="width" id="GQ2-rr-AtL"/>
+                                <constraint firstItem="zVo-F0-fEk" firstAttribute="width" secondItem="Uf3-eo-fu0" secondAttribute="width" id="Kzk-bz-hPR"/>
+                                <constraint firstItem="Rtf-4X-KnZ" firstAttribute="top" secondItem="Uf3-eo-fu0" secondAttribute="top" id="dKY-GI-R0B"/>
+                                <constraint firstAttribute="bottom" secondItem="Rtf-4X-KnZ" secondAttribute="bottom" id="hpn-3p-zQX"/>
+                                <constraint firstAttribute="height" constant="300" id="vWG-XM-TVb"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectBtn" translatesAutoresizingMaskIntoConstraints="NO" id="iKq-En-V8v">
+                            <rect key="frame" x="344" y="349.5" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="8j1-zY-X11"/>
+                                <constraint firstAttribute="width" constant="30" id="Fsp-5v-acH"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="X1i-KS-94b"/>
+                                <constraint firstAttribute="height" constant="30" id="f2I-Ed-fZj"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="Uf3-eo-fu0" firstAttribute="top" secondItem="iKq-En-V8v" secondAttribute="bottom" id="171-S8-kgR"/>
+                        <constraint firstItem="soo-rF-0JV" firstAttribute="width" secondItem="bN8-TJ-fDn" secondAttribute="width" multiplier="1:3" id="1TO-5T-3ca"/>
+                        <constraint firstAttribute="trailing" secondItem="qPg-XN-vhe" secondAttribute="trailing" constant="40" id="3HU-kV-pr1"/>
+                        <constraint firstItem="qPg-XN-vhe" firstAttribute="height" secondItem="bN8-TJ-fDn" secondAttribute="height" multiplier="1:20" id="BPy-tF-JYT"/>
+                        <constraint firstItem="lNA-Oy-C1j" firstAttribute="leading" secondItem="bN8-TJ-fDn" secondAttribute="leading" constant="40" id="COL-lD-7VL"/>
+                        <constraint firstItem="qPg-XN-vhe" firstAttribute="leading" secondItem="bN8-TJ-fDn" secondAttribute="leading" constant="40" id="CRZ-4Z-89O"/>
+                        <constraint firstAttribute="trailing" secondItem="Uf3-eo-fu0" secondAttribute="trailing" constant="40" id="HTa-eb-MeQ"/>
+                        <constraint firstItem="Uf3-eo-fu0" firstAttribute="leading" secondItem="bN8-TJ-fDn" secondAttribute="leading" constant="40" id="HrS-Lt-jfM"/>
+                        <constraint firstItem="QyT-Z1-EDn" firstAttribute="leading" secondItem="bN8-TJ-fDn" secondAttribute="leading" constant="32" id="IG8-5Y-fQF"/>
+                        <constraint firstItem="QyT-Z1-EDn" firstAttribute="top" secondItem="bN8-TJ-fDn" secondAttribute="top" constant="90" id="Plp-5B-Mzv"/>
+                        <constraint firstAttribute="trailing" secondItem="QyT-Z1-EDn" secondAttribute="trailing" constant="32" id="R9L-Ry-kkT"/>
+                        <constraint firstAttribute="trailing" secondItem="soo-rF-0JV" secondAttribute="trailing" constant="40" id="VBd-I8-aRR"/>
+                        <constraint firstItem="Uf3-eo-fu0" firstAttribute="top" secondItem="lNA-Oy-C1j" secondAttribute="bottom" id="W64-kz-dqf"/>
+                        <constraint firstItem="iKq-En-V8v" firstAttribute="trailing" secondItem="qPg-XN-vhe" secondAttribute="trailing" id="X7a-ix-cPe"/>
+                        <constraint firstAttribute="trailing" secondItem="lNA-Oy-C1j" secondAttribute="trailing" constant="40" id="bIP-Ia-zYb"/>
+                        <constraint firstItem="iKq-En-V8v" firstAttribute="centerY" secondItem="qPg-XN-vhe" secondAttribute="centerY" id="ei6-b6-gFI"/>
+                        <constraint firstItem="qPg-XN-vhe" firstAttribute="centerX" secondItem="bN8-TJ-fDn" secondAttribute="centerX" id="i1t-U1-p26"/>
+                        <constraint firstAttribute="bottom" secondItem="soo-rF-0JV" secondAttribute="bottom" constant="140" id="kkC-YN-s3Z"/>
+                        <constraint firstItem="soo-rF-0JV" firstAttribute="height" secondItem="bN8-TJ-fDn" secondAttribute="height" multiplier="1:20" id="kw3-lt-FIc"/>
+                        <constraint firstItem="qPg-XN-vhe" firstAttribute="top" secondItem="QyT-Z1-EDn" secondAttribute="bottom" constant="52" id="uAw-Nd-2ZV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bN8-TJ-fDn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7c5-Ka-1MJ"/>
+                <constraint firstItem="bN8-TJ-fDn" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="RGs-Q5-SIg"/>
+                <constraint firstItem="bN8-TJ-fDn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZXj-Ul-dwN"/>
+                <constraint firstAttribute="bottom" secondItem="bN8-TJ-fDn" secondAttribute="bottom" id="y0N-Vk-aOY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="choiceCompletedOff" width="140" height="48"/>
+        <image name="selectBtn" width="16" height="16"/>
+    </resources>
+</document>
