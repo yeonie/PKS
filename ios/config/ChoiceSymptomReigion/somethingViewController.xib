@@ -22,6 +22,7 @@
                 <outlet property="symptomBTNBTM" destination="4UH-U2-TbT" id="C4U-db-5s0"/>
                 <outlet property="symptomView" destination="TtY-75-X6I" id="ocG-9h-ceD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="whtSymptomYouHaveLable" destination="o5N-oL-ygS" id="XsR-tw-Xuz"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

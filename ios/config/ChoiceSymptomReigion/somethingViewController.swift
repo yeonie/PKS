@@ -12,6 +12,7 @@ class somethingViewController: BaseViewController {
     
     var select = false
 
+    @IBOutlet weak var whtSymptomYouHaveLable: UILabel!
     @IBOutlet weak var selectBtn: UIButton!
     @IBOutlet weak var symptomView: UIView!
     @IBOutlet weak var symptomBTN: UIView!
@@ -19,6 +20,11 @@ class somethingViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        whtSymptomYouHaveLable.alpha = 0
+        UIView.animate(withDuration: 1.0, animations: ({
+            self.whtSymptomYouHaveLable.alpha  = 1;
+        }))
+
         selectBtn.layer.cornerRadius = 16
         symptomView.layer.cornerRadius = 15
         symptomView.isHidden = true
@@ -29,9 +35,15 @@ class somethingViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        
-        navigationController?.navigationBar.isHidden = true
-        
+        navigationController?.navigationBar.isHidden = false
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationItem.backBarButtonItem?.image = UIImage(named: "dismissBtn")
+        self.navigationItem.backBarButtonItem?.tintColor = .black
+        self.navigationController?.navigationBar.barTintColor = UIColor.init(red: 0/255, green: 155/255, blue: 230/255, alpha: 1.0)
+        self.navigationController?.navigationBar.topItem?.title = ""
+        self.navigationController?.navigationBar.tintColor = .black
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
     }
 
     @IBAction func mainBtnPressed(_ sender: UIButton) {

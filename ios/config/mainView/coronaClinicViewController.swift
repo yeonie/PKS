@@ -101,8 +101,6 @@ class coronaClinicViewController: BaseViewController {
         getHospitalData(SIGUN_NM: "여주시", SIGUN_CD: "")
         
     }
-//    print(latitude)
-//    print(longitude)
 
 
 }

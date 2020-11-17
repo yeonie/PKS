@@ -149,8 +149,8 @@
 			children = (
 				848638492547C2C3007FA1B1 /* somethingViewController.xib */,
 				848638482547C2C3007FA1B1 /* somethingViewController.swift */,
-				8478005D2562223B006C62FE /* RegionViewController.swift */,
 				8478005E2562223B006C62FE /* RegionViewController.xib */,
+				8478005D2562223B006C62FE /* RegionViewController.swift */,
 			);
 			path = ChoiceSymptomReigion;
 			sourceTree = "<group>";
