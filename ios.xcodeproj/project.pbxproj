@@ -172,7 +172,6 @@
 		848638532547C2F5007FA1B1 /* mainView */ = {
 			isa = PBXGroup;
 			children = (
-				848638552547C2F5007FA1B1 /* tapbar */,
 				848638582547C2F5007FA1B1 /* findHospitalViewController.xib */,
 				848638592547C2F5007FA1B1 /* findHospitalViewController.swift */,
 				8486385C2547C2F5007FA1B1 /* putSymptomViewController.xib */,
@@ -294,6 +293,7 @@
 		BDEF322D22F9B7CB00FEF8BD /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				848638552547C2F5007FA1B1 /* tapbar */,
 				BD9BF17122F9C31D009E47EB /* config */,
 				BD9BF16F22F9C314009E47EB /* Main */,
 				BDEF323822F9B7CB00FEF8BD /* Assets.xcassets */,
