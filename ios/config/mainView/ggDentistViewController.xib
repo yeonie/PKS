@@ -107,9 +107,21 @@
                                 <constraint firstItem="fl0-fO-Oqc" firstAttribute="leading" secondItem="9rB-17-jrN" secondAttribute="trailing" constant="8" id="zos-QH-Yi3"/>
                             </constraints>
                         </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lnf-yH-awk">
+                            <rect key="frame" x="319" y="511" width="70" height="35"/>
+                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="19"/>
+                            <state key="normal" title="In English">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="inEnglishBtn:" destination="-1" eventType="touchUpInside" id="0lo-jg-M6B"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Lnf-yH-awk" secondAttribute="trailing" constant="25" id="1aA-KS-LDE"/>
+                        <constraint firstItem="vbC-hb-Tde" firstAttribute="top" secondItem="Lnf-yH-awk" secondAttribute="bottom" id="DMj-Cp-iaw"/>
                         <constraint firstAttribute="trailing" secondItem="vbC-hb-Tde" secondAttribute="trailing" constant="20" id="LY3-eb-cVK"/>
                         <constraint firstAttribute="bottom" secondItem="vbC-hb-Tde" secondAttribute="bottom" constant="150" id="asH-tE-oqu"/>
                         <constraint firstItem="vbC-hb-Tde" firstAttribute="leading" secondItem="53U-gX-zR7" secondAttribute="leading" constant="20" id="x1c-9I-5Nx"/>

@@ -89,6 +89,11 @@
                         <constraint firstItem="ZGF-8E-lEL" firstAttribute="height" secondItem="NkG-nj-LGb" secondAttribute="height" id="Xfc-RD-0fB"/>
                     </constraints>
                 </stackView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAk-tI-mMc">
+                    <rect key="frame" x="277" y="210" width="81" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="File revision"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>

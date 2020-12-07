@@ -36,8 +36,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //FirebaseApp.configure()
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
-//        let splashViewController = somethingViewController()
         let splashViewController = RegionViewController()
+//        let splashViewController = testForS3UploadViewController()
         self.window?.rootViewController = UINavigationController(rootViewController: splashViewController)
         self.window?.makeKeyAndVisible()
         return true

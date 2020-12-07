@@ -13,6 +13,12 @@ import SwiftyXMLParser
 class coronaClinicViewController: BaseViewController {
     
     
+    var latitude : String!
+    var longitude : String!
+    
+    
+    
+    
     @IBOutlet weak var hospitalNM: UILabel!
     @IBOutlet weak var medType: UILabel!
     @IBOutlet weak var medReg: UILabel!
@@ -73,15 +79,19 @@ class coronaClinicViewController: BaseViewController {
                         for element in xml["EmgMedInfo"]["row"] {
                             if let MEDCARE_INST_NM = element["MEDCARE_INST_NM"].text,
                                 let DISTRCT_DIV_NM = element["DISTRCT_DIV_NM"].text,
-                                let REFINE_ROADNM_ADDR = element["REFINE_ROADNM_ADDR"].text {
+                                let REFINE_ROADNM_ADDR = element["REFINE_ROADNM_ADDR"].text,
+                                let REFINE_WGS84_LAT = element["REFINE_WGS84_LAT"].text,
+                                let REFINE_WGS84_LOGT = element["REFINE_WGS84_LOGT"].text{
+                                self.latitude = "\(REFINE_WGS84_LAT)"
+                                self.longitude = "\(REFINE_WGS84_LOGT)"
                                 print("MEDCARE_INST_NM = \(MEDCARE_INST_NM)")
                                 print("DISTRCT_DIV_NM = \(DISTRCT_DIV_NM)")
                                 print("REFINE_ROADNM_ADDR = \(REFINE_ROADNM_ADDR)")
                                 self.hospitalNM.text = "\(MEDCARE_INST_NM)"
                                 self.medType.text = "\(DISTRCT_DIV_NM)"
                                 self.medReg.text = "\(REFINE_ROADNM_ADDR)"
-
-
+                                print(self.latitude)
+                                print(self.longitude)
                             }
                             if let MEDCARE_INST_NM2 = element["MEDCARE_INST_NM"].text,
                                 let DISTRCT_DIV_NM2 = element["DISTRCT_DIV_NM"].text,
@@ -89,6 +99,13 @@ class coronaClinicViewController: BaseViewController {
                                 self.hospitalNM2.text = "\(MEDCARE_INST_NM2)"
                                 self.medType2.text = "\(DISTRCT_DIV_NM2)"
                                 self.medReg2.text = "\(REFINE_ROADNM_ADDR2)"
+                            }
+                            if let MEDCARE_INST_NM3 = element["MEDCARE_INST_NM"].text,
+                                let DISTRCT_DIV_NM3 = element["DISTRCT_DIV_NM"].text,
+                                let REFINE_ROADNM_ADDR3 = element["REFINE_ROADNM_ADDR"].text {
+                                self.hospitalNM3.text = "\(MEDCARE_INST_NM3)"
+                                self.medType3.text = "\(DISTRCT_DIV_NM3)"
+                                self.medReg3.text = "\(REFINE_ROADNM_ADDR3)"
                             }
                         }
                     }
@@ -113,9 +130,7 @@ class coronaClinicViewController: BaseViewController {
         super.viewDidLoad()
         
 //        hospitalNM.text = MEDCARE_INST_NM.
-        
-        //        getHospitalData(instit_nm: "동아대학교병원")
-        getHospitalData(SIGUN_NM: "여주시", SIGUN_CD: "")
+    getHospitalData(SIGUN_NM: "여주시", SIGUN_CD: "")
         
     }
 
