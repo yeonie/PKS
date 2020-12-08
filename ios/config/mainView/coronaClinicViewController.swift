@@ -16,10 +16,14 @@ class coronaClinicViewController: BaseViewController, CLLocationManagerDelegate 
     
     var locationManager:CLLocationManager!
     
+    var latitude : Double = 0.0
+    var longitude : Double = 0.0
+    
     var latitude1 : String!
     var longitude1 : String!
     
     
+//    distance(start_x: latitude!, start_y: longitude!, end_x: latitude1, end_y: longitude1)
     
     
     @IBOutlet weak var hospitalNM: UILabel!
@@ -77,7 +81,46 @@ class coronaClinicViewController: BaseViewController, CLLocationManagerDelegate 
     }
     
     func consecutive(a: Double, b: Double, c: Double){
+        var max : Double
+        var min : Double
         
+        max = 0
+        min = 0
+        
+        if a>b {
+            if(b>c){
+                max = a
+                min = c
+            }
+            else if(b<c){
+                if(a>c){
+                    max = a
+                    min = b
+                }
+                else{
+                    max = c
+                    min = b
+                }
+            }
+        }
+        else {
+            if(a>c){
+                max = b
+                min = c
+            }
+            else if(a<c){
+                if(b>c){
+                    max = b
+                    min = a
+                }
+                else{
+                    max = c
+                    min = a
+                }
+            }
+        }
+        print("max = ", max)
+        print("min = ", min)
     }
     
     func getHospitalData(SIGUN_NM: String, SIGUN_CD: String) {
@@ -116,20 +159,20 @@ class coronaClinicViewController: BaseViewController, CLLocationManagerDelegate 
 //                                print(self.latitude1)
 //                                print(self.longitude1)
                             }
-                            if let MEDCARE_INST_NM2 = element["MEDCARE_INST_NM"].text,
-                                let DISTRCT_DIV_NM2 = element["DISTRCT_DIV_NM"].text,
-                                let REFINE_ROADNM_ADDR2 = element["REFINE_ROADNM_ADDR"].text {
-                                self.hospitalNM2.text = "\(MEDCARE_INST_NM2)"
-                                self.medType2.text = "\(DISTRCT_DIV_NM2)"
-                                self.medReg2.text = "\(REFINE_ROADNM_ADDR2)"
-                            }
-                            if let MEDCARE_INST_NM3 = element["MEDCARE_INST_NM"].text,
-                                let DISTRCT_DIV_NM3 = element["DISTRCT_DIV_NM"].text,
-                                let REFINE_ROADNM_ADDR3 = element["REFINE_ROADNM_ADDR"].text {
-                                self.hospitalNM3.text = "\(MEDCARE_INST_NM3)"
-                                self.medType3.text = "\(DISTRCT_DIV_NM3)"
-                                self.medReg3.text = "\(REFINE_ROADNM_ADDR3)"
-                            }
+//                            if let MEDCARE_INST_NM2 = element["MEDCARE_INST_NM"].text,
+//                                let DISTRCT_DIV_NM2 = element["DISTRCT_DIV_NM"].text,
+//                                let REFINE_ROADNM_ADDR2 = element["REFINE_ROADNM_ADDR"].text {
+//                                self.hospitalNM2.text = "\(MEDCARE_INST_NM2)"
+//                                self.medType2.text = "\(DISTRCT_DIV_NM2)"
+//                                self.medReg2.text = "\(REFINE_ROADNM_ADDR2)"
+//                            }
+//                            if let MEDCARE_INST_NM3 = element["MEDCARE_INST_NM"].text,
+//                                let DISTRCT_DIV_NM3 = element["DISTRCT_DIV_NM"].text,
+//                                let REFINE_ROADNM_ADDR3 = element["REFINE_ROADNM_ADDR"].text {
+//                                self.hospitalNM3.text = "\(MEDCARE_INST_NM3)"
+//                                self.medType3.text = "\(DISTRCT_DIV_NM3)"
+//                                self.medReg3.text = "\(REFINE_ROADNM_ADDR3)"
+//                            }
                         }
                     }
                     
@@ -165,12 +208,17 @@ class coronaClinicViewController: BaseViewController, CLLocationManagerDelegate 
         let coor = locationManager.location?.coordinate
         let latitude = coor?.latitude
         let longitude = coor?.longitude
+        
+        print(latitude)
+        print(longitude?.magnitude)
 
-        distance(start_x: latitude!, start_y: longitude!, end_x: latitude1, end_y: longitude1)
 
         getHospitalData(SIGUN_NM: "여주시", SIGUN_CD: "")
+        getHospitalData(SIGUN_NM: "고양시", SIGUN_CD: "")
+//        getHospitalData(SIGUN_NM: "여주시", SIGUN_CD: "")
         
     }
+    
     
 
 

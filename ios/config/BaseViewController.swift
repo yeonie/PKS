@@ -20,8 +20,7 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         
         
-//        print(latitude)
-//        print(longitude?.magnitude)
+        
         
         hideKeyboardWhenTappedAround()
     }
