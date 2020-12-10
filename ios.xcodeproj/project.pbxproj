@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		843F3A65257E31FA00F7A2DC /* somthin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 843F3A64257E31FA00F7A2DC /* somthin.txt */; };
-		844D89B3257D9ACE00253FF9 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 844D89B2257D9ACE00253FF9 /* ReadMe.txt */; };
+		843F3A65257E31FA00F7A2DC /* dentistData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 843F3A64257E31FA00F7A2DC /* dentistData.txt */; };
 		845D44C4254E883A002794A7 /* hospitalAPITestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D44C2254E883A002794A7 /* hospitalAPITestViewController.swift */; };
 		845D44C5254E883A002794A7 /* hospitalAPITestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845D44C3254E883A002794A7 /* hospitalAPITestViewController.xib */; };
 		845D44C82550055D002794A7 /* gyungkiAPITestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D44C62550055D002794A7 /* gyungkiAPITestViewController.swift */; };
@@ -65,13 +64,12 @@
 /* Begin PBXFileReference section */
 		2F13293A0F781AAAF1DC9C8A /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DE891A8DE4AEB4ED1D1105 /* Pods-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.release.xcconfig"; path = "Target Support Files/Pods-ios/Pods-ios.release.xcconfig"; sourceTree = "<group>"; };
-		843F3A64257E31FA00F7A2DC /* somthin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = somthin.txt; sourceTree = "<group>"; };
-		844D89B2257D9ACE00253FF9 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		843F3A64257E31FA00F7A2DC /* dentistData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dentistData.txt; sourceTree = "<group>"; };
 		845D44C2254E883A002794A7 /* hospitalAPITestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hospitalAPITestViewController.swift; sourceTree = "<group>"; };
 		845D44C3254E883A002794A7 /* hospitalAPITestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = hospitalAPITestViewController.xib; sourceTree = "<group>"; };
 		845D44C62550055D002794A7 /* gyungkiAPITestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gyungkiAPITestViewController.swift; sourceTree = "<group>"; };
 		845D44C72550055D002794A7 /* gyungkiAPITestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = gyungkiAPITestViewController.xib; sourceTree = "<group>"; };
-		845D44CA25500BC0002794A7 /* ggDentistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ggDentistViewController.swift; sourceTree = "<group>"; };
+		845D44CA25500BC0002794A7 /* ggDentistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ggDentistViewController.swift; sourceTree = "<group>"; };
 		845D44CB25500BC0002794A7 /* ggDentistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ggDentistViewController.xib; sourceTree = "<group>"; };
 		8478005925595405006C62FE /* lisabe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lisabe.png; sourceTree = "<group>"; };
 		8478005D2562223B006C62FE /* RegionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionViewController.swift; sourceTree = "<group>"; };
@@ -190,7 +188,7 @@
 				845D44C62550055D002794A7 /* gyungkiAPITestViewController.swift */,
 				845D44C72550055D002794A7 /* gyungkiAPITestViewController.xib */,
 				845D44CA25500BC0002794A7 /* ggDentistViewController.swift */,
-				843F3A64257E31FA00F7A2DC /* somthin.txt */,
+				843F3A64257E31FA00F7A2DC /* dentistData.txt */,
 				845D44CB25500BC0002794A7 /* ggDentistViewController.xib */,
 				84A35DB925593D9D009FE822 /* testForS3UploadViewController.swift */,
 				84A35DBA25593D9D009FE822 /* testForS3UploadViewController.xib */,
@@ -207,7 +205,6 @@
 			children = (
 				848638562547C2F5007FA1B1 /* RoundShadowView.swift */,
 				848638572547C2F5007FA1B1 /* MainTabbarViewController.swift */,
-				844D89B2257D9ACE00253FF9 /* ReadMe.txt */,
 				8478005925595405006C62FE /* lisabe.png */,
 			);
 			path = tapbar;
@@ -378,7 +375,7 @@
 				8486384B2547C2C3007FA1B1 /* somethingViewController.xib in Resources */,
 				84780064256248FD006C62FE /* coronaClinicViewController.xib in Resources */,
 				848638672547C2F5007FA1B1 /* printMapViewController.xib in Resources */,
-				843F3A65257E31FA00F7A2DC /* somthin.txt in Resources */,
+				843F3A65257E31FA00F7A2DC /* dentistData.txt in Resources */,
 				845D44C92550055D002794A7 /* gyungkiAPITestViewController.xib in Resources */,
 				848638622547C2F5007FA1B1 /* findHospitalViewController.xib in Resources */,
 				84A35DBC25593D9D009FE822 /* testForS3UploadViewController.xib in Resources */,
@@ -389,7 +386,6 @@
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
 				BD9BF18822F9DCC7009E47EB /* MainViewController.xib in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
-				844D89B3257D9ACE00253FF9 /* ReadMe.txt in Resources */,
 				8486386E2547C37C007FA1B1 /* pharmacyHospitalViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

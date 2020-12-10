@@ -20,6 +20,31 @@
                 <outlet property="lastCornerView" destination="obi-oX-nvI" id="lwV-le-qTe"/>
                 <outlet property="selectBtn" destination="Nax-8g-6BA" id="5St-0Z-MHP"/>
                 <outlet property="selectedReg" destination="YKU-sV-4ee" id="O9M-XQ-6lw"/>
+                <outlet property="stv1" destination="ExI-Ss-nGL" id="XYt-gi-KJB"/>
+                <outlet property="stv10" destination="3Ao-Z9-Iib" id="VmM-kR-TTe"/>
+                <outlet property="stv11" destination="wII-LT-TaC" id="QGQ-rh-T9P"/>
+                <outlet property="stv12" destination="nr1-Gj-d3j" id="RjN-OS-ujW"/>
+                <outlet property="stv13" destination="ch3-E3-qFF" id="WbY-jg-yzD"/>
+                <outlet property="stv14" destination="XyW-ZJ-LFr" id="qAI-Rz-Lct"/>
+                <outlet property="stv15" destination="ZlK-qF-4Js" id="8Lu-oc-aPM"/>
+                <outlet property="stv16" destination="SvF-Wh-aJe" id="6hb-mA-dRr"/>
+                <outlet property="stv17" destination="PLr-z3-8fm" id="Fp5-G4-7Tt"/>
+                <outlet property="stv18" destination="2eJ-8q-QtP" id="icy-cr-0pT"/>
+                <outlet property="stv19" destination="nvK-ic-wD5" id="lwK-bt-bps"/>
+                <outlet property="stv2" destination="Hnv-Rx-2Js" id="GQ6-WM-aTf"/>
+                <outlet property="stv20" destination="cRH-tG-Amc" id="T8H-Fy-EOr"/>
+                <outlet property="stv21" destination="Fhf-qO-pKZ" id="ZwN-FI-jBO"/>
+                <outlet property="stv22" destination="7Ee-rK-UQy" id="mFy-9d-0JI"/>
+                <outlet property="stv23" destination="K87-7w-co9" id="9fz-nw-RL0"/>
+                <outlet property="stv24" destination="XyW-ZJ-LFr" id="7Zl-hf-vWc"/>
+                <outlet property="stv25" destination="8KW-G6-VUx" id="PLN-6p-2Rx"/>
+                <outlet property="stv3" destination="OgX-T2-OmR" id="w6g-9E-6Ef"/>
+                <outlet property="stv4" destination="f6V-hQ-EJJ" id="gtZ-Cd-Tim"/>
+                <outlet property="stv5" destination="EPa-df-i2Q" id="AZp-am-gbR"/>
+                <outlet property="stv6" destination="Ifz-HM-c4L" id="Kwn-fj-cLD"/>
+                <outlet property="stv7" destination="vNX-QK-hyN" id="G8U-gL-m8z"/>
+                <outlet property="stv8" destination="i6p-C8-Hwg" id="4hv-as-iAn"/>
+                <outlet property="stv9" destination="1Rg-th-x3A" id="orc-n5-6zm"/>
                 <outlet property="symptomBTN" destination="yr5-bf-2MI" id="S7k-PN-pNb"/>
                 <outlet property="symptomBTNBTM" destination="XDA-es-EUm" id="EPk-Ix-bru"/>
                 <outlet property="symptomView" destination="R9U-55-ws4" id="Vkq-NP-hjJ"/>
@@ -610,7 +635,7 @@
                                                         <constraint firstItem="5x5-bO-65d" firstAttribute="top" secondItem="K87-7w-co9" secondAttribute="top" id="vZR-i3-kyd"/>
                                                     </constraints>
                                                 </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XyW-ZJ-LFr">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XyW-ZJ-LFr" userLabel="Stv24">
                                                     <rect key="frame" x="0.0" y="1250" width="334" height="50"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oeu-ye-Tok">

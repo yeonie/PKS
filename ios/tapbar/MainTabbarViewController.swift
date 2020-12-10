@@ -51,12 +51,12 @@ class MainTabbarViewController: UITabBarController {
         let putSymptomHomeVC = putSymptomViewController()
         let putSymptomHomeNaviVC = UINavigationController(rootViewController: putSymptomHomeVC)
         putSymptomHomeNaviVC.tabBarItem.image = UIImage(named: "bottomTapBarHomeBtn")
-        putSymptomHomeNaviVC.tabBarItem.title = "증상입력"
+        putSymptomHomeNaviVC.tabBarItem.title = "병원 정보"
         
         let findHospitalVC = findHospitalViewController()
         let findHospitalNaviVC = UINavigationController(rootViewController: findHospitalVC)
         findHospitalNaviVC.tabBarItem.image = UIImage(named: "findingbottomTabbar")
-        findHospitalNaviVC.tabBarItem.title = "병원찾기"
+        findHospitalNaviVC.tabBarItem.title = "번역 정보"
         
         
         viewControllers = [putSymptomHomeNaviVC, findHospitalNaviVC]

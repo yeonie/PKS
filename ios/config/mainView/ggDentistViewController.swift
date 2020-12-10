@@ -48,14 +48,14 @@ class ggDentistViewController: BaseViewController {
                             String.Encoding.utf8.rawValue )
                         let xml = try! XML.parse(String(responseString!))
                         for element in xml["DentistryHospital"]["row"] {
-                            if let BIZPLC_NM = element["BIZPLC_NM"].text,
-                                let BSN_STATE_NM = element["BSN_STATE_NM"].text,
-                                let REFINE_ROADNM_ADDR = element["REFINE_ROADNM_ADDR"].text
+                            if let 병원이름 = element["BIZPLC_NM"].text,
+                                let 상태 = element["BSN_STATE_NM"].text,
+                                let 주소 = element["REFINE_ROADNM_ADDR"].text
                             {
-                                self.hospitalNM.text = "\(BIZPLC_NM)"
-                                self.hospitalRG.text = "\(REFINE_ROADNM_ADDR)"
-                                self.hospitalST.text = "\(BSN_STATE_NM)"
-                                print("BIZPLC_NM = \(BIZPLC_NM), BSN_STATE_NM = \(BSN_STATE_NM),REFINE_ROADNM_ADDR = \(REFINE_ROADNM_ADDR)")
+                                self.hospitalNM.text = "\(병원이름)"
+                                self.hospitalRG.text = "\(상태)"
+                                self.hospitalST.text = "\(주소)"
+                                print("BIZPLC_NM = \(병원이름), BSN_STATE_NM = \(상태),REFINE_ROADNM_ADDR = \(주소)")
                             }
                         }
                     }
@@ -68,7 +68,7 @@ class ggDentistViewController: BaseViewController {
     
 //    ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ s3 Upload ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
     
-    let bucketName = "pks-translate-input"
+    let bucketName = "pks-cooperative-input"
     
     
     override func viewDidLoad() {
@@ -122,7 +122,7 @@ class ggDentistViewController: BaseViewController {
         
         do {
             try str.write(to: filename, atomically: true, encoding: String.Encoding.utf8)
-            uploadFile(with: "somthin", type: "txt")
+            uploadFile(with: "dentistData", type: "txt")
             print("revision completed")
             
         } catch {

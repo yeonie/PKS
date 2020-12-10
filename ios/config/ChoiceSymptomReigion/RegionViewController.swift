@@ -20,6 +20,34 @@ class RegionViewController: BaseViewController {
     @IBOutlet weak var symptomBTN: UIView!
     @IBOutlet weak var symptomBTNBTM: UIView!
     @IBOutlet weak var lastCornerView: UIView!
+    @IBOutlet weak var stv1: UIView!
+    @IBOutlet weak var stv2: UIView!
+    @IBOutlet weak var stv3: UIView!
+    @IBOutlet weak var stv4: UIView!
+    @IBOutlet weak var stv5: UIView!
+    @IBOutlet weak var stv6: UIView!
+    @IBOutlet weak var stv7: UIView!
+    @IBOutlet weak var stv8: UIView!
+    @IBOutlet weak var stv9: UIView!
+    @IBOutlet weak var stv10: UIView!
+    @IBOutlet weak var stv11: UIView!
+    @IBOutlet weak var stv12: UIView!
+    @IBOutlet weak var stv13: UIView!
+    @IBOutlet weak var stv14: UIView!
+    @IBOutlet weak var stv15: UIView!
+    @IBOutlet weak var stv16: UIView!
+    @IBOutlet weak var stv17: UIView!
+    @IBOutlet weak var stv18: UIView!
+    @IBOutlet weak var stv19: UIView!
+    @IBOutlet weak var stv20: UIView!
+    @IBOutlet weak var stv21: UIView!
+    @IBOutlet weak var stv22: UIView!
+    @IBOutlet weak var stv23: UIView!
+    @IBOutlet weak var stv24: UIView!
+    @IBOutlet weak var stv25: UIView!
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +62,31 @@ class RegionViewController: BaseViewController {
         symptomView.isHidden = true
         symptomBTN.layer.cornerRadius = 15
         symptomBTNBTM.layer.cornerRadius = 15
+        stv1.layer.cornerRadius = 15
+        stv2.layer.cornerRadius = 15
+        stv3.layer.cornerRadius = 15
+        stv4.layer.cornerRadius = 15
+        stv5.layer.cornerRadius = 15
+        stv6.layer.cornerRadius = 15
+        stv7.layer.cornerRadius = 15
+        stv8.layer.cornerRadius = 15
+        stv9.layer.cornerRadius = 15
+        stv10.layer.cornerRadius = 15
+        stv11.layer.cornerRadius = 15
+        stv12.layer.cornerRadius = 15
+        stv13.layer.cornerRadius = 15
+        stv14.layer.cornerRadius = 15
+        stv15.layer.cornerRadius = 15
+        stv16.layer.cornerRadius = 15
+        stv17.layer.cornerRadius = 15
+        stv18.layer.cornerRadius = 15
+        stv19.layer.cornerRadius = 15
+        stv20.layer.cornerRadius = 15
+        stv21.layer.cornerRadius = 15
+        stv22.layer.cornerRadius = 15
+        stv23.layer.cornerRadius = 15
+        stv24.layer.cornerRadius = 15
+        stv25.layer.cornerRadius = 15
         lastCornerView.layer.cornerRadius = 15
         // Do any additional setup after loading the view.
         
