@@ -68,7 +68,7 @@ class ggDentistViewController: BaseViewController {
     
 //    ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ s3 Upload ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
     
-    let bucketName = "pks-cooperative-input"
+    let bucketName = "sam-translation-bucket"
     
     
     override func viewDidLoad() {

@@ -41,8 +41,8 @@
                                 <action selector="mapPressed:" destination="-1" eventType="touchUpInside" id="Uv0-dJ-cfI"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEe-A0-zKA">
-                            <rect key="frame" x="22" y="433" width="66" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEe-A0-zKA">
+                            <rect key="frame" x="300" y="590" width="66" height="30"/>
                             <state key="normal" title="지하철 API">
                                 <color key="titleColor" red="0.94510442019999996" green="0.94508665800000002" blue="0.94509869810000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
@@ -50,17 +50,8 @@
                                 <action selector="tstbtnPressed:" destination="-1" eventType="touchUpInside" id="7PK-hX-xhu"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgl-az-ZsD">
-                            <rect key="frame" x="309" y="433" width="83" height="30"/>
-                            <state key="normal" title="부산 병원 API">
-                                <color key="titleColor" red="0.94510442019999996" green="0.94508665800000002" blue="0.94509869810000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </state>
-                            <connections>
-                                <action selector="hosTest:" destination="-1" eventType="touchUpInside" id="7lL-IZ-YLy"/>
-                            </connections>
-                        </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBM-UD-w7I">
-                            <rect key="frame" x="155" y="433" width="106" height="30"/>
+                            <rect key="frame" x="22" y="456" width="106" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="이가아프다구요??">
                                 <color key="titleColor" red="0.94510442019999996" green="0.94508665800000002" blue="0.94509869810000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -89,7 +80,7 @@
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wac-eo-iaH">
-                            <rect key="frame" x="309" y="489" width="85" height="32"/>
+                            <rect key="frame" x="22" y="376" width="85" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
                             <state key="normal" title="지역 설정 하기">
@@ -111,6 +102,15 @@ In English..
                             </state>
                             <connections>
                                 <action selector="regReset:" destination="-1" eventType="touchUpInside" id="WTT-4T-D20"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgl-az-ZsD">
+                            <rect key="frame" x="166" y="376" width="83" height="30"/>
+                            <state key="normal" title="부산 병원 API">
+                                <color key="titleColor" red="0.94510442019999996" green="0.94508665800000002" blue="0.94509869810000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="hosTest:" destination="-1" eventType="touchUpInside" id="7lL-IZ-YLy"/>
                             </connections>
                         </button>
                     </subviews>
