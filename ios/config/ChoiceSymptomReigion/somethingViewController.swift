@@ -17,10 +17,10 @@ class somethingViewController: BaseViewController {
     @IBOutlet weak var symptomView: UIView!
     @IBOutlet weak var symptomBTN: UIView!
     @IBOutlet weak var symptomBTNBTM: UIView!
-    @IBOutlet weak var symptomBTS: UIView!
     @IBOutlet weak var whtsYourPlbLabel: UILabel!
     @IBOutlet weak var stackVieww: UIStackView!
-    @IBOutlet weak var lastBtn: UIButton!
+    @IBOutlet weak var puppyView: UIView!
+    @IBOutlet weak var mentalView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,9 +35,9 @@ class somethingViewController: BaseViewController {
         symptomView.isHidden = true
         symptomBTN.layer.cornerRadius = 15
         symptomBTNBTM.layer.cornerRadius = 15
-        symptomBTS.layer.cornerRadius = 15
         stackVieww.layer.cornerRadius = 15
-        lastBtn.layer.cornerRadius = 15
+        puppyView.layer.cornerRadius = 15
+        mentalView.layer.cornerRadius = 15
         // Do any additional setup after loading the view.
     }
     

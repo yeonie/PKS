@@ -17,12 +17,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="somethingViewController" customModule="ios" customModuleProvider="target">
             <connections>
-                <outlet property="lastBtn" destination="Ybk-kZ-sfw" id="KCK-ra-1Ud"/>
+                <outlet property="mentalView" destination="hPa-xd-zvo" id="TFZ-2H-QVd"/>
+                <outlet property="puppyView" destination="Ayh-Np-JYd" id="yas-gT-GAv"/>
                 <outlet property="selectBtn" destination="Ycw-lu-Rrw" id="gDy-gk-Vwf"/>
                 <outlet property="stackVieww" destination="aV3-hw-WSp" id="ZDz-ff-cbf"/>
                 <outlet property="symptomBTN" destination="U1L-zv-dqd" id="38y-Fr-J4T"/>
                 <outlet property="symptomBTNBTM" destination="4UH-U2-TbT" id="C4U-db-5s0"/>
-                <outlet property="symptomBTS" destination="47n-Pj-aGK" id="gc4-pm-xBh"/>
                 <outlet property="symptomView" destination="TtY-75-X6I" id="ocG-9h-ceD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="whtSymptomYouHaveLable" destination="o5N-oL-ygS" id="XsR-tw-Xuz"/>
@@ -38,201 +38,196 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5N-oL-ygS">
-                            <rect key="frame" x="32" y="90" width="350" height="200"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="200" id="aUA-0t-1dh"/>
-                            </constraints>
+                            <rect key="frame" x="32" y="90" width="334" height="179"/>
                             <string key="text">어디가
 불편하세요?</string>
                             <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="51"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TtY-75-X6I">
-                            <rect key="frame" x="40" y="382" width="334" height="387"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TtY-75-X6I">
+                            <rect key="frame" x="40" y="361" width="334" height="350"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aV3-hw-WSp">
-                                    <rect key="frame" x="0.0" y="0.0" width="334" height="389.5"/>
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfG-Ma-Up5">
+                                    <rect key="frame" x="0.0" y="0.0" width="334" height="350"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1L-zv-dqd">
-                                            <rect key="frame" x="0.0" y="0.0" width="334" height="55.5"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="aV3-hw-WSp">
+                                            <rect key="frame" x="0.0" y="0.0" width="334" height="400"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwn-rY-s3x">
-                                                    <rect key="frame" x="0.0" y="0.0" width="334" height="55.5"/>
-                                                    <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
-                                                    <state key="normal" title="발열 ,  마른기침 ,  피로감 (covid19)">
-                                                        <color key="titleColor" red="0.91927325729999998" green="0.59049665929999995" blue="0.4666360021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="covidBtn:" destination="-1" eventType="touchUpInside" id="PsX-u9-IjE"/>
-                                                    </connections>
-                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1L-zv-dqd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="334" height="48.5"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwn-rY-s3x">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="발열 ,  마른기침 ,  피로감 (covid19)">
+                                                                <color key="titleColor" red="0.91927325729999998" green="0.59049665929999995" blue="0.4666360021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="covidBtn:" destination="-1" eventType="touchUpInside" id="PsX-u9-IjE"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vff-k8-Pjq">
+                                                    <rect key="frame" x="0.0" y="50.5" width="334" height="48"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDU-Os-QBk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="타박상 ,  골절 ,  요통">
+                                                                <color key="titleColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="orthopedicsBtn:" destination="-1" eventType="touchUpInside" id="XQ2-mF-FiS"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAW-FV-IlT">
+                                                    <rect key="frame" x="0.0" y="100.5" width="334" height="48.5"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7U-JX-p21">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="목 ,  귀 ,  코 (이비인후과)">
+                                                                <color key="titleColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="otolarngology:" destination="-1" eventType="touchUpInside" id="Xqj-Ng-YHx"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="riL-5v-b7z">
+                                                    <rect key="frame" x="0.0" y="151" width="334" height="48"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pf-j0-hsK">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="치 통">
+                                                                <color key="titleColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="dentistBtn:" destination="-1" eventType="touchUpInside" id="HwY-ap-quJ"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4UH-U2-TbT">
+                                                    <rect key="frame" x="0.0" y="201" width="334" height="48.5"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fj9-l9-ajf">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="피 부">
+                                                                <color key="titleColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="skin:" destination="-1" eventType="touchUpInside" id="cdh-h6-aIY"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ld-Fs-wZy">
+                                                    <rect key="frame" x="0.0" y="251.5" width="334" height="48"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30u-27-Q0o">
+                                                            <rect key="frame" x="0.0" y="8" width="334" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="신 경 계">
+                                                                <color key="titleColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="nervecare:" destination="-1" eventType="touchUpInside" id="ML0-MV-jOz"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPa-xd-zvo">
+                                                    <rect key="frame" x="0.0" y="301.5" width="334" height="48.5"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vze-qx-PqZ">
+                                                            <rect key="frame" x="0.0" y="8" width="334" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="정 신 과">
+                                                                <color key="titleColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="nervecare:" destination="-1" eventType="touchUpInside" id="HaP-tD-aRT"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ayh-Np-JYd">
+                                                    <rect key="frame" x="0.0" y="352" width="334" height="48"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5h-fO-jlL">
+                                                            <rect key="frame" x="0.0" y="8" width="334" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
+                                                            <state key="normal" title="동 물  병 원">
+                                                                <color key="titleColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="nervecare:" destination="-1" eventType="touchUpInside" id="v5M-Qb-Ur3"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="Jwn-rY-s3x" secondAttribute="trailing" id="6Bz-cy-JLW"/>
-                                                <constraint firstItem="Jwn-rY-s3x" firstAttribute="top" secondItem="U1L-zv-dqd" secondAttribute="top" id="NFF-tn-lKy"/>
-                                                <constraint firstAttribute="bottom" secondItem="Jwn-rY-s3x" secondAttribute="bottom" id="QZc-9Y-uDy"/>
-                                                <constraint firstItem="Jwn-rY-s3x" firstAttribute="leading" secondItem="U1L-zv-dqd" secondAttribute="leading" id="Rdu-gf-66J"/>
+                                                <constraint firstItem="riL-5v-b7z" firstAttribute="height" secondItem="TAW-FV-IlT" secondAttribute="height" id="2ee-1m-69A"/>
+                                                <constraint firstItem="U1L-zv-dqd" firstAttribute="height" secondItem="vff-k8-Pjq" secondAttribute="height" id="IVv-KD-cW6"/>
+                                                <constraint firstItem="8Ld-Fs-wZy" firstAttribute="height" secondItem="4UH-U2-TbT" secondAttribute="height" id="Ihm-nS-ylO"/>
+                                                <constraint firstItem="hPa-xd-zvo" firstAttribute="height" secondItem="8Ld-Fs-wZy" secondAttribute="height" id="NgS-wo-c9s"/>
+                                                <constraint firstItem="TAW-FV-IlT" firstAttribute="height" secondItem="vff-k8-Pjq" secondAttribute="height" id="QAK-E7-tl2"/>
+                                                <constraint firstAttribute="height" constant="400" id="Tb5-l3-t3A"/>
+                                                <constraint firstItem="4UH-U2-TbT" firstAttribute="height" secondItem="riL-5v-b7z" secondAttribute="height" id="dDR-gz-4jr"/>
+                                                <constraint firstItem="Ayh-Np-JYd" firstAttribute="height" secondItem="hPa-xd-zvo" secondAttribute="height" id="fLT-iU-aN7"/>
                                             </constraints>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vff-k8-Pjq">
-                                            <rect key="frame" x="0.0" y="55.5" width="334" height="56"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDU-Os-QBk">
-                                                    <rect key="frame" x="0.0" y="0.0" width="334" height="56"/>
-                                                    <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
-                                                    <state key="normal" title="타박상 ,  골절 ,  요통">
-                                                        <color key="titleColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="orthopedicsBtn:" destination="-1" eventType="touchUpInside" id="XQ2-mF-FiS"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstItem="pDU-Os-QBk" firstAttribute="top" secondItem="vff-k8-Pjq" secondAttribute="top" id="42C-pk-wrc"/>
-                                                <constraint firstAttribute="trailing" secondItem="pDU-Os-QBk" secondAttribute="trailing" id="KaC-SP-IAB"/>
-                                                <constraint firstAttribute="bottom" secondItem="pDU-Os-QBk" secondAttribute="bottom" id="aP8-DT-bGW"/>
-                                                <constraint firstItem="pDU-Os-QBk" firstAttribute="leading" secondItem="vff-k8-Pjq" secondAttribute="leading" id="gwa-xu-j4b"/>
-                                            </constraints>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAW-FV-IlT">
-                                            <rect key="frame" x="0.0" y="111.5" width="334" height="55.5"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7U-JX-p21">
-                                                    <rect key="frame" x="0.0" y="0.0" width="334" height="55.5"/>
-                                                    <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
-                                                    <state key="normal" title="목 ,  귀 ,  코 (이비인후과)">
-                                                        <color key="titleColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="otolarngology:" destination="-1" eventType="touchUpInside" id="Xqj-Ng-YHx"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstItem="M7U-JX-p21" firstAttribute="top" secondItem="TAW-FV-IlT" secondAttribute="top" id="FaM-jB-15A"/>
-                                                <constraint firstAttribute="trailing" secondItem="M7U-JX-p21" secondAttribute="trailing" id="TVn-d8-Lax"/>
-                                                <constraint firstItem="M7U-JX-p21" firstAttribute="leading" secondItem="TAW-FV-IlT" secondAttribute="leading" id="Xua-4M-XQZ"/>
-                                                <constraint firstAttribute="bottom" secondItem="M7U-JX-p21" secondAttribute="bottom" id="cmW-sh-RBL"/>
-                                            </constraints>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="riL-5v-b7z">
-                                            <rect key="frame" x="0.0" y="167" width="334" height="55.5"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pf-j0-hsK">
-                                                    <rect key="frame" x="0.0" y="0.0" width="334" height="55.5"/>
-                                                    <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
-                                                    <state key="normal" title="치 통">
-                                                        <color key="titleColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="dentistBtn:" destination="-1" eventType="touchUpInside" id="HwY-ap-quJ"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstItem="3pf-j0-hsK" firstAttribute="top" secondItem="riL-5v-b7z" secondAttribute="top" id="3r3-F7-VXY"/>
-                                                <constraint firstAttribute="bottom" secondItem="3pf-j0-hsK" secondAttribute="bottom" id="IGO-YT-t9M"/>
-                                                <constraint firstAttribute="trailing" secondItem="3pf-j0-hsK" secondAttribute="trailing" id="agm-Zr-jd8"/>
-                                                <constraint firstItem="3pf-j0-hsK" firstAttribute="leading" secondItem="riL-5v-b7z" secondAttribute="leading" id="gph-pM-iiF"/>
-                                            </constraints>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4UH-U2-TbT">
-                                            <rect key="frame" x="0.0" y="222.5" width="334" height="56"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fj9-l9-ajf">
-                                                    <rect key="frame" x="0.0" y="0.0" width="334" height="56"/>
-                                                    <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
-                                                    <state key="normal" title="피 부">
-                                                        <color key="titleColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="skin:" destination="-1" eventType="touchUpInside" id="cdh-h6-aIY"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstItem="fj9-l9-ajf" firstAttribute="leading" secondItem="4UH-U2-TbT" secondAttribute="leading" id="A7Z-oz-IKl"/>
-                                                <constraint firstItem="fj9-l9-ajf" firstAttribute="top" secondItem="4UH-U2-TbT" secondAttribute="top" id="DZU-kK-Mph"/>
-                                                <constraint firstAttribute="bottom" secondItem="fj9-l9-ajf" secondAttribute="bottom" id="ZeW-YY-OdJ"/>
-                                                <constraint firstAttribute="trailing" secondItem="fj9-l9-ajf" secondAttribute="trailing" id="p45-8z-DID"/>
-                                            </constraints>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ld-Fs-wZy">
-                                            <rect key="frame" x="0.0" y="278.5" width="334" height="55.5"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30u-27-Q0o">
-                                                    <rect key="frame" x="0.0" y="8" width="334" height="49.5"/>
-                                                    <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
-                                                    <state key="normal" title="신 경 계">
-                                                        <color key="titleColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="nervecare:" destination="-1" eventType="touchUpInside" id="ML0-MV-jOz"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstItem="30u-27-Q0o" firstAttribute="top" secondItem="8Ld-Fs-wZy" secondAttribute="top" id="0wO-rP-gkf"/>
-                                                <constraint firstAttribute="bottom" secondItem="30u-27-Q0o" secondAttribute="bottom" id="97j-tc-f9g"/>
-                                                <constraint firstAttribute="trailing" secondItem="30u-27-Q0o" secondAttribute="trailing" id="Ara-8u-XoO"/>
-                                                <constraint firstItem="30u-27-Q0o" firstAttribute="leading" secondItem="8Ld-Fs-wZy" secondAttribute="leading" id="pj3-iZ-FB6"/>
-                                            </constraints>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="47n-Pj-aGK">
-                                            <rect key="frame" x="0.0" y="334" width="334" height="55.5"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybk-kZ-sfw">
-                                                    <rect key="frame" x="0.0" y="8" width="334" height="49.5"/>
-                                                    <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="17"/>
-                                                    <state key="normal" title="비뇨기 ,  산부인과">
-                                                        <color key="titleColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="penis:" destination="-1" eventType="touchUpInside" id="oYt-Uf-peH"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="Ybk-kZ-sfw" secondAttribute="bottom" id="DZx-iY-xlX"/>
-                                                <constraint firstItem="Ybk-kZ-sfw" firstAttribute="leading" secondItem="47n-Pj-aGK" secondAttribute="leading" id="Jbv-9l-40T"/>
-                                                <constraint firstAttribute="trailing" secondItem="Ybk-kZ-sfw" secondAttribute="trailing" id="UBV-Lv-Pee"/>
-                                                <constraint firstItem="Ybk-kZ-sfw" firstAttribute="top" secondItem="47n-Pj-aGK" secondAttribute="top" id="u6v-7P-RdD"/>
-                                            </constraints>
-                                        </view>
+                                        </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="47n-Pj-aGK" firstAttribute="height" secondItem="4UH-U2-TbT" secondAttribute="height" id="BJI-pb-NeJ"/>
-                                        <constraint firstItem="4UH-U2-TbT" firstAttribute="height" secondItem="riL-5v-b7z" secondAttribute="height" id="G5V-d4-lIh"/>
-                                        <constraint firstItem="vff-k8-Pjq" firstAttribute="height" secondItem="U1L-zv-dqd" secondAttribute="height" id="Px4-XJ-1dN"/>
-                                        <constraint firstItem="TAW-FV-IlT" firstAttribute="height" secondItem="vff-k8-Pjq" secondAttribute="height" id="SQK-sj-CJA"/>
-                                        <constraint firstItem="U1L-zv-dqd" firstAttribute="height" secondItem="aV3-hw-WSp" secondAttribute="height" multiplier="1:7" id="aYo-PP-h9V"/>
-                                        <constraint firstItem="riL-5v-b7z" firstAttribute="height" secondItem="TAW-FV-IlT" secondAttribute="height" id="dGd-hf-qdB"/>
-                                        <constraint firstItem="8Ld-Fs-wZy" firstAttribute="height" secondItem="U1L-zv-dqd" secondAttribute="height" id="htg-2A-uB9"/>
+                                        <constraint firstItem="aV3-hw-WSp" firstAttribute="leading" secondItem="dfG-Ma-Up5" secondAttribute="leading" id="0sH-mD-ARn"/>
+                                        <constraint firstAttribute="height" constant="350" id="BA3-wn-C0b"/>
+                                        <constraint firstAttribute="trailing" secondItem="aV3-hw-WSp" secondAttribute="trailing" id="HEM-t8-Qss"/>
+                                        <constraint firstItem="aV3-hw-WSp" firstAttribute="top" secondItem="dfG-Ma-Up5" secondAttribute="top" id="LIb-9Y-LBZ"/>
+                                        <constraint firstAttribute="bottom" secondItem="aV3-hw-WSp" secondAttribute="bottom" id="TjS-y8-lQf"/>
+                                        <constraint firstItem="aV3-hw-WSp" firstAttribute="centerX" secondItem="dfG-Ma-Up5" secondAttribute="centerX" id="yp3-RJ-6Jw"/>
                                     </constraints>
-                                </stackView>
+                                </scrollView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="aV3-hw-WSp" secondAttribute="trailing" id="054-1k-XpG"/>
-                                <constraint firstAttribute="bottom" secondItem="aV3-hw-WSp" secondAttribute="bottom" id="6n1-Hl-Srw"/>
-                                <constraint firstItem="aV3-hw-WSp" firstAttribute="leading" secondItem="TtY-75-X6I" secondAttribute="leading" id="HnN-pP-V9J"/>
-                                <constraint firstItem="aV3-hw-WSp" firstAttribute="top" secondItem="TtY-75-X6I" secondAttribute="top" id="eU9-ja-vkL"/>
+                                <constraint firstAttribute="height" constant="350" id="4ut-LT-gmg"/>
+                                <constraint firstItem="dfG-Ma-Up5" firstAttribute="centerX" secondItem="TtY-75-X6I" secondAttribute="centerX" id="4yp-Cq-8ra"/>
+                                <constraint firstItem="dfG-Ma-Up5" firstAttribute="top" secondItem="TtY-75-X6I" secondAttribute="top" id="85w-6J-SRQ"/>
+                                <constraint firstItem="dfG-Ma-Up5" firstAttribute="leading" secondItem="TtY-75-X6I" secondAttribute="leading" id="I8t-LV-kDn"/>
+                                <constraint firstAttribute="bottom" secondItem="dfG-Ma-Up5" secondAttribute="bottom" id="MHB-BQ-g5C"/>
+                                <constraint firstAttribute="trailing" secondItem="dfG-Ma-Up5" secondAttribute="trailing" id="Pze-0d-4q0"/>
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycw-lu-Rrw">
-                            <rect key="frame" x="40" y="342" width="334" height="40"/>
+                            <rect key="frame" x="40" y="321" width="334" height="40"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="40" id="hz1-dn-U0X"/>
+                                <constraint firstAttribute="height" constant="40" id="Zpb-f1-MpD"/>
                             </constraints>
                             <state key="normal">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -241,19 +236,8 @@
                                 <action selector="symptomBtn:" destination="-1" eventType="touchUpInside" id="7Jg-H2-VqV"/>
                             </connections>
                         </button>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectBtn" translatesAutoresizingMaskIntoConstraints="NO" id="LRB-2H-xwu">
-                            <rect key="frame" x="344" y="347" width="30" height="30"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="30" id="3a3-oJ-zRO"/>
-                                <constraint firstAttribute="width" constant="30" id="Zjf-4B-LYq"/>
-                            </constraints>
-                        </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zw-H9-vCk">
-                            <rect key="frame" x="237" y="776.5" width="137" height="60"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="60" id="Clu-VO-DGD"/>
-                                <constraint firstAttribute="width" constant="137" id="O2H-rQ-Unq"/>
-                            </constraints>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zw-H9-vCk">
+                            <rect key="frame" x="237" y="737" width="137" height="60"/>
                             <state key="normal" image="confirmBtnYellow">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -262,10 +246,11 @@
                             </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tg7-pg-HRQ">
-                            <rect key="frame" x="40" y="286" width="95.5" height="40"/>
+                            <rect key="frame" x="40" y="265" width="95.5" height="40"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyo-gi-ZIR">
-                                    <rect key="frame" x="0.0" y="0.0" width="95.5" height="40"/>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyo-gi-ZIR">
+                                    <rect key="frame" x="0.0" y="0.0" width="96" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                     <state key="normal" title="COVID 19">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -276,57 +261,57 @@
                                 </button>
                             </subviews>
                             <color key="backgroundColor" red="0.96614569429999997" green="0.72388029639780438" blue="0.54630944056690256" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <constraints>
-                                <constraint firstItem="lyo-gi-ZIR" firstAttribute="centerY" secondItem="Tg7-pg-HRQ" secondAttribute="centerY" id="BWJ-rb-pQX"/>
-                                <constraint firstItem="lyo-gi-ZIR" firstAttribute="leading" secondItem="Tg7-pg-HRQ" secondAttribute="leading" id="Gi8-pp-H8s"/>
-                                <constraint firstAttribute="trailing" secondItem="lyo-gi-ZIR" secondAttribute="trailing" id="LNA-3O-Kjs"/>
-                                <constraint firstItem="lyo-gi-ZIR" firstAttribute="centerX" secondItem="Tg7-pg-HRQ" secondAttribute="centerX" id="jWT-yu-jZs"/>
-                                <constraint firstItem="lyo-gi-ZIR" firstAttribute="top" secondItem="Tg7-pg-HRQ" secondAttribute="top" id="kgn-QP-1wC"/>
-                                <constraint firstAttribute="bottom" secondItem="lyo-gi-ZIR" secondAttribute="bottom" id="z1B-uD-cAi"/>
-                            </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0f-Vj-RYj">
-                            <rect key="frame" x="40" y="345.5" width="334" height="33"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="33" id="sr8-hB-k66"/>
-                            </constraints>
+                            <rect key="frame" x="40" y="321" width="334" height="40"/>
                             <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="19"/>
                             <color key="textColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectBtn" translatesAutoresizingMaskIntoConstraints="NO" id="LRB-2H-xwu">
+                            <rect key="frame" x="334" y="321" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="LRB-2H-xwu" secondAttribute="height" multiplier="1:1" id="8uJ-YF-bTe"/>
+                            </constraints>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="Ycw-lu-Rrw" secondAttribute="trailing" constant="40" id="0Fu-vG-SRU"/>
-                        <constraint firstItem="TtY-75-X6I" firstAttribute="leading" secondItem="Ycw-lu-Rrw" secondAttribute="leading" id="2Ha-UI-Ece"/>
-                        <constraint firstItem="Ycw-lu-Rrw" firstAttribute="top" secondItem="o5N-oL-ygS" secondAttribute="bottom" constant="52" id="5W0-sn-eaV"/>
-                        <constraint firstItem="Tg7-pg-HRQ" firstAttribute="leading" secondItem="Ycw-lu-Rrw" secondAttribute="leading" id="O7R-Lz-qcb"/>
-                        <constraint firstItem="LRB-2H-xwu" firstAttribute="trailing" secondItem="Ycw-lu-Rrw" secondAttribute="trailing" id="Oxm-jz-1Sd"/>
-                        <constraint firstItem="4Zw-H9-vCk" firstAttribute="top" secondItem="aV3-hw-WSp" secondAttribute="bottom" constant="5" id="PWq-zr-M1f"/>
-                        <constraint firstItem="o5N-oL-ygS" firstAttribute="leading" secondItem="qOq-2j-1Ut" secondAttribute="leading" constant="32" id="TyD-XH-0RF"/>
-                        <constraint firstItem="F0f-Vj-RYj" firstAttribute="width" secondItem="Ycw-lu-Rrw" secondAttribute="width" id="Uum-TL-ujh"/>
-                        <constraint firstItem="Ycw-lu-Rrw" firstAttribute="leading" secondItem="qOq-2j-1Ut" secondAttribute="leading" constant="40" id="VFW-0Z-Vwf"/>
-                        <constraint firstItem="Tg7-pg-HRQ" firstAttribute="height" secondItem="Ycw-lu-Rrw" secondAttribute="height" id="aNz-js-UGe"/>
-                        <constraint firstItem="TtY-75-X6I" firstAttribute="height" secondItem="qOq-2j-1Ut" secondAttribute="height" multiplier="1:2.3" id="cEv-wN-9IR"/>
-                        <constraint firstAttribute="trailing" secondItem="o5N-oL-ygS" secondAttribute="trailing" constant="32" id="ccD-On-1Z1"/>
-                        <constraint firstItem="F0f-Vj-RYj" firstAttribute="centerX" secondItem="Ycw-lu-Rrw" secondAttribute="centerX" id="ctM-xM-6y9"/>
-                        <constraint firstItem="TtY-75-X6I" firstAttribute="trailing" secondItem="Ycw-lu-Rrw" secondAttribute="trailing" id="gkx-qx-zhV"/>
-                        <constraint firstItem="4Zw-H9-vCk" firstAttribute="trailing" secondItem="TtY-75-X6I" secondAttribute="trailing" id="jRr-q8-gHL"/>
-                        <constraint firstItem="LRB-2H-xwu" firstAttribute="centerY" secondItem="Ycw-lu-Rrw" secondAttribute="centerY" id="l2c-c9-CXt"/>
-                        <constraint firstItem="o5N-oL-ygS" firstAttribute="top" secondItem="qOq-2j-1Ut" secondAttribute="top" constant="90" id="ryw-Va-ran"/>
-                        <constraint firstItem="F0f-Vj-RYj" firstAttribute="centerY" secondItem="Ycw-lu-Rrw" secondAttribute="centerY" id="sEb-CL-quK"/>
-                        <constraint firstItem="Ycw-lu-Rrw" firstAttribute="top" secondItem="Tg7-pg-HRQ" secondAttribute="bottom" constant="16" id="sqg-Um-gPJ"/>
-                        <constraint firstItem="TtY-75-X6I" firstAttribute="top" secondItem="Ycw-lu-Rrw" secondAttribute="bottom" id="tik-Y9-1L1"/>
-                        <constraint firstItem="Tg7-pg-HRQ" firstAttribute="width" secondItem="Ycw-lu-Rrw" secondAttribute="width" multiplier="1:3.5" id="uf9-cz-UKN"/>
+                        <constraint firstItem="4Zw-H9-vCk" firstAttribute="top" secondItem="TtY-75-X6I" secondAttribute="bottom" constant="26" id="10F-l7-dqM"/>
+                        <constraint firstItem="F0f-Vj-RYj" firstAttribute="centerY" secondItem="Ycw-lu-Rrw" secondAttribute="centerY" id="4J4-IB-elu"/>
+                        <constraint firstItem="o5N-oL-ygS" firstAttribute="height" secondItem="qOq-2j-1Ut" secondAttribute="height" multiplier="1:5" id="5ao-TH-Oao"/>
+                        <constraint firstItem="Ycw-lu-Rrw" firstAttribute="centerX" secondItem="TtY-75-X6I" secondAttribute="centerX" id="7z5-Pw-Wdk"/>
+                        <constraint firstItem="F0f-Vj-RYj" firstAttribute="width" secondItem="Ycw-lu-Rrw" secondAttribute="width" id="C8v-fj-nxO"/>
+                        <constraint firstItem="Ycw-lu-Rrw" firstAttribute="trailing" secondItem="TtY-75-X6I" secondAttribute="trailing" id="D8I-HL-a7H"/>
+                        <constraint firstItem="4Zw-H9-vCk" firstAttribute="trailing" secondItem="TtY-75-X6I" secondAttribute="trailing" id="Eam-pG-OEY"/>
+                        <constraint firstItem="Tg7-pg-HRQ" firstAttribute="leading" secondItem="Ycw-lu-Rrw" secondAttribute="leading" id="IOu-tv-4hP"/>
+                        <constraint firstItem="4Zw-H9-vCk" firstAttribute="height" secondItem="qOq-2j-1Ut" secondAttribute="height" multiplier="1:14" id="N2D-6c-7hj"/>
+                        <constraint firstItem="4Zw-H9-vCk" firstAttribute="width" secondItem="qOq-2j-1Ut" secondAttribute="width" multiplier="1:3" id="NhG-wu-b8D"/>
+                        <constraint firstItem="o5N-oL-ygS" firstAttribute="width" secondItem="F0f-Vj-RYj" secondAttribute="width" id="PAL-mf-SQX"/>
+                        <constraint firstItem="LRB-2H-xwu" firstAttribute="centerY" secondItem="Ycw-lu-Rrw" secondAttribute="centerY" id="PgV-pS-73X"/>
+                        <constraint firstItem="Tg7-pg-HRQ" firstAttribute="width" secondItem="Ycw-lu-Rrw" secondAttribute="width" multiplier="1:3.5" id="RV5-bj-QPA"/>
+                        <constraint firstItem="Ycw-lu-Rrw" firstAttribute="leading" secondItem="TtY-75-X6I" secondAttribute="leading" id="ToB-sB-W0d"/>
+                        <constraint firstAttribute="trailing" secondItem="Ycw-lu-Rrw" secondAttribute="trailing" constant="40" id="V17-B0-oAI"/>
+                        <constraint firstItem="TtY-75-X6I" firstAttribute="top" secondItem="Ycw-lu-Rrw" secondAttribute="bottom" id="Z55-76-Eoq"/>
+                        <constraint firstItem="Ycw-lu-Rrw" firstAttribute="leading" secondItem="qOq-2j-1Ut" secondAttribute="leading" constant="40" id="be9-4i-BJn"/>
+                        <constraint firstItem="Ycw-lu-Rrw" firstAttribute="top" secondItem="o5N-oL-ygS" secondAttribute="bottom" constant="52" id="elx-oS-Wji"/>
+                        <constraint firstItem="Ycw-lu-Rrw" firstAttribute="top" secondItem="Tg7-pg-HRQ" secondAttribute="bottom" constant="16" id="lNd-XM-mEA"/>
+                        <constraint firstItem="F0f-Vj-RYj" firstAttribute="centerX" secondItem="Ycw-lu-Rrw" secondAttribute="centerX" id="nAo-y3-W4L"/>
+                        <constraint firstItem="F0f-Vj-RYj" firstAttribute="height" secondItem="Ycw-lu-Rrw" secondAttribute="height" id="qiE-1p-iLJ"/>
+                        <constraint firstItem="LRB-2H-xwu" firstAttribute="height" secondItem="Ycw-lu-Rrw" secondAttribute="height" id="rMm-ZX-YVE"/>
+                        <constraint firstItem="Tg7-pg-HRQ" firstAttribute="top" secondItem="o5N-oL-ygS" secondAttribute="bottom" constant="-4" id="snM-8N-lES"/>
+                        <constraint firstItem="o5N-oL-ygS" firstAttribute="leading" secondItem="qOq-2j-1Ut" secondAttribute="leading" constant="32" id="uee-1g-fGx"/>
+                        <constraint firstItem="o5N-oL-ygS" firstAttribute="top" secondItem="qOq-2j-1Ut" secondAttribute="top" constant="90" id="w9z-fK-fdo"/>
+                        <constraint firstItem="LRB-2H-xwu" firstAttribute="trailing" secondItem="Ycw-lu-Rrw" secondAttribute="trailing" id="yu2-Zw-4wy"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="qOq-2j-1Ut" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0Hf-E3-PhA"/>
-                <constraint firstAttribute="bottom" secondItem="qOq-2j-1Ut" secondAttribute="bottom" id="Dmt-xS-3oN"/>
-                <constraint firstItem="qOq-2j-1Ut" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="HDr-l3-b0u"/>
-                <constraint firstItem="qOq-2j-1Ut" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UgH-8r-8Ig"/>
+                <constraint firstItem="qOq-2j-1Ut" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4Z0-Be-he6"/>
+                <constraint firstItem="qOq-2j-1Ut" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5ki-n8-0pZ"/>
+                <constraint firstItem="qOq-2j-1Ut" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="hND-YY-Toy"/>
+                <constraint firstAttribute="bottom" secondItem="qOq-2j-1Ut" secondAttribute="bottom" id="wIU-Xp-l16"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
