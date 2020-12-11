@@ -70,10 +70,10 @@
                             </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CGQ-pk-nrV">
-                            <rect key="frame" x="22" y="506" width="95.5" height="40"/>
+                            <rect key="frame" x="22" y="65" width="83" height="34.5"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awl-hI-gDG">
-                                    <rect key="frame" x="0.0" y="0.0" width="95.5" height="40"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="83" height="34.5"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                     <state key="normal" title="COVID 19">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -82,18 +82,10 @@
                             </subviews>
                             <color key="backgroundColor" red="0.96614569429999997" green="0.72388029639999996" blue="0.54630944059999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="95.5" id="4PI-SQ-FgS"/>
-                                <constraint firstAttribute="trailing" secondItem="Awl-hI-gDG" secondAttribute="trailing" id="4cg-aw-zLP"/>
-                                <constraint firstItem="Awl-hI-gDG" firstAttribute="centerX" secondItem="CGQ-pk-nrV" secondAttribute="centerX" id="5c0-Wm-A3n"/>
-                                <constraint firstItem="Awl-hI-gDG" firstAttribute="centerY" secondItem="CGQ-pk-nrV" secondAttribute="centerY" id="5l8-Ij-QhM"/>
-                                <constraint firstItem="Awl-hI-gDG" firstAttribute="leading" secondItem="CGQ-pk-nrV" secondAttribute="leading" id="C6F-Ma-yBA"/>
-                                <constraint firstItem="Awl-hI-gDG" firstAttribute="leading" secondItem="CGQ-pk-nrV" secondAttribute="leading" id="INa-yn-aPt"/>
-                                <constraint firstItem="Awl-hI-gDG" firstAttribute="top" secondItem="CGQ-pk-nrV" secondAttribute="top" id="OqG-nu-lDy"/>
-                                <constraint firstAttribute="bottom" secondItem="Awl-hI-gDG" secondAttribute="bottom" id="P3t-yH-zJC"/>
-                                <constraint firstItem="Awl-hI-gDG" firstAttribute="top" secondItem="CGQ-pk-nrV" secondAttribute="top" id="RP3-iG-W4u"/>
-                                <constraint firstAttribute="height" constant="40" id="T5L-dE-rak"/>
-                                <constraint firstAttribute="bottom" secondItem="Awl-hI-gDG" secondAttribute="bottom" id="YOA-H5-Ovq"/>
-                                <constraint firstAttribute="trailing" secondItem="Awl-hI-gDG" secondAttribute="trailing" id="jWB-qW-HUN"/>
+                                <constraint firstItem="Awl-hI-gDG" firstAttribute="height" secondItem="CGQ-pk-nrV" secondAttribute="height" id="Wq2-Oc-e9G"/>
+                                <constraint firstItem="Awl-hI-gDG" firstAttribute="centerY" secondItem="CGQ-pk-nrV" secondAttribute="centerY" id="an1-p5-48l"/>
+                                <constraint firstItem="Awl-hI-gDG" firstAttribute="centerX" secondItem="CGQ-pk-nrV" secondAttribute="centerX" id="jcL-g6-MM5"/>
+                                <constraint firstItem="Awl-hI-gDG" firstAttribute="width" secondItem="CGQ-pk-nrV" secondAttribute="width" id="mHY-S2-qFf"/>
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wac-eo-iaH">
@@ -107,16 +99,36 @@
                                 <action selector="regReset:" destination="-1" eventType="touchUpInside" id="daA-9s-FLo"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="W3J-bQ-tUm">
+                            <rect key="frame" x="22" y="134" width="165.5" height="103.5"/>
+                            <fontDescription key="fontDescription" name="TTRunGothic" family="TTRunGothic" pointSize="27"/>
+                            <state key="normal">
+                                <string key="title">&lt;&lt; last hospital 
+Position
+In English..
+</string>
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="regReset:" destination="-1" eventType="touchUpInside" id="WTT-4T-D20"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="CGQ-pk-nrV" secondAttribute="bottom" constant="350" id="4w0-f3-sDY"/>
+                        <constraint firstItem="W3J-bQ-tUm" firstAttribute="height" secondItem="Awl-hI-gDG" secondAttribute="height" multiplier="3:1" id="67j-dj-xxC"/>
                         <constraint firstItem="nEe-A0-zKA" firstAttribute="leading" secondItem="OIS-RN-6sZ" secondAttribute="leading" constant="22" id="EbY-14-lw1"/>
                         <constraint firstItem="tO1-qd-jLp" firstAttribute="top" secondItem="nEe-A0-zKA" secondAttribute="bottom" constant="197" id="FLS-cP-Ta5"/>
+                        <constraint firstItem="W3J-bQ-tUm" firstAttribute="width" secondItem="Awl-hI-gDG" secondAttribute="width" multiplier="2:1" id="FwL-Vy-F2g"/>
+                        <constraint firstItem="CGQ-pk-nrV" firstAttribute="top" secondItem="OIS-RN-6sZ" secondAttribute="top" constant="65" id="GWD-dH-r0q"/>
+                        <constraint firstItem="CGQ-pk-nrV" firstAttribute="width" secondItem="OIS-RN-6sZ" secondAttribute="width" multiplier="1:5" id="Nzf-Yo-bTT"/>
+                        <constraint firstItem="CGQ-pk-nrV" firstAttribute="height" secondItem="OIS-RN-6sZ" secondAttribute="height" multiplier="1:26" id="QIf-B6-OcL"/>
                         <constraint firstItem="tO1-qd-jLp" firstAttribute="centerX" secondItem="OIS-RN-6sZ" secondAttribute="centerX" id="Saw-2Q-W4T"/>
                         <constraint firstAttribute="trailing" secondItem="jgl-az-ZsD" secondAttribute="trailing" constant="22" id="Shg-Y5-pLz"/>
                         <constraint firstItem="ljM-o9-nC6" firstAttribute="top" secondItem="tO1-qd-jLp" secondAttribute="bottom" constant="18" id="VAa-9Z-hHc"/>
+                        <constraint firstItem="W3J-bQ-tUm" firstAttribute="leading" secondItem="Awl-hI-gDG" secondAttribute="leading" id="W14-ij-06p"/>
                         <constraint firstItem="ljM-o9-nC6" firstAttribute="centerX" secondItem="OIS-RN-6sZ" secondAttribute="centerX" id="XY0-lz-WUb"/>
+                        <constraint firstItem="W3J-bQ-tUm" firstAttribute="top" secondItem="CGQ-pk-nrV" secondAttribute="bottom" constant="34.5" id="Xni-Yb-ltX"/>
                         <constraint firstItem="tO1-qd-jLp" firstAttribute="top" secondItem="jgl-az-ZsD" secondAttribute="bottom" constant="197" id="hRE-tP-F9R"/>
                         <constraint firstItem="tO1-qd-jLp" firstAttribute="top" secondItem="OIS-RN-6sZ" secondAttribute="top" constant="660" id="lI7-nm-L5t"/>
                         <constraint firstItem="CGQ-pk-nrV" firstAttribute="leading" secondItem="OIS-RN-6sZ" secondAttribute="leading" constant="22" id="msf-Q2-DY7"/>
