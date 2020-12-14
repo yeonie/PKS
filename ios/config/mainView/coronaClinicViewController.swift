@@ -19,9 +19,14 @@ class coronaClinicViewController: BaseViewController, CLLocationManagerDelegate 
     var latitude : Double = 0.0
     var longitude : Double = 0.0
     
-    var latitude1 : String!
-    var longitude1 : String!
+    var temp_lat1 : String!
+    var temp_long1 : String!
     
+    var temp_lat2 : String!
+    var temp_long2 : String!
+    
+    var temp_lat3 : String!
+    var temp_long3 : String!
     
 //    distance(start_x: latitude!, start_y: longitude!, end_x: latitude1, end_y: longitude1)
     
@@ -41,7 +46,7 @@ class coronaClinicViewController: BaseViewController, CLLocationManagerDelegate 
     
     
 
-    let CoronaHospitalURL = "https://openapi.gg.go.kr/EmgMedInfo?KEY=005d50ab8c3c40f3866b4ffd93756f0e&pIndex=10&pSize=3"
+    let CoronaHospitalURL = "https://openapi.gg.go.kr/EmgMedInfo?KEY=005d50ab8c3c40f3866b4ffd93756f0e&pIndex=1&pSize=3"
     let serviceKey = "005d50ab8c3c40f3866b4ffd93756f0e"
     let pIndex = "10"
     let pSize = "1"
@@ -80,6 +85,7 @@ class coronaClinicViewController: BaseViewController, CLLocationManagerDelegate 
         print(distance)
     }
     
+//      좌표 비교 최대, 최소
     func consecutive(a: Double, b: Double, c: Double){
         var max : Double
         var min : Double
@@ -140,39 +146,74 @@ class coronaClinicViewController: BaseViewController, CLLocationManagerDelegate 
                         let responseString = NSString(data: response.data!, encoding:
                             String.Encoding.utf8.rawValue )
                         let xml = try! XML.parse(String(responseString!))
-                        for element in xml["EmgMedInfo"]["row"] {
+                        
+                        
+                        
+                        for element in xml["EmgMedInfo"]["row"][0] {
                             if let MEDCARE_INST_NM = element["MEDCARE_INST_NM"].text,
                                 let DISTRCT_DIV_NM = element["DISTRCT_DIV_NM"].text,
                                 let REFINE_ROADNM_ADDR = element["REFINE_ROADNM_ADDR"].text,
                                 let REFINE_WGS84_LAT = element["REFINE_WGS84_LAT"].text,
                                 let REFINE_WGS84_LOGT = element["REFINE_WGS84_LOGT"].text{
-                                print("REFINE_WGS84_LAT = \(REFINE_WGS84_LAT)")
-                                print("REFINE_WGS84_LOGT = \(REFINE_WGS84_LOGT)")
-                                self.latitude1 = "\(REFINE_WGS84_LAT)"
-                                self.longitude1 = "\(REFINE_WGS84_LOGT)"
+                                self.temp_lat1 = "\(REFINE_WGS84_LAT)"
+                                self.temp_long1 = "\(REFINE_WGS84_LOGT)"
                                 print("MEDCARE_INST_NM = \(MEDCARE_INST_NM)")
                                 print("DISTRCT_DIV_NM = \(DISTRCT_DIV_NM)")
                                 print("REFINE_ROADNM_ADDR = \(REFINE_ROADNM_ADDR)")
+                                print("REFINE_WGS84_LAT = \(REFINE_WGS84_LAT)")
+                                print("REFINE_WGS84_LOGT = \(REFINE_WGS84_LOGT)")
+
+                                
+                                
                                 self.hospitalNM.text = "\(MEDCARE_INST_NM)"
                                 self.medType.text = "\(DISTRCT_DIV_NM)"
                                 self.medReg.text = "\(REFINE_ROADNM_ADDR)"
-//                                print(self.latitude1)
-//                                print(self.longitude1)
+                                
                             }
-//                            if let MEDCARE_INST_NM2 = element["MEDCARE_INST_NM"].text,
-//                                let DISTRCT_DIV_NM2 = element["DISTRCT_DIV_NM"].text,
-//                                let REFINE_ROADNM_ADDR2 = element["REFINE_ROADNM_ADDR"].text {
-//                                self.hospitalNM2.text = "\(MEDCARE_INST_NM2)"
-//                                self.medType2.text = "\(DISTRCT_DIV_NM2)"
-//                                self.medReg2.text = "\(REFINE_ROADNM_ADDR2)"
-//                            }
-//                            if let MEDCARE_INST_NM3 = element["MEDCARE_INST_NM"].text,
-//                                let DISTRCT_DIV_NM3 = element["DISTRCT_DIV_NM"].text,
-//                                let REFINE_ROADNM_ADDR3 = element["REFINE_ROADNM_ADDR"].text {
-//                                self.hospitalNM3.text = "\(MEDCARE_INST_NM3)"
-//                                self.medType3.text = "\(DISTRCT_DIV_NM3)"
-//                                self.medReg3.text = "\(REFINE_ROADNM_ADDR3)"
-//                            }
+                        }
+                        for element in xml["EmgMedInfo"]["row"][1] {
+                            if let MEDCARE_INST_NM = element["MEDCARE_INST_NM"].text,
+                                let DISTRCT_DIV_NM = element["DISTRCT_DIV_NM"].text,
+                                let REFINE_ROADNM_ADDR = element["REFINE_ROADNM_ADDR"].text,
+                                let REFINE_WGS84_LAT = element["REFINE_WGS84_LAT"].text,
+                                let REFINE_WGS84_LOGT = element["REFINE_WGS84_LOGT"].text{
+                                self.temp_lat2 = "\(REFINE_WGS84_LAT)"
+                                self.temp_long2 = "\(REFINE_WGS84_LOGT)"
+                                print("MEDCARE_INST_NM = \(MEDCARE_INST_NM)")
+                                print("DISTRCT_DIV_NM = \(DISTRCT_DIV_NM)")
+                                print("REFINE_ROADNM_ADDR = \(REFINE_ROADNM_ADDR)")
+                                print("REFINE_WGS84_LAT = \(REFINE_WGS84_LAT)")
+                                print("REFINE_WGS84_LOGT = \(REFINE_WGS84_LOGT)")
+                                
+                                
+                                
+                                self.hospitalNM2.text = "\(MEDCARE_INST_NM)"
+                                self.medType2.text = "\(DISTRCT_DIV_NM)"
+                                self.medReg2.text = "\(REFINE_ROADNM_ADDR)"
+                                
+                            }
+                        }
+                        for element in xml["EmgMedInfo"]["row"][2] {
+                            if let MEDCARE_INST_NM = element["MEDCARE_INST_NM"].text,
+                                let DISTRCT_DIV_NM = element["DISTRCT_DIV_NM"].text,
+                                let REFINE_ROADNM_ADDR = element["REFINE_ROADNM_ADDR"].text,
+                                let REFINE_WGS84_LAT = element["REFINE_WGS84_LAT"].text,
+                                let REFINE_WGS84_LOGT = element["REFINE_WGS84_LOGT"].text{
+                                self.temp_lat3 = "\(REFINE_WGS84_LAT)"
+                                self.temp_long3 = "\(REFINE_WGS84_LOGT)"
+                                print("MEDCARE_INST_NM = \(MEDCARE_INST_NM)")
+                                print("DISTRCT_DIV_NM = \(DISTRCT_DIV_NM)")
+                                print("REFINE_ROADNM_ADDR = \(REFINE_ROADNM_ADDR)")
+                                print("REFINE_WGS84_LAT = \(REFINE_WGS84_LAT)")
+                                print("REFINE_WGS84_LOGT = \(REFINE_WGS84_LOGT)")
+                                
+                                
+                                
+                                self.hospitalNM3.text = "\(MEDCARE_INST_NM)"
+                                self.medType3.text = "\(DISTRCT_DIV_NM)"
+                                self.medReg3.text = "\(REFINE_ROADNM_ADDR)"
+                                
+                            }
                         }
                     }
                     
@@ -183,7 +224,7 @@ class coronaClinicViewController: BaseViewController, CLLocationManagerDelegate 
         }
         
     }
-    //    let responseString = NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue )
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
