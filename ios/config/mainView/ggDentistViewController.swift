@@ -78,7 +78,8 @@ class ggDentistViewController: BaseViewController {
         
         // Amazon Cognito 인증 공급자를 초기화합니다
         
-        let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.APNortheast2, identityPoolId:"ap-northeast-2:b3173e00-d7d4-492a-9881-21501356b5ad")
+        let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.APNortheast2, identityPoolId:"ap-northeast-2:256b561d-6244-46c4-ac9a-54473e548c61")
+        
         
         let configuration = AWSServiceConfiguration(region:.APNortheast2, credentialsProvider:credentialsProvider)
         
