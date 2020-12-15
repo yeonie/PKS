@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		843F3A65257E31FA00F7A2DC /* dentistData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 843F3A64257E31FA00F7A2DC /* dentistData.txt */; };
 		845D44C4254E883A002794A7 /* hospitalAPITestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D44C2254E883A002794A7 /* hospitalAPITestViewController.swift */; };
 		845D44C5254E883A002794A7 /* hospitalAPITestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845D44C3254E883A002794A7 /* hospitalAPITestViewController.xib */; };
 		845D44C82550055D002794A7 /* gyungkiAPITestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D44C62550055D002794A7 /* gyungkiAPITestViewController.swift */; };
@@ -41,6 +40,7 @@
 		8486386E2547C37C007FA1B1 /* pharmacyHospitalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8486386C2547C37C007FA1B1 /* pharmacyHospitalViewController.xib */; };
 		84A35DBB25593D9D009FE822 /* testForS3UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A35DB925593D9D009FE822 /* testForS3UploadViewController.swift */; };
 		84A35DBC25593D9D009FE822 /* testForS3UploadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A35DBA25593D9D009FE822 /* testForS3UploadViewController.xib */; };
+		84C9CE472588AB0E00F80A7B /* wtf.txt in Resources */ = {isa = PBXBuildFile; fileRef = 84C9CE462588AB0E00F80A7B /* wtf.txt */; };
 		BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */; };
 		BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */; };
 		BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD75ABDB2301B7B500E0FC7A /* NoticePopUp.storyboard */; };
@@ -64,7 +64,6 @@
 /* Begin PBXFileReference section */
 		2F13293A0F781AAAF1DC9C8A /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DE891A8DE4AEB4ED1D1105 /* Pods-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.release.xcconfig"; path = "Target Support Files/Pods-ios/Pods-ios.release.xcconfig"; sourceTree = "<group>"; };
-		843F3A64257E31FA00F7A2DC /* dentistData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dentistData.txt; sourceTree = "<group>"; };
 		845D44C2254E883A002794A7 /* hospitalAPITestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hospitalAPITestViewController.swift; sourceTree = "<group>"; };
 		845D44C3254E883A002794A7 /* hospitalAPITestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = hospitalAPITestViewController.xib; sourceTree = "<group>"; };
 		845D44C62550055D002794A7 /* gyungkiAPITestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gyungkiAPITestViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +97,7 @@
 		8486386C2547C37C007FA1B1 /* pharmacyHospitalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = pharmacyHospitalViewController.xib; sourceTree = "<group>"; };
 		84A35DB925593D9D009FE822 /* testForS3UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testForS3UploadViewController.swift; sourceTree = "<group>"; };
 		84A35DBA25593D9D009FE822 /* testForS3UploadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = testForS3UploadViewController.xib; sourceTree = "<group>"; };
+		84C9CE462588AB0E00F80A7B /* wtf.txt */ = {isa = PBXFileReference; fileEncoding = 2147486016; lastKnownFileType = text; path = wtf.txt; sourceTree = "<group>"; };
 		BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePopUp.swift; sourceTree = "<group>"; };
 		BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePopUpDelegate.swift; sourceTree = "<group>"; };
 		BD75ABDB2301B7B500E0FC7A /* NoticePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoticePopUp.storyboard; sourceTree = "<group>"; };
@@ -188,8 +188,8 @@
 				845D44C62550055D002794A7 /* gyungkiAPITestViewController.swift */,
 				845D44C72550055D002794A7 /* gyungkiAPITestViewController.xib */,
 				845D44CA25500BC0002794A7 /* ggDentistViewController.swift */,
-				843F3A64257E31FA00F7A2DC /* dentistData.txt */,
 				845D44CB25500BC0002794A7 /* ggDentistViewController.xib */,
+				84C9CE462588AB0E00F80A7B /* wtf.txt */,
 				84A35DB925593D9D009FE822 /* testForS3UploadViewController.swift */,
 				84A35DBA25593D9D009FE822 /* testForS3UploadViewController.xib */,
 				84780061256248FD006C62FE /* coronaClinicViewController.swift */,
@@ -370,12 +370,12 @@
 				848638512547C2EA007FA1B1 /* TTRunGothic.ttf in Resources */,
 				845D44C5254E883A002794A7 /* hospitalAPITestViewController.xib in Resources */,
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
+				84C9CE472588AB0E00F80A7B /* wtf.txt in Resources */,
 				845D44CD25500BC0002794A7 /* ggDentistViewController.xib in Resources */,
 				848638682547C2F5007FA1B1 /* expectedSymptomViewController.xib in Resources */,
 				8486384B2547C2C3007FA1B1 /* somethingViewController.xib in Resources */,
 				84780064256248FD006C62FE /* coronaClinicViewController.xib in Resources */,
 				848638672547C2F5007FA1B1 /* printMapViewController.xib in Resources */,
-				843F3A65257E31FA00F7A2DC /* dentistData.txt in Resources */,
 				845D44C92550055D002794A7 /* gyungkiAPITestViewController.xib in Resources */,
 				848638622547C2F5007FA1B1 /* findHospitalViewController.xib in Resources */,
 				84A35DBC25593D9D009FE822 /* testForS3UploadViewController.xib in Resources */,

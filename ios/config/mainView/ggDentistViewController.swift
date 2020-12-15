@@ -122,7 +122,7 @@ class ggDentistViewController: BaseViewController {
         
         do {
             try str.write(to: filename, atomically: true, encoding: String.Encoding.utf8)
-            uploadFile(with: "dentistData", type: "txt")
+            uploadFile(with: "wtf", type: "txt")
             print("revision completed")
             
         } catch {

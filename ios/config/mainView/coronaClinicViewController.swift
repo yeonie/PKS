@@ -28,6 +28,12 @@ class coronaClinicViewController: BaseViewController, CLLocationManagerDelegate 
     var temp_lat3 : String!
     var temp_long3 : String!
     
+    var distanceTemp : Double!
+    
+    var dis1 : Double!
+    var dis2 : Double!
+    var dis3 : Double!
+    
 //    distance(start_x: latitude!, start_y: longitude!, end_x: latitude1, end_y: longitude1)
     
     
@@ -72,17 +78,17 @@ class coronaClinicViewController: BaseViewController, CLLocationManagerDelegate 
     }
     
 //    두 좌표간 거리
-    func distance(start_x: Double, start_y: Double, end_x: String, end_y: String){
+    func distance(start_x: String, start_y: String, end_x: String, end_y: String){
         
-        let a = Double(start_x)
-        let b = Double(end_x)
+        let a = Double(start_x)!
+        let b = Double(end_x)!
         
-        let c = Double(start_y)
+        let c = Double(start_y)!
         let d = Double(end_y)!
         
-        let distance = sqrt(pow((b!-a), 2) + pow((d-c),2))
+        var distance = sqrt(pow((b-a), 2) + pow((d-c),2))
         
-        print(distance)
+        distanceTemp = distance
     }
     
 //      좌표 비교 최대, 최소
@@ -215,6 +221,9 @@ class coronaClinicViewController: BaseViewController, CLLocationManagerDelegate 
                                 
                             }
                         }
+                        
+//                        distance(start_x: temp_lat1, start_y: temp_long1, end_x: latitude, end_y: longitude)
+                        
                     }
                     
 //                case .failure:
@@ -255,7 +264,7 @@ class coronaClinicViewController: BaseViewController, CLLocationManagerDelegate 
 
 
         getHospitalData(SIGUN_NM: "여주시", SIGUN_CD: "")
-        getHospitalData(SIGUN_NM: "고양시", SIGUN_CD: "")
+//        getHospitalData(SIGUN_NM: "고양시", SIGUN_CD: "")
 //        getHospitalData(SIGUN_NM: "여주시", SIGUN_CD: "")
         
     }
