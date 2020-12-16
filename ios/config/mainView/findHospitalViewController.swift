@@ -23,7 +23,7 @@ class findHospitalViewController: BaseViewController {
         
         
 //        for S3
-        let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.APNortheast2, identityPoolId:"ap-northeast-2:b3173e00-d7d4-492a-9881-21501356b5ad")
+        let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.APNortheast2, identityPoolId:"ap-northeast-2:7f72781f-e4ef-4d31-85f2-4caa2e9bbaf6")
         
         
         let configuration = AWSServiceConfiguration(region:.APNortheast2, credentialsProvider:credentialsProvider)
@@ -87,12 +87,12 @@ class findHospitalViewController: BaseViewController {
     @IBAction func s3UpldatedTranslationBtnPressed(_ sender: UIButton) {
         
         let str = "Super long string here"
-        let filename = getDocumentsDirectory().appendingPathComponent("ReadMe.txt")
+        let filename = getDocumentsDirectory().appendingPathComponent("somthin.txt")
         //        /Users/li_tong/Desktop/PKSgit/ios/tapbar/ReadMe.txt
         
         do {
             try str.write(to: filename, atomically: true, encoding: String.Encoding.utf8)
-            uploadFile(with: "wtf", type: "txt")
+            uploadFile(with: "somthin", type: "txt")
             print("revision completed")
             
         } catch {

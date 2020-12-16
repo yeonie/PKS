@@ -86,8 +86,9 @@ class coronaClinicViewController: BaseViewController, CLLocationManagerDelegate 
         let c = Double(start_y)!
         let d = Double(end_y)!
         
-        var distance = sqrt(pow((b-a), 2) + pow((d-c),2))
+        let distance = sqrt(pow((b-a), 2) + pow((d-c),2))
         
+        print(distance)
         distanceTemp = distance
     }
     

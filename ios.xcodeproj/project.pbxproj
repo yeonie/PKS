@@ -40,7 +40,7 @@
 		8486386E2547C37C007FA1B1 /* pharmacyHospitalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8486386C2547C37C007FA1B1 /* pharmacyHospitalViewController.xib */; };
 		84A35DBB25593D9D009FE822 /* testForS3UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A35DB925593D9D009FE822 /* testForS3UploadViewController.swift */; };
 		84A35DBC25593D9D009FE822 /* testForS3UploadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A35DBA25593D9D009FE822 /* testForS3UploadViewController.xib */; };
-		84C9CE472588AB0E00F80A7B /* wtf.txt in Resources */ = {isa = PBXBuildFile; fileRef = 84C9CE462588AB0E00F80A7B /* wtf.txt */; };
+		84C9CE492588D4AE00F80A7B /* somthin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 84C9CE482588D4AE00F80A7B /* somthin.txt */; };
 		BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */; };
 		BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */; };
 		BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD75ABDB2301B7B500E0FC7A /* NoticePopUp.storyboard */; };
@@ -97,7 +97,7 @@
 		8486386C2547C37C007FA1B1 /* pharmacyHospitalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = pharmacyHospitalViewController.xib; sourceTree = "<group>"; };
 		84A35DB925593D9D009FE822 /* testForS3UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testForS3UploadViewController.swift; sourceTree = "<group>"; };
 		84A35DBA25593D9D009FE822 /* testForS3UploadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = testForS3UploadViewController.xib; sourceTree = "<group>"; };
-		84C9CE462588AB0E00F80A7B /* wtf.txt */ = {isa = PBXFileReference; fileEncoding = 2147486016; lastKnownFileType = text; path = wtf.txt; sourceTree = "<group>"; };
+		84C9CE482588D4AE00F80A7B /* somthin.txt */ = {isa = PBXFileReference; fileEncoding = 2147486016; lastKnownFileType = text; path = somthin.txt; sourceTree = "<group>"; };
 		BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePopUp.swift; sourceTree = "<group>"; };
 		BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePopUpDelegate.swift; sourceTree = "<group>"; };
 		BD75ABDB2301B7B500E0FC7A /* NoticePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoticePopUp.storyboard; sourceTree = "<group>"; };
@@ -189,7 +189,7 @@
 				845D44C72550055D002794A7 /* gyungkiAPITestViewController.xib */,
 				845D44CA25500BC0002794A7 /* ggDentistViewController.swift */,
 				845D44CB25500BC0002794A7 /* ggDentistViewController.xib */,
-				84C9CE462588AB0E00F80A7B /* wtf.txt */,
+				84C9CE482588D4AE00F80A7B /* somthin.txt */,
 				84A35DB925593D9D009FE822 /* testForS3UploadViewController.swift */,
 				84A35DBA25593D9D009FE822 /* testForS3UploadViewController.xib */,
 				84780061256248FD006C62FE /* coronaClinicViewController.swift */,
@@ -370,11 +370,11 @@
 				848638512547C2EA007FA1B1 /* TTRunGothic.ttf in Resources */,
 				845D44C5254E883A002794A7 /* hospitalAPITestViewController.xib in Resources */,
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
-				84C9CE472588AB0E00F80A7B /* wtf.txt in Resources */,
 				845D44CD25500BC0002794A7 /* ggDentistViewController.xib in Resources */,
 				848638682547C2F5007FA1B1 /* expectedSymptomViewController.xib in Resources */,
 				8486384B2547C2C3007FA1B1 /* somethingViewController.xib in Resources */,
 				84780064256248FD006C62FE /* coronaClinicViewController.xib in Resources */,
+				84C9CE492588D4AE00F80A7B /* somthin.txt in Resources */,
 				848638672547C2F5007FA1B1 /* printMapViewController.xib in Resources */,
 				845D44C92550055D002794A7 /* gyungkiAPITestViewController.xib in Resources */,
 				848638622547C2F5007FA1B1 /* findHospitalViewController.xib in Resources */,
@@ -615,7 +615,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.softsquared.template.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.litong.template.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -635,7 +635,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.softsquared.template.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.litong.template.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

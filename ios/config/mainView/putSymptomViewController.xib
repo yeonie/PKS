@@ -17,6 +17,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="putSymptomViewController" customModule="ios" customModuleProvider="target">
             <connections>
+                <outlet property="hospitalNM" destination="goj-KG-YZg" id="dXg-vs-lPi"/>
+                <outlet property="hospitalNM2" destination="1zQ-E9-cy2" id="pyX-kx-5nN"/>
+                <outlet property="hospitalNM3" destination="XYw-9u-G3I" id="eLp-cl-Fjy"/>
+                <outlet property="medReg" destination="NgG-im-PwA" id="BM8-uv-aXs"/>
+                <outlet property="medReg2" destination="LDp-kL-sc0" id="tcV-ZD-xAe"/>
+                <outlet property="medReg3" destination="jcy-NL-UlZ" id="xVX-YT-Upi"/>
+                <outlet property="medType" destination="01D-Ye-N6n" id="DUv-p0-mt9"/>
+                <outlet property="medType2" destination="01D-Ye-N6n" id="7vQ-av-nl1"/>
+                <outlet property="medType3" destination="yaW-wn-0fi" id="dgt-pw-jjW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -128,7 +137,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="region" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDp-kL-sc0">
-                                    <rect key="frame" x="79" y="322" width="42.5" height="42"/>
+                                    <rect key="frame" x="79" y="322" width="287" height="42"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="42" id="oGb-Rl-TZt"/>
                                     </constraints>
@@ -170,7 +179,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="region" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcy-NL-UlZ">
-                                    <rect key="frame" x="79" y="491" width="42.5" height="42"/>
+                                    <rect key="frame" x="79" y="491" width="287" height="42"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="42" id="0ZH-Qk-v7c"/>
                                     </constraints>
@@ -183,6 +192,7 @@
                             <constraints>
                                 <constraint firstItem="XYw-9u-G3I" firstAttribute="leading" secondItem="GX6-4X-8o6" secondAttribute="trailing" constant="8" id="0BE-fe-TKE"/>
                                 <constraint firstItem="LDp-kL-sc0" firstAttribute="top" secondItem="s8M-bd-GIC" secondAttribute="top" id="1l3-Jl-uNl"/>
+                                <constraint firstAttribute="trailing" secondItem="jcy-NL-UlZ" secondAttribute="trailing" constant="8" id="4Ta-1c-QMW"/>
                                 <constraint firstItem="LDp-kL-sc0" firstAttribute="leading" secondItem="s8M-bd-GIC" secondAttribute="trailing" constant="7" id="6fX-mP-gTS"/>
                                 <constraint firstItem="SAr-af-lDs" firstAttribute="leading" secondItem="uRa-yj-bX9" secondAttribute="leading" id="GCw-Y7-WEq"/>
                                 <constraint firstItem="uRa-yj-bX9" firstAttribute="leading" secondItem="LXl-zI-6h4" secondAttribute="leading" id="Gw9-He-xHy"/>
@@ -218,6 +228,7 @@
                                 <constraint firstItem="f7W-nJ-OvR" firstAttribute="leading" secondItem="AJU-ZA-OhL" secondAttribute="trailing" constant="7" id="ovo-xE-nhU"/>
                                 <constraint firstItem="GX6-4X-8o6" firstAttribute="top" secondItem="s8M-bd-GIC" secondAttribute="bottom" constant="60" id="p3l-RT-IYh"/>
                                 <constraint firstItem="yaW-wn-0fi" firstAttribute="leading" secondItem="Jez-lf-8bu" secondAttribute="trailing" constant="7" id="r16-8e-Qlc"/>
+                                <constraint firstAttribute="trailing" secondItem="LDp-kL-sc0" secondAttribute="trailing" constant="8" id="t6l-4S-ZY8"/>
                                 <constraint firstItem="uRa-yj-bX9" firstAttribute="top" secondItem="LXl-zI-6h4" secondAttribute="bottom" constant="26" id="tso-KT-yhG"/>
                                 <constraint firstItem="Jez-lf-8bu" firstAttribute="leading" secondItem="GX6-4X-8o6" secondAttribute="leading" id="zP9-Of-rMR"/>
                             </constraints>

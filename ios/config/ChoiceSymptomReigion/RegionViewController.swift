@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import CoreLocation
 
-class RegionViewController: BaseViewController {
+class RegionViewController: BaseViewController, CLLocationManagerDelegate {
+    
+    var locationManager:CLLocationManager!
 
     var select = false
     
@@ -91,6 +94,20 @@ class RegionViewController: BaseViewController {
         // Do any additional setup after loading the view.
         
 //        위치 테스트
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        //        포그라운드 위치 추적 권한 요청
+        locationManager.requestWhenInUseAuthorization()
+        //        배터리에 맞기 권장되는 최적의 정확도
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        //        위치 업데이트
+        locationManager.startUpdatingLocation()
+
+        //        위경도 가져오기
+        let coor = locationManager.location?.coordinate
+        let latitude = coor?.latitude
+        let longitude = coor?.longitude
+
         
     }
     

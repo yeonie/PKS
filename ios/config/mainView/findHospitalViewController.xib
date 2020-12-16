@@ -84,15 +84,6 @@
                                 <action selector="s3UpldatedTranslationBtnPressed:" destination="-1" eventType="touchUpInside" id="TJU-kn-vct"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBM-UD-w7I">
-                            <rect key="frame" x="8" y="716" width="163" height="30"/>
-                            <state key="normal" title="aws S3 Upload Test Btn">
-                                <color key="titleColor" red="0.94510442019999996" green="0.94508665800000002" blue="0.94509869810000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </state>
-                            <connections>
-                                <action selector="gyungkiAPI:" destination="-1" eventType="touchUpInside" id="qXJ-QY-vdL"/>
-                            </connections>
-                        </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJs-ju-0xZ">
                             <rect key="frame" x="20" y="246" width="374" height="388"/>
                             <subviews>
@@ -229,6 +220,22 @@
                                 <constraint firstAttribute="height" constant="0.5" id="s9H-Sb-EQB"/>
                             </constraints>
                         </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9xz-kB-j53">
+                            <rect key="frame" x="8" y="642" width="398" height="0.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="sbJ-1L-UJb"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBM-UD-w7I">
+                            <rect key="frame" x="8" y="824" width="163" height="30"/>
+                            <state key="normal" title="aws S3 Upload Test Btn">
+                                <color key="titleColor" red="0.27781575918197632" green="0.61318677663803101" blue="0.87454187870025635" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="gyungkiAPI:" destination="-1" eventType="touchUpInside" id="qXJ-QY-vdL"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
@@ -238,6 +245,7 @@
                         <constraint firstItem="CGQ-pk-nrV" firstAttribute="top" secondItem="OIS-RN-6sZ" secondAttribute="top" constant="65" id="GWD-dH-r0q"/>
                         <constraint firstItem="D8h-6H-6qA" firstAttribute="top" secondItem="W3J-bQ-tUm" secondAttribute="bottom" constant="-5.5" id="H7v-9I-PRh"/>
                         <constraint firstItem="TJs-ju-0xZ" firstAttribute="top" secondItem="W3J-bQ-tUm" secondAttribute="bottom" constant="8.5" id="IPL-Sj-C6J"/>
+                        <constraint firstItem="9xz-kB-j53" firstAttribute="top" secondItem="TJs-ju-0xZ" secondAttribute="bottom" constant="8" id="Jvr-ch-UA2"/>
                         <constraint firstItem="tO1-qd-jLp" firstAttribute="top" secondItem="TJs-ju-0xZ" secondAttribute="bottom" constant="26" id="MUs-kR-PfS"/>
                         <constraint firstItem="oBM-UD-w7I" firstAttribute="leading" secondItem="OIS-RN-6sZ" secondAttribute="leading" constant="8" id="N8J-cS-ouX"/>
                         <constraint firstItem="CGQ-pk-nrV" firstAttribute="width" secondItem="OIS-RN-6sZ" secondAttribute="width" multiplier="1:5" id="Nzf-Yo-bTT"/>
@@ -247,9 +255,11 @@
                         <constraint firstItem="ljM-o9-nC6" firstAttribute="top" secondItem="tO1-qd-jLp" secondAttribute="bottom" constant="18" id="VAa-9Z-hHc"/>
                         <constraint firstItem="W3J-bQ-tUm" firstAttribute="leading" secondItem="Awl-hI-gDG" secondAttribute="leading" id="W14-ij-06p"/>
                         <constraint firstItem="ljM-o9-nC6" firstAttribute="centerX" secondItem="OIS-RN-6sZ" secondAttribute="centerX" id="XY0-lz-WUb"/>
+                        <constraint firstAttribute="trailing" secondItem="9xz-kB-j53" secondAttribute="trailing" constant="8" id="Xc1-It-ynp"/>
                         <constraint firstItem="W3J-bQ-tUm" firstAttribute="top" secondItem="CGQ-pk-nrV" secondAttribute="bottom" constant="34.5" id="Xni-Yb-ltX"/>
+                        <constraint firstItem="9xz-kB-j53" firstAttribute="leading" secondItem="OIS-RN-6sZ" secondAttribute="leading" constant="8" id="Xzb-ES-l06"/>
                         <constraint firstItem="wac-eo-iaH" firstAttribute="top" secondItem="Awl-hI-gDG" secondAttribute="top" id="aCd-6k-lP5"/>
-                        <constraint firstAttribute="bottom" secondItem="oBM-UD-w7I" secondAttribute="bottom" constant="150" id="bVy-B4-dMw"/>
+                        <constraint firstAttribute="bottom" secondItem="oBM-UD-w7I" secondAttribute="bottom" constant="42" id="ccL-w2-35B"/>
                         <constraint firstItem="D8h-6H-6qA" firstAttribute="leading" secondItem="OIS-RN-6sZ" secondAttribute="leading" constant="8" id="d2T-3H-Je7"/>
                         <constraint firstAttribute="trailing" secondItem="D8h-6H-6qA" secondAttribute="trailing" constant="8" id="fc9-VO-y4e"/>
                         <constraint firstItem="tO1-qd-jLp" firstAttribute="top" secondItem="OIS-RN-6sZ" secondAttribute="top" constant="660" id="lI7-nm-L5t"/>

@@ -4,7 +4,7 @@
 target 'ios' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  
+
   platform :ios, '9.0'
 
   pod 'AWSTranslate', '~> 2.6.19'
@@ -21,6 +21,7 @@ target 'ios' do
   pod 'AWSS3'
   pod 'AWSCore'
   pod 'AWSCognito'
-  
+  pod 'NMapsMap'
+
 
 end
