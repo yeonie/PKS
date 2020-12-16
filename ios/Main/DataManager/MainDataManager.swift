@@ -31,4 +31,16 @@ class MainDataManager {
                 }
             })
     }
+    
+    func getLogin(_ loginViewController: findHospitalViewController){
+        let username = loginViewController.englishReg.text!
+        Alamofire.request("https://c4n5mfj1ta.execute-api.ap-northeast-2.amazonaws.com/hospital_api/en%2Fhospital1.txt/hospital1.txt", method:
+            .get,encoding: JSONEncoding.default, headers: nil)
+            .validate(statusCode: 200..<600).response { response in
+                loginViewController.englishReg.text = username
+                
+                
+                    
+                }
+        }
 }

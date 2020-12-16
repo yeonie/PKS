@@ -17,23 +17,20 @@ import AWSS3
 
 class findHospitalViewController: BaseViewController {
 
+    @IBOutlet weak var englishReg: UILabel!
+    
+    let bucketName = "sam-translation-bucket"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
 //        for S3
         let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.APNortheast2, identityPoolId:"ap-northeast-2:7f72781f-e4ef-4d31-85f2-4caa2e9bbaf6")
-        
         
         let configuration = AWSServiceConfiguration(region:.APNortheast2, credentialsProvider:credentialsProvider)
         
         AWSServiceManager.default().defaultServiceConfiguration = configuration
         
 //          S3 done
-        
-    
-        
         navigationController?.navigationBar.isHidden = true
 
         // Do any additional setup after loading the view.
@@ -52,8 +49,6 @@ class findHospitalViewController: BaseViewController {
     }
     
 //     for S3
-    
-    let bucketName = "sam-translation-bucket"
     
     func uploadFile(with resource: String, type: String){
         let key = "\(resource).\(type)"
